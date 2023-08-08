@@ -1,0 +1,178 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>آموزش امنیت رایانه برای فعالان مدنی</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" type="text/css" href="btn/css/default.css" />
+		<link rel="stylesheet" type="text/css" href="btn/css/component.css" />
+		<script src="btn/js/modernizr.custom.js"></script>
+
+		<!--
+		################################################################################################################
+		######################################### Custom Part ##########################################################
+		################################################################################################################
+		-->
+		<!-- https://ionicons.com/usage
+		-->
+		<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+		<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css"
+			rel="stylesheet">
+
+		<!-- https://fontawesome.com/icons
+		-->
+		<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+			integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+			crossorigin="anonymous"></script>
+
+		<link
+			href="https://cdn.rawgit.com/rastikerdar/vazir-font/v11.0.0/dist/font-face.css"
+			rel="stylesheet"
+			type="text/css" />
+		<link href='https://fonts.googleapis.com/css?family=Lalezar' rel='stylesheet'
+			type='text/css'>
+
+		<!-- a site for web2 colors: http://colorhunt.co/popular
+		     a site for free icons: https://www.flaticon.com/free-icon
+		-->
+
+		<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+<div class="ribbon top-left"><a href="#" style="font-family: Lalezar; color: #666;"><i class="fas fa-hand-holding-usd"></i> حمایت از این پروژه</a></div>
+		-->
+		<!-- Printing and PDF exports -->
+		<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/01-falling.svg" data-background-size="70%"
+					data-background-color="#fff"
+					data-state="dim3">
+					<h1>امـنـیـت رایـانـه</h1>
+					<h3>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<p style="font-size: 500%; color:#393e46; text-shadow: 1px 1px 10px #666;">
+						<ion-icon name="finger-print"></ion-icon></i>
+				</p>
+				<p style="font-size: 60%; margin-top: -10%;"><b>عـلـی نـیـکـویـی</b><br><span
+						style="font-size: 50%;"><a
+							href="http://twitter.com/IranSecurity">iransec <i class="fab fa-twitter"></i></a><br>زمستان
+						۱۳۹۷</span></p>
+				<p style="font-size:50%; padding-top:10px;">این محتوا با <span
+						style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
+							class="fas fa-heart"></i></span> و تحت
+					گواهی <i class="fab fa-creative-commons"></i><i
+						class="fab fa-creative-commons-by"></i><i
+						class="fab fa-creative-commons-nc"></i><i
+						class="fab fa-creative-commons-sa"></i> منتشر می‌شود
+					<span style="font-size: 50%;">(<a
+							href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+							target="_blank">بیش‌تر بخوانید</a>)</span></p>
+				<p><a href="#"
+						style="font-size: 60%; font-family: Lalezar; color: #fbf9fa; background: #882042; padding: 15px; opacity: 0.9;"><i
+							class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
+						&nbsp;&nbsp;<i
+							class="fas fa-hand-holding-usd fa-flip-horizontal"></i></a></p>
+
+			</section>
+
+			<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+
+		<section data-background="images/question.jpg">
+			<h1 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک دارید؟</h1>
+			<span class="o70" style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+				خود را با ما در میان بگذارید.</span>
+			<span class="o70"
+				style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+			<a href="https://t.me/IranSec_Bot" class="o70"
+				style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+		</section>
+
+		<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+		<section>
+			<section data-transition="slide" data-background-color="#a21232"
+				data-background-transition="zoom">
+				<h1>تشکر و حق مولف</h1>
+				<img class="big" src="images/logo-telegram.png">
+				<p>مروری بر مهم‌ترین تنظیمات امنیتی</p>
+				<span style="font-size:40%; opacity: 0.5;">آخرین به-روز-رسانی: شهریور ۱۳۹۷</span>
+				<div>Icons made by <a href="https://www.flaticon.com/authors/smashicons"
+						title="Smashicons">Smashicons</a>
+					from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+					is licensed by <a
+						href="http://creativecommons.org/licenses/by/3.0/"
+						title="Creative Commons BY 3.0"
+						target="_blank">CC 3.0 BY</a></div>
+			</section>
+		</section>
+		<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// Change the presentation direction to be RTL
+			rtl: true,
+			// Hides the address bar on mobile devices
+			hideAddressBar: true,
+			// limit how many pages a slide may expand onto
+			pdfMaxPagesPerSlide: 1,
+			// Transition style
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Transition style for full page slide backgrounds
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Enables touch navigation on devices with touch input
+			touch: true,
+			// Push each slide change to the browser history
+			history: true,
+			// Vertical centering of slides
+			center: true,
+			// Display the page number of the current slide
+			slideNumber: true,
+			dependencies: [
+				{ src: 'plugin/markdown/marked.js' },
+				{ src: 'plugin/markdown/markdown.js' },
+				{ src: 'plugin/notes/notes.js', async: true },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } }
+			]
+		});
+	</script>
+	</body>
+
+</html>

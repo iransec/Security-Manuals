@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="fa">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>☘️ آموزش امنیت اسکایپ برای فعالان مدنی</title>
+
+		<meta name="description"
+			content="چرا امنیت دیجیتال برای فعالان مدنی و روزنامه‌نگاران مهم است و چگونه می‌توان امنیت عمومی فعالان حقوق بشر و روزنامه‌نگاران را تقویت کرد.">
+		<meta name="author" content="ایرانسک">
+
+		<meta name="apple-mobile-web-feature-capable" content="yes">
+		<meta name="apple-mobile-web-feature-status-bar-style"
+			content="black-translucent">
+
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- ###########################################################################################################
+		######################################### Custom Part ##########################################################
+		################################################################################################################ -->
+		<!-- a site for web2 colors: http://colorhunt.co/popular
+		   a site for free icons: https://www.flaticon.com/free-icon -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+		<!-- https://ionicons.com/usage -->
+		<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+		<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css"
+			rel="stylesheet">
+
+		<!-- https://fontawesome.com/icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+			integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+			crossorigin="anonymous"></script>
+
+		<style>
+		.reveal a {
+			color: #90b8f8;
+		}
+
+		.reveal .icon {
+			font-size: 220%;
+			color: #90b8f8;
+			text-shadow: 1px 1px 10px #666;
+			opacity: 0.9;
+		}
+
+		.reveal .feature {
+			color: #90b8f8;
+			text-shadow: 1px 1px 10px #666;
+		}
+	</style>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<!-- Printing and PDF exports -->
+		<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/01-falling.svg" data-background-size="70%"
+					data-background-color="#253858">
+					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<p class="icon" style="font-size: 170px;">
+						<ion-icon name="finger-print"></ion-icon>
+					</p>
+					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; ارتباط امن با جیتسی
+						&nbsp;&nbsp;}</h2>
+					<div style="opacity: 0.7;">
+						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+							<a href="http://twitter.com/IranSecurity">IranSecurity 
+								<i class="fab fa-twitter"></i></a><br />
+							<a href="http://instagram.com/IranSec">IranSec 
+								<i class="fab fa-instagram"></i></a><br />
+							<a href="http://telegram.com/IranSec2">IranSec2 
+								<i class="fab fa-telegram"></i></a><br />
+										<!-- <br>بهار ۱۴۰۲ -->
+									</span></p>
+						<p class="f50" style="padding-top:10px;">این محتوا با <span
+								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
+									class="fas fa-heart"></i></span> و
+							تحت گواهی <i class="fab fa-creative-commons"></i><i
+								class="fab fa-creative-commons-by"></i><i
+								class="fab fa-creative-commons-nc"></i><i
+								class="fab fa-creative-commons-sa"></i> منتشر
+							می‌شود <span class="f50">(<a
+									href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+									target="_blank">بیش‌تر بخوانید</a>)</span></p>
+					</div>
+					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90"
+							style="font-family: Lalezar; color: #fbf9fa; background: #342056; padding: 15px;"><i
+								class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
+							&nbsp;&nbsp;<i
+								class="fas fa-hand-holding-usd fa-flip-horizontal"></i></a></p>
+				</section>
+				<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+				<section>
+					<section data-transition="slide" data-background-color="#253858"
+						data-background-transition="zoom">
+						<h1>ارتباط امن با جیتسی</h1>
+						<img class="big" src="images/logo-jitsi.svg">
+						<p>استفاده از جیتسی</p>
+						<span style="font-size:40%; opacity: 0.5;">آخرین به-روز-رسانی: شهریور ۱۳۹۸</span>
+					</section>
+					<section data-transition="slide" data-background-color="#253858"
+						data-background-transition="zoom">
+						<h1>چند نکته درباره‌ی جیتسی</h1>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li>جیتسی ابزاری برای ارتباط متنی، صوتی و تصویری امن است</li>
+							<li>با جیتسی امکان برگزاری وبینار و کلاس آنلاین را خواهید داشت</li>
+							<li>جیتسی نرم‌افزاری رایگان و متن‌باز است</li>
+						</ul>
+						<p style="font-size:60%;"><br>امنیت جیتسی قابل قبول است اما اگر دستگاه شما
+							به هر طریقی آلوده شده
+							باشد، امکان شنود مکالمات
+							شما وجود دارد. پس حفظ امنیت عمومی دستگاه‌تان یک «باید» مهم و حیاتی است.</p>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Web-01.png"
+						data-background-size="70%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">در مرورگر خود آدرس
+							https://meet.jit.si را باز
+							کنید و در قسمت Start a new meeting نامی برای اتاق گفت‌وگوی خود انتخاب
+							کنید و دکمه‌ی Go را بزنید.
+						</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Web-02.png"
+						data-background-size="70%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">با این کار صفحه‌ای
+							شبیه این برای شما باز می‌شود.
+							اگر روی علامت سه-نقطه کلیک کنید، امکان‌هایی برای شما نمایش داده می‌شود
+							مانند ضبط گفت‌وگو،
+							اشتراک‌گذاری فایل و ...</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Web-03.png"
+						data-background-size="70%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">اگر روی دکمه‌ی اطلاعات
+							کلیک کنید دو امکان مهم به
+							شما داده می‌شود: اشتراک‌گذاری اطلاعات ورود به اتاق و قفل کردن اتاق. اگر
+							دکمه‌ی Copy را بزنید،
+							اطلاعات دست‌رسی به اتاق (به جز رمز) کپی می‌شود و می‌توانید آن را با
+							دیگران به اشتراک بگذارید.
+						</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Web-04.png"
+						data-background-size="70%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">اما با کلیک روی
+							گزینه‌ی Add Password می‌توانید
+							روی اتاق گفت‌وگو رمز بگذارید تا امکان دست‌رسی به آن برای هر کسی مهیا
+							نباشد. پس از تعیین رمز
+							دکمه‌ی Enter از روی صفحه‌کلید خود را بزنید.</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Web-05.png"
+						data-background-size="70%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">امکان دیگر جیتسی،
+							گفت‌وگوی متنی است که با کلیک
+							روی
+							علامت حباب (سمت راست، پایین صفحه) نمایش داده می‌شود. دیگر دکمه‌ها مربوط
+							به اجازه گرفتن و
+							اشتراک‌گذاری صفحه‌ی نمایش است.</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Mobile-01.png"
+						data-background-size="40%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">برای ورود به اتاق
+							گفت‌وگو دو راه وجود دارد. یا
+							از طریق پیوند دعوت یا وارد کردن اسم اتاق. از این‌جا استفاده از جیتسی در
+							تلفن همراه را نشان
+							می‌دهیم. مراحل خیلی شبیه به آن چه در جیتسی وب دیدید است.</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Mobile-02.png"
+						data-background-size="20%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">اگر رمزی روی اتاق
+							باشد، پیش از ورود از شما رمز
+							را می‌خواهد. پس از وارد کردن رمز روی دکمه‌ی OK کلیک کنید تا وارد اتاق
+							گفت‌وگو شوید.</blockquote>
+					</section>
+					<section data-background="images/Jitsi/Jitsi-Mobile-03.png"
+						data-background-size="20%"
+						data-background-transition="zoom" data-background-color="#253858">
+						<blockquote style="margin-top: 60%; font-size:60%;">پس از ورود، لیست دیگر
+							اعضای گروه را می‌بینید و
+							بیش‌تر امکاناتی که در محیط جیتسی وب هم وجود دارد: گفت‌وگوی متنی، فعال و
+							غیر فعال کردن میکروفن یا
+							دوربین و ...</blockquote>
+					</section>
+				</section>
+				<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<section data-background="images/question.jpg">
+			<h1 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک دارید؟</h1>
+			<span class="o70" style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+				خود را با ما در میان بگذارید.</span>
+			<span class="o70"
+				style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+			<a href="https://t.me/IranSec_Bot" class="o70"
+				style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+		</section>
+				<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+				<section data-transition="slide" data-background-color="#253858"
+					data-background-transition="zoom">
+					<h1>حق مولف و تشکر</h1>
+					<p class="icon"><i class="far fa-copyright"></i></p>
+					<p class="f50 justify">این نوشته به واسطه‌ی تجربه‌ی چند ساله در ارائه‌ی
+						مشاوره‌ی امنیتی به سازمان‌ها و
+						فعالان مدنی و حقوق بشر و روزنامه‌نگاران تهیه شده است. هر چند که تمام تلاشم
+						را کرده‌ام که متن حاضر
+						به‌روز و بی‌نقص باشد، امکان ایراد وجود دارد پس با آغوش باز پذیرای نقدها و
+						پیشنهادات شما هستم. لازم
+						است یادآوری کنم که این جزوه‌ی امنیتی با <a
+							href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+							target="_blank">گواهی کریتو
+							کامنز (قابل استفاده‌ی غیر تجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
+						به حتم برای هر شکل از
+						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه دارید.</p>
+					<p class="f50 justify">در این پروژه‌ی آموزشی از محتوای دیگران با گواهی قابل
+						انتشار و تغییر استفاده شده
+						است. از آن جمله می‌توان به <a href="https://github.com/hakimel/reveal.js/"
+							target="_blan">ارائه‌گر
+							reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
+							target="_blan">لاله‌زار</a>
+						و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
+						و <a
+							href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
+						شکلک‌های <a
+							href="https://ionicons.com" target="_blan">ion</a> و <a
+							href="https://fontawesome.com"
+							target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
+						استفاده شده. در هر جای
+						پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده است
+						خوش‌حال می‌شوم که آن را
+						گوش‌زد کنید.</p>
+				</section>
+			</div>
+		</div>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+		<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// Change the presentation direction to be RTL
+			rtl: true,
+			// Hides the address bar on mobile devices
+			hideAddressBar: true,
+			// limit how many pages a slide may expand onto
+			pdfMaxPagesPerSlide: 1,
+			// Transition style
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Transition style for full page slide backgrounds
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Enables touch navigation on devices with touch input
+			touch: true,
+			// Push each slide change to the browser history
+			history: true,
+			// Vertical centering of slides
+			center: true,
+			// Display the page number of the current slide
+			slideNumber: true,
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+	</body>
+
+</html>

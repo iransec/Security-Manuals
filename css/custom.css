@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Lalezar');
+
+@import url('https://cdn.rawgit.com/rastikerdar/vazir-font/v19.0.0/dist/font-face.css');
+
+@import url('http://www.fontonline.ir/css/BYekan.css');
+
+.reveal.rtl .slides {
+  font-family: 'vazir', sans-serif;
+}
+
+.reveal .slide-number {
+  font-family: 'BYekan', sans-serif;
+}
+
+.reveal.rtl .slides h1,
+.reveal.rtl .slides h2,
+.reveal.rtl .slides h3,
+.reveal.rtl .slides h4,
+.reveal.rtl .slides h5,
+.reveal.rtl .slides h6 {
+  font-family: 'Lalezar', sans-serif;
+  text-shadow: 4px 5px 6px #666;
+}
+
+.reveal .justify {
+  text-align: justify;
+}
+
+.reveal .center {
+  text-align: center;
+}
+
+.reveal .right {
+  text-align: right;
+}
+
+.reveal .left {
+  direction: ltr;
+  text-align: left;
+}
+
+.reveal .f40 {
+  font-size: 40%;
+}
+
+.reveal .f50 {
+  font-size: 50%;
+}
+
+.reveal .f60 {
+  font-size: 60%;
+}
+
+.reveal .f70 {
+  font-size: 70%;
+}
+
+.reveal .f80 {
+  font-size: 80%;
+}
+
+.reveal .l40 {
+  line-height: 40%;
+}
+
+.reveal .l50 {
+  line-height: 50%;
+}
+
+.reveal .l70 {
+  line-height: 70%;
+}
+
+.reveal .l80 {
+  line-height: 80%;
+}
+
+.reveal .l90 {
+  line-height: 90%;
+}
+
+.reveal .o50 {
+  opacity: 0.5;
+}
+
+.reveal .o80 {
+  opacity: 0.8;
+}
+
+.reveal .o90 {
+  opacity: 0.9;
+}
+
+.reveal .controls {
+  left: 120px;
+  right: inherit;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: right;
+}
+
+.reveal section img {
+  margin: 0;
+  background: initial;
+  border: none;
+  box-shadow: none;
+}
+
+.reveal blockquote {
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-style: normal;
+  width: 100%;
+  margin: 0;
+}
+
+.reveal blockquote:hover {
+  opacity: 0.2;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  margin: 0 1em 0 0;
+}
+
+.reveal .block {
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 0 20px;
+}
+
+.reveal ol,
+.reveal dl,
+.reveal ul {
+  margin: 0;
+  width: 60%;
+}
+
+html.dim5 .slide-background {
+  opacity: 0.5 !important;
+}
+
+html.dim4 .slide-background {
+  opacity: 0.4 !important;
+}
+
+html.dim3 .slide-background {
+  opacity: 0.3 !important;
+}
+
+html.dim2 .slide-background {
+  opacity: 0.2 !important;
+}
+
+.reveal .slide-number {
+  right: initial;
+  left: 8px;
+}
+
+.reveal img.big {
+  max-height: 350px;
+}
