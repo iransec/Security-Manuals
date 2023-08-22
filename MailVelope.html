@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="fa">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>☘️ آموزش رمزگذاری برای فعالان مدنی</title>
+
+		<meta name="description"
+			content="چرا امنیت دیجیتال برای فعالان مدنی و روزنامه‌نگاران مهم است و چگونه می‌توان امنیت عمومی فعالان حقوق بشر و روزنامه‌نگاران را تقویت کرد.">
+		<meta name="author" content="ایرانسک">
+
+		<meta name="apple-mobile-web-feature-capable" content="yes">
+		<meta name="apple-mobile-web-feature-status-bar-style"
+			content="black-translucent">
+
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- ###########################################################################################################
+		######################################### Custom Part ##########################################################
+		################################################################################################################ -->
+		<!-- a site for web2 colors: http://colorhunt.co/popular
+		   a site for free icons: https://www.flaticon.com/free-icon -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+		<!-- https://ionicons.com/usage -->
+		<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+		<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css"
+			rel="stylesheet">
+
+		<!-- https://fontawesome.com/icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+			integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+			crossorigin="anonymous"></script>
+
+		<style>
+		.reveal a {
+			color: #c38b8b;
+		}
+
+		.reveal .icon {
+			font-size: 220%;
+			color: #c38b8b;
+			text-shadow: 1px 1px 10px #666;
+			opacity: 0.9;
+		}
+
+		.reveal .feature {
+			color: #c38b8b;
+			text-shadow: 1px 1px 10px #666;
+		}
+	</style>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<!-- Printing and PDF exports -->
+		<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/01-falling.svg" data-background-size="70%"
+					data-background-color="#800080">
+					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<p class="icon" style="font-size: 170px;">
+						<ion-icon name="finger-print"></ion-icon>
+					</p>
+					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; رمزگذاری &nbsp;&nbsp;}</h2>
+					<div style="opacity: 0.7;">
+						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+								<a href="http://twitter.com/IranSecurity">IranSecurity
+									<i class="fab fa-twitter"></i></a><br />
+								<a href="http://instagram.com/IranSec">IranSec
+									<i class="fab fa-instagram"></i></a><br />
+								<a href="http://telegram.com/IranSec2">IranSec2
+									<i class="fab fa-telegram"></i></a><br />
+								<!-- <br>زمستان ۱۳۹۷-->
+							</span></p>
+						<p class="f50" style="padding-top:10px;">این محتوا با <span
+								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
+									class="fas fa-heart"></i></span> و
+							تحت گواهی <i class="fab fa-creative-commons"></i><i
+								class="fab fa-creative-commons-by"></i><i
+								class="fab fa-creative-commons-nc"></i><i
+								class="fab fa-creative-commons-sa"></i> منتشر
+							می‌شود <span class="f50">(<a
+									href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+									target="_blank">بیش‌تر بخوانید</a>)</span></p>
+					</div>
+					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90"
+							style="font-family: Lalezar; color: #fbf9fa; background: #681a1e; padding: 15px;"><i
+								class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
+							&nbsp;&nbsp;<i
+								class="fas fa-hand-holding-usd fa-flip-horizontal"></i></a></p>
+
+				</section>
+
+				<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+				<section><!--intro-->
+					<!--2.1-->
+					<section data-transition="slide" data-background-color="#fffb00"
+						data-background-transition="zoom">
+						<h1>Mailvelope</h1>
+						<img class="big" src="images/mailvelope.svg">
+						<p><b>برنامه‌ای برای رمزگذاری</b></p>
+						<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
+							تابستان ۱۴۰۲</span>
+					</section>
+
+					<!--2.2-->
+					<section data-transition="slide" data-background-color="#fffb00"
+						data-background-transition="zoom">
+						<p style="font-size: 50%; text-align: justify;">
+							PGP (Pretty Good Privacy)
+							یک سیستم رمزگذاری و امنیتی برای حفاظت از اطلاعات حساس است. این سیستم به
+							شما اجازه می‌دهد اطلاعات خود را رمزگذاری کنید تا فقط افراد مجاز بتوانند
+							آن را مشاهده کنند.
+							<br />
+							افزونۀ
+							Mailvelope
+							یک افزونۀ رمزگذاری برای مرورگرها است که با استفاده از
+							PGP
+							امکان رمزنگاری ایمیل‌های ارسالی و دریافتی را ایجاد می‌کند. این افزونه به
+							شما این امکان را می‌دهد که از رمزگذاری مطمئنی برای ارتباطات ایمیلی خود
+							استفاده کنید.
+						</p>
+					</section>
+
+					<!--2.3-->
+					<section data-transition="slide" data-background-color="#fffb00"
+						data-background-transition="zoom">
+						<h2>ویژگی‌های مهم Mailvelope</h2>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li>رمزگذاری قدرتمند</li>
+							<li>امضاء دیجیتال (تضمین اصالت پیام)</li>
+							<li>یکپارچه‌سازی با سرویس‌های ایمیل معروف</li>
+							<li>مدیریت آسان کلیدها</li>
+							<li>پشتیبانی از انواع پیوست‌ها</li>
+						</ul>
+					</section>
+				</section>
+
+				<section><!--Register-->
+					<!--3.1-->
+					<section data-transition="slide" data-background-color="#fffb00"
+						data-background-transition="zoom">
+						<h2>تشکیل حساب کاربری<br>بیت‌واردن</h2>
+						<img class="big" src="images/Icons/smartphone01.svg">
+					</section>
+
+					<!--3.2-->
+					<section data-background="images/Bitwarden/Bitwarden-01.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#fffb00">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							به
+							<a href="https://mailvelope.com/en/help">تارنمای رسمی Mailvelope</a>
+							مراجعه کنید و مرورگر خود را انتخاب کنید تا وارد صفحۀ افزونه شوید.
+
+							فرم ثبت نام را تکمیل کنید. Master password رمز ورود به نرم‌افزار/افزونۀ
+							مدیریت رمز شماست.
+							<br />
+							توجه کنید که Master password hint را طوری انتخاب کنید که با دیدن آن رمز
+							را فقط خودتان بتوانید به‌یاد بیاورید. تیک پذیرش قوانین را زده و دکمۀ
+							Create account را بزنید.
+						</blockquote>
+					</section>
+
+					<!--3.3-->
+					<section
+						data-background="images/mailvelope_videos/mailvelope_installation.mp4"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#fffb00">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							به
+							<a href="https://mailvelope.com/en/help">تارنمای رسمی Mailvelope</a>
+							مراجعه کنید و مرورگر خود را انتخاب کنید تا وارد صفحۀ افزونه شوید.
+
+							فرم ثبت نام را تکمیل کنید. Master password رمز ورود به نرم‌افزار/افزونۀ
+							مدیریت رمز شماست.
+							<br />
+							توجه کنید که Master password hint را طوری انتخاب کنید که با دیدن آن رمز
+							را فقط خودتان بتوانید به‌یاد بیاورید. تیک پذیرش قوانین را زده و دکمۀ
+							Create account را بزنید.
+						</blockquote>
+					</section>
+
+					<section>
+						<section data-transition="slide" data-background-color="#5d3a3a"
+							data-background-transition="zoom">
+							<h1>راه ساده<br><span style="font-size:50%;">بدون دردسر نصب و راه‌اندازی
+									این همه برنامه</span></h1>
+							<img class="big" src="images/Icons/encryption01.svg" style="width:30%">
+							<p>رمزگذاری نقطه به نقطه افزونه‌های مبتنی بر مرورگر</p>
+							<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
+								تابستان ۱۴۰۲</span>
+						</section>
+						<section data-transition="slide" data-background-color="#5d3a3a"
+							data-background-transition="zoom">
+							<h1></h1>
+							<p style="font-size: 50%; text-align: justify;">اگر به هر دلیلی امکان یا
+								تمایلی برای استفاده از
+								شیوه‌ی امن عنوان شده ندارید و تنها می‌خواهید از امکان رمزگذاری
+								نقطه-به-نقطه روی رایانامه‌ی خود
+								استفاده کنید، پس از مروری بر قسمت‌های تنظیم Enigmail و فرستادن و گرفتن
+								رایانامه‌ی رمزگذاری شده
+								یکی از افزونه‌های زیر را روی مرورگر خود نصب کنید.</p>
+							<table>
+								<thead>
+									<tr>
+										<th style="text-align:center;"><span
+												style="font-size:70%; opacity:0.5;">Mailvelope</span><br><span
+												style="font-size:40%; opacity:0.5; text-shadow: 1px 1px 10px #666;"><i
+													class="fab fa-firefox"></i> <i class="fab fa-chrome"></i></span></th>
+										<th style="text-align:center;"><span
+												style="font-size:70%; opacity:0.5;">Mymail-Crypt</span><br><span
+												style="font-size:40%; opacity:0.5; text-shadow: 1px 1px 10px #666;"><i
+													class="fab fa-chrome"></i></span></th>
+										<th style="text-align:center;"><span
+												style="font-size:70%; opacity:0.5;">PGP
+												Anywhere</span><br><span
+												style="font-size:40%; opacity:0.5; text-shadow: 1px 1px 10px #666;"><i
+													class="fab fa-chrome"></i></span></th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr style="font-size: 60%; text-align:right;">
+										<td><span style="color:#7FF77F; text-shadow: 1px 1px 10px #666;"><i
+													class="fas fa-check"></i></span> سرویس‌های مهم</td>
+										<td><span style="color:#7FF77F; text-shadow: 1px 1px 10px #666;"><i
+													class="fas fa-check"></i></span> فقط جیمیل</td>
+										<td><span style="color:#7FF77F; text-shadow: 1px 1px 10px #666;"><i
+													class="fas fa-check"></i></span> همه جا</td>
+									</tr>
+								</tbody>
+								<tfoot>
+									<tr>
+										<td style="text-align: center; vertical-align: middle;"><a
+												href="https://www.mailvelope.com/en"><img class="big" class="plain"
+													width="140px;" src="images/logo-mailvelope.png"></a></td>
+										<td style="text-align: center; vertical-align: middle;"><a
+												href="https://chrome.google.com/webstore/detail/mymail-crypt-for-gmail/jcaobjhdnlpmopmjhijplpjhlplfkhba"><img
+													class="plain" width="140px;" src="images/logo-mymail-crypt.png"></a></td>
+										<td style="text-align: center; vertical-align: middle;"><a
+												href="https://chrome.google.com/webstore/detail/pgp-anywhere/cdlcdnmhcodhagbmljapgbjdimjckilb"><img
+													class="plain" width="140px;" src="images/logo-pgp-anywhere.png"></a></td>
+									</tr>
+								</tfoot>
+							</table>
+							<p style="font-size: 50%; text-align: justify;">شیوه‌ی کار این افزونه‌ها
+								کم و بیش شبیه به هم است که
+								در پی می‌آید. نکته‌ی مهم این است که امنیت این افزونه‌ها وابسته به امنیت
+								مرورگر است و اگر
+								افزونه‌ای در کنار آن نصب کنید (یا به طور خودکار نصب شود) آن‌گاه ممکن است
+								که امنیت کلید و محتوای
+								رمزگذاری شده در خطر باشد.</p>
+						</section>
+					</section>
+					<!-- ################################################################################################################ -->
+					<section>
+						<section data-transition="slide" data-background-color="#5d3a3a"
+							data-background-transition="zoom">
+							<h1>نصف افزونه‌ی<br>Mailvelope</h1>
+							<img class="big" src="images/Icons/plugin01.svg">
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-0-install01.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">Mailvelope را از طریق
+								<a
+									href="https://www.mailvelope.com/en" target="_blank">تارنمای</a> آن
+								دریافت کنید. سپس روی
+								افزونه‌ی کروم یا فایرفاکس بزنید.<br>* به آدرس تارنما و قفل سبزرنگ دقت
+								کنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-0-install02.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">اگر در گوگل کروم این
+								کار را انجام داده باشید،
+								صفحه‌ای شبیه به این به شما نمایش داده خواهد شد. روی دکمه‌ی Add extension
+								بزنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-0-install03.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">پس از چند لحظه شکلک
+								این افزونه به بالای صفحه
+								اضافه می‌شود و پیامی مبنی بر نصب شدن برنامه به شما نمایش داده خواهد شد</blockquote>
+						</section>
+						<section data-transition="slide" data-background-color="#5d3a3a"
+							data-background-transition="zoom">
+							<h1>ساخت و افزودن کلید با<br>Mailvelope</h1>
+							<img src="images/Icons/key10.svg">
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config01.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با کلیک روی شکلک
+								افزونه صفحه‌ای شبیه به این باز
+								خواهد شد. روی Options بزنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config02.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با رفتن به بخش Setup
+								می‌توانید یک کلید را بسازید
+								یا یک کلید از پیش‌ساخته شده را به افزونه اضافه کنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config03.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">اگر روی Generate Key
+								بزنید، این صفحه به شما
+								نمایش داده خواهد شد. کافی است که مشخصات را وارد کنید و روی دکمه‌ی
+								Generate بزنید تا کلید ساخته
+								شود<br><span style="font-size:50%;">(اگر به هر دلیلی پیام خطایی گرفتید،
+									یک بار این صفحه را
+									ببندید و دوباره باز کنید)</span></blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config04.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با رفتن به بخش
+								Display
+								Keys می‌توانید کلیدهایی
+								که دارید را ببینید. اگر دو شکلک دو کلید کنار رایانامه بود یعنی کلید
+								خصوصی
+								و عمومی را دارید
+							</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config05.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 55%; font-size:60%;">اما اگر روی Import
+								Keys بزنید، می‌توانید به سه
+								طریق یک کلید را به افزونه اضافه کنید: جست‌وجو در سرور عمومی، فایل یا به
+								صورت متنی<br>اگر در قسمت
+								Search مشخصات کلیدی که دنبال آن می‌گردید (نام یا آدرس رایانامه) را بزنید
+								فهرستی به شما نمایش
+								داده می‌شود</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config06.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با انتخاب کلیدی که
+								می‌خواهید، جزئیات بیش‌تری به
+								شما نمایش داده خواهد شد</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config07.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">کافی است که روی
+								دکمه‌ی
+								آبی بزنید تا کلید به
+								افزونه افزوده شود</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config08.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">به صفحه‌ی اولیه
+								برخواهید گشت و پایین صفحه در
+								کادری سبزرنگ تاییدیه‌ای را به شما نمایش خواهد داد</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config09.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">اگر به بخش Display
+								Keys برگردید، کلیدها را نشان
+								می‌دهد؛ شکلک کلید (یک دانه) یعنی فقط کلید عمومی را دارید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config10.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">حال اگر بخواهید یک
+								کلید را از طریق فایل به
+								افزونه اضافه کنید باید در بخش Import Keys رفته و روی Select a key text
+								fole to import بزنید
+							</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config11.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">در صفحه‌ای که باز
+								می‌شود باید فایل را انتخاب
+								کنید و روی Open بزنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config12.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با این کار به صفحه‌ی
+								اولیه باز می‌گردید که در
+								پایین صفحه تاییدیه‌ای به شما نمایش داده خواهد شد</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-1-config13.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">اگر به بخش Display
+								Keys برگردید، کلیدها را نشان
+								می‌دهد؛ شکلک کلید (یک دانه) یعنی فقط کلید عمومی را دارید</blockquote>
+						</section>
+						<section data-transition="slide" data-background-color="#5d3a3a"
+							data-background-transition="zoom">
+							<h1>گرفتن/فرستادن رایانامه با<br>Mailvelope</h1>
+							<img class="big" src="images/Icons/email01.svg">
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending01.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">برای فرستادن رایانامه
+								به شکل معمول روی دکمه‌ی
+								Compose (برای جیمیل) بزنید. با این کار دکمه‌ای در صفحه‌ی مربوط به نوشتن
+								رایانامه نمایش داده
+								خواهد شد که برای نوشتن رایانامه‌ی رمزگذاری شده است. روی آن کلیک کنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending02.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با این کار صفحه‌ای
+								باز
+								می‌شود که باید مشخص کنید
+								که گیرنده(ها)ی رایانامه کیست.</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending03.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">متن رایانامه‌ی خود را
+								بنویسید و سپس از پایین
+								صفحه روی دکمه‌ی Encrypt بزنید</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending04.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با این کار به صفحه‌ی
+								نوشتن رایانامه برمی‌گردید
+								اما با متن رمزگذاری شده. باید عنوان رایانامه را بنویسید اما به خاطر
+								داشته
+								باشید که عنوان
+								رایانامه، آدرس فرستنده و گیرنده رمزگذاری نخواهند شد</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending05.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">اگر یک رایانامه‌ی
+								رمزگذاری شده بگیرید، چیزی شبیه
+								به این صفحه خواهد بود. کافی است روی نشان نامه با قفل بزنید تا رایانامه
+								از
+								حالت رمزگذاری خارج شود
+							</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending06.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با این کار از شما
+								می‌خواهد که رمز کلید خود را
+								وارد کنید. دقت داشته باشید که این رمز با رمز رایانامه‌ی شما یکی نیست.</blockquote>
+						</section>
+						<section data-background="images/Mailvelope/Mailvelope-2-sending07.png"
+							data-background-size="auto auto"
+							data-background-transition="zoom" data-background-color="#5d3a3a">
+							<blockquote style="margin-top: 60%; font-size:60%;">با این کار رایانامه
+								از
+								حالت رمز شده خارج خواهد
+								شد</blockquote>
+						</section>
+					</section>
+					<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+					<section data-background="images/question.jpg">
+						<h1 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+							دارید؟</h1>
+						<span class="o70"
+							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+							خود را با ما در میان بگذارید.</span>
+						<span class="o70"
+							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+						<a href="https://t.me/IranSec_Bot" class="o70"
+							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+					</section>
+					<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<h1>حق مولف و تشکر</h1>
+						<p class="icon"><i class="far fa-copyright"></i></p>
+						<p class="f50 justify">این نوشته به واسطه‌ی تجربه‌ی چند ساله در ارائه‌ی
+							مشاوره‌ی امنیتی به سازمان‌ها و
+							فعالان مدنی و حقوق بشر و روزنامه‌نگاران تهیه شده است. هر چند که تمام
+							تلاشم
+							را کرده‌ام که متن حاضر
+							به‌روز و بی‌نقص باشد، امکان ایراد وجود دارد پس با آغوش باز پذیرای نقدها و
+							پیشنهادات شما هستم. لازم
+							است یادآوری کنم که این جزوه‌ی امنیتی با <a
+								href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+								target="_blank">گواهی کریتو
+								کامنز (قابل استفاده‌ی غیر تجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
+							به حتم برای هر شکل از
+							استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه دارید.</p>
+						<p class="f50 justify">در این پروژه‌ی آموزشی از محتوای دیگران با گواهی
+							قابل
+							انتشار و تغییر استفاده شده
+							است. از آن جمله می‌توان به <a
+								href="https://github.com/hakimel/reveal.js/"
+								target="_blan">ارائه‌گر
+								reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
+								target="_blan">لاله‌زار</a>
+							و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
+							و <a
+								href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
+							شکلک‌های <a
+								href="https://ionicons.com" target="_blan">ion</a> و <a
+								href="https://fontawesome.com"
+								target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
+							استفاده شده. در هر جای
+							پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
+							است
+							خوش‌حال می‌شوم که آن را
+							گوش‌زد کنید.</p>
+					</section>
+				</div>
+			</div>
+			<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+			<script src="lib/js/head.min.js"></script>
+			<script src="js/reveal.js"></script>
+
+			<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// Change the presentation direction to be RTL
+			rtl: true,
+			// Hides the address bar on mobile devices
+			hideAddressBar: true,
+			// limit how many pages a slide may expand onto
+			pdfMaxPagesPerSlide: 1,
+			// Transition style
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Transition style for full page slide backgrounds
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Enables touch navigation on devices with touch input
+			touch: true,
+			// Push each slide change to the browser history
+			history: true,
+			// Vertical centering of slides
+			center: true,
+			// Display the page number of the current slide
+			slideNumber: true,
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+		</body>
+
+	</html>
