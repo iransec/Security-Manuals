@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="fa">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>☘️ آموزش رمزگذاری فایل‌ها برای فعالان مدنی</title>
+		<link rel="icon" href="images/veracrypt.png" type="image/x-icon">
+
+		<meta name="description"
+			content="چرا امنیت دیجیتال برای فعالان مدنی و روزنامه‌نگاران مهم است و چگونه می‌توان امنیت عمومی فعالان حقوق بشر و روزنامه‌نگاران را تقویت کرد.">
+		<meta name="author" content="ایرانسک">
+
+		<meta name="apple-mobile-web-feature-capable" content="yes">
+		<meta name="apple-mobile-web-feature-status-bar-style"
+			content="black-translucent">
+
+		<meta name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- ###########################################################################################################
+		######################################### Custom Part ##########################################################
+		################################################################################################################ -->
+		<!-- a site for web2 colors: http://colorhunt.co/popular
+		   a site for free icons: https://www.flaticon.com/free-icon -->
+		<link rel="stylesheet" type="text/css" href="css/custom.css" />
+
+		<!-- https://ionicons.com/usage -->
+		<script src="https://unpkg.com/ionicons@4.5.0/dist/ionicons.js"></script>
+		<link href="https://unpkg.com/ionicons@4.5.0/dist/css/ionicons.min.css"
+			rel="stylesheet">
+
+		<!-- https://fontawesome.com/icons -->
+		<script defer src="https://use.fontawesome.com/releases/v5.6.1/js/all.js"
+			integrity="sha384-R5JkiUweZpJjELPWqttAYmYM1P3SNEJRM6ecTQF05pFFtxmCO+Y1CiUhvuDzgSVZ"
+			crossorigin="anonymous"></script>
+
+		<style>
+		.reveal a {
+			color: #ff9d76;
+		}
+
+		.reveal .icon {
+			font-size: 220%;
+			color: #ff9d76;
+			text-shadow: 1px 1px 10px #666;
+			opacity: 0.9;
+		}
+
+		.reveal .feature {
+			color: #ffc0c2;
+			text-shadow: 1px 1px 10px #666;
+		}
+	</style>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<!-- Printing and PDF exports -->
+		<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+			<div class="slides">
+				<section data-background="images/01-falling.svg" data-background-size="70%"
+					data-background-color="#5d3a3a">
+					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<p class="icon" style="font-size: 170px;">
+						<ion-icon name="finger-print"></ion-icon>
+					</p>
+					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; رمزگذاری &nbsp;&nbsp;}</h2>
+					<div style="opacity: 0.7;">
+						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+								<a href="http://twitter.com/IranSecurity">IranSecurity
+									<i class="fab fa-twitter"></i></a><br />
+								<a href="http://instagram.com/IranSec">IranSec
+									<i class="fab fa-instagram"></i></a><br />
+								<a href="http://telegram.com/IranSec2">IranSec2
+									<i class="fab fa-telegram"></i></a><br />
+								<!-- <br>زمستان ۱۳۹۷-->
+							</span></p>
+						<p class="f50" style="padding-top:10px;">این محتوا با <span
+								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
+									class="fas fa-heart"></i></span> و
+							تحت گواهی <i class="fab fa-creative-commons"></i><i
+								class="fab fa-creative-commons-by"></i><i
+								class="fab fa-creative-commons-nc"></i><i
+								class="fab fa-creative-commons-sa"></i> منتشر
+							می‌شود <span class="f50">(<a
+									href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+									target="_blank">بیش‌تر بخوانید</a>)</span></p>
+					</div>
+					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90"
+							style="font-family: Lalezar; color: #fbf9fa; background: #ffc400; padding: 15px;"><i
+								class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
+							&nbsp;&nbsp;<i
+								class="fas fa-hand-holding-usd fa-flip-horizontal"></i></a></p>
+
+				</section>
+
+				<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+				<section><!--intro-->
+					<!--2.1-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<!--<h1>BitWarden</h1>-->
+						<img class="big" src="images/veracrypt.png">
+						<p><b>برنامه‌ای برای رمزگذاری فایل‌ها</b></p>
+						<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->پاییز
+							۱۴۰۲</span>
+					</section>
+
+					<!--2.2-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<ul style="font-size: 50%; text-align: justify;">
+							<li>همه ما اطلاعاتی داریم که نیازمند محافظت از آن‌ها دربرابر دست‌رسی‌های
+								غیرمجاز هستیم.</li>
+							<li>یکی از راه‌های جلوگیری از دست‌رسی غریبه‌ها به اطلاعات، رمزگذاری
+								آن‌هاست.</li>
+							<li>رمزگذاری فایل یک فرآیند است که در آن اطلاعات قابل خواندن ما به کدی
+								تبدیل می‌شود که برای دیگران نامفهوم است، مگر اینکه دسترسی به کلید مخصوصی
+								داشته باشند. به این ترتیب، حتی اگر فایل‌های ما در دست دیگران قرار گیرند،
+								اطلاعات داخلی فایل‌ها امنیت دارند.</li>
+							<li>نرم‌‌افزار veracrypt قوی‌ترین نرم‌افزارهای رایگان رمزگذاری در دنیاست.</li>
+							<li>اگر رمز خود را فراموش کنید، به‌هیچ وجه امکان بازیابی فایل‌های خود را
+								نخواهید داشت.</li>
+							<li>این نرم‌افزار امکان رمزگذاری فایل‌ها را با الگوریتم‌های بسیار قوی و
+								به‌طور رایگان عرضه می‌کند.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section><!--Download-->
+					<!--3.1-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<h2>دانلود و نصب</h2>
+						<img class="big" src="images/Icons/smartphone01.svg">
+					</section>
+
+					<!--3.2-->
+					<section data-background="images/veracrypt/veracrypt-01.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							وارد
+							<a href="https://veracrypt.fr/en/Home.html">تارنمای رسمی veracryt </a>
+							شوید. وارد بخش download شوید. نسخه مناسب خود را انتخاب و دانلود کنید.
+						</blockquote>
+					</section>
+
+					<!--3.3-->
+					<section data-background="images/veracrypt/veracrypt-02.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							نرم افزار را نصب کنید. اگر فکر می‌کنید نیاز به بیشترین میزان امنیت دارید،
+							تیک همه گزینه‌ها را بردارید.
+						</blockquote>
+					</section>
+				</section>
+
+				<section><!--Standard Mode-->
+					<!--4.1-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<h2>حالت استاندارد</h2>
+						<img class="big" src="images/Icons/smartphone01.svg">
+					</section>
+
+					<!--4.2-->
+					<section data-background="images/veracrypt/veracrypt-03.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							وارد نرم افزار شوید. روی دکمه create volume بزنید.
+							<br>سه انتخاب دارید:
+						</blockquote>
+					</section>
+
+					<!--4.3-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<p style="font-size:50%">۱. ایجاد یک حجم فایل رمزگذاری‌شده (Create an
+							Encrypted File Container):</p>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li>در این عملیات، شما یک فایل با پسوند خاص (مثلاً .vc) ایجاد می‌کنید که
+								به عنوان یک "حجم فایل رمزگذاری‌شده" شناخته می‌شود.</li>
+							<li>این فایل نیازمند رمزگذاری است و تا زمانی که به درستی رمزگذاری نشده
+								باشد، محتویات داخل آن نمی‌توانند دسترسی‌پذیر باشند.</li>
+							<li>شما می‌توانید این حجم فایل را بسیاری از فرمت‌ها بسازید و دیگر فایل‌ها
+								و پوشه‌ها را درون آن قرار دهید. برای دسترسی به محتویات درون حجم فایل،
+								نیاز به وارد کردن رمز عبور دارید.</li>
+						</ul>
+					</section>
+
+					<!--4.4-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<p style="font-size:50%">۲. رمزگذاری یک پارتیشن/درایو غیرسیستمی (Encrypt a
+							Non-System Partition/Drive):</p>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li>در این عملیات، شما یک پارتیشن (مثلاً یک درایو داده خارجی یا پارتیشن
+								دیسک داخلی) را رمزگذاری می‌کنید.</li>
+							<li>پس از رمزگذاری، تمام محتویات این پارتیشن یا درایو به صورت خودکار
+								رمزگشایی نمی‌شوند و برای دسترسی به آنها نیاز به وارد کردن رمز عبور
+								دارید.</li>
+						</ul>
+					</section>
+
+					<!--4.5-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<p style="font-size:50%">۳. رمزگذاری پارتیشن سیستمی یا کل درایو سیستم
+							(Encrypt the System Partition or Entire System Drive):</p>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li>این عملیات به شما اجازه می‌دهد که پارتیشن سیستمی (به طور عمده درایو C
+								در ویندوز) یا کل درایو سیستم (تمامی پارتیشن‌های مرتبط با سیستم عامل) را
+								رمزگذاری کنید.</li>
+							<li>وقتی که سیستم رمزگذاری شده را راه‌اندازی می‌کنید، شما باید رمز عبور
+								را قبل از بارگذاری سیستم عامل وارد کنید.</li>
+							<li>این سطح از رمزگذاری بسیار ایمن و محافظتی است، زیرا حتی در صورت دسترسی
+								فیزیکی به دیسک، داده‌های شما رمزگذاری شده و غیرقابل دسترسی هستند.</li>
+						</ul>
+					</section>
+
+					<!--4.6-->
+					<section data-background="images/veracrypt/veracrypt-04.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							ما در این‌جا حالت اول، یعنی رمزگذاری یک فایل را آموزش می‌دهیم. حالت مناسب
+							خود را انتخاب کنید. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--4.7-->
+					<section data-background="images/veracrypt/veracrypt-05.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							در این بخش دو حالت رمزگذاری دارید: استاندارد و فایل مخفی. حالت استاندارد
+							را انتخاب کنید. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--4.8-->
+					<section data-background="images/veracrypt/veracrypt-06.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							روی ...select file کلیک کنید و فایلی انتخاب کنید. توجه کنید که این فایل
+							باید خالی باشد زیرا اطلاعات موجود در آن از بین می‌رود. (در اصل، قبل
+							رمزگذاری فایل فرمت می‌شود تا اطلاعات جدید روی آن قرار بگیرند.) این فایل
+							می‌تواند از هر فرمت دلخواهی باشد. ما در این‌جا فایلی با پسوند .txt
+							می‌سازیم. با روشن بودن گزینه never save history، می‌پذیرید که هیچ
+							تاریخچه‌ای از اطلاعات فایل قبلی باقی نماند. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--4.9-->
+					<section data-background="images/veracrypt/veracrypt-07.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							در این بخش می‌توانید الگوریتم رمزگذاری دلخواه خود را انتخاب کنید. ما در
+							آموزش از الگوریم AES و SHA-512 استفاده می‌کنیم. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--4.10-->
+					<section data-background="images/veracrypt/veracrypt-08.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							حجم اطلاعاتی که می‌خواهید رمزگذاری کنید را تعیین کنید تا Container با آن
+							حجم تشکیل شود. حجمی که تعیین می‌کنید باید کمتر از فضای خالی سیستم شما
+							باشد. پیشنهاد می‌شود مقدار را بیشتر از حجم داده‌های خود تعیین کنید تا به
+							مشکل نخورید. توجه کنید که هرچه حجم بیشتر باشد، رمزگذاری و رمزگشایی آن
+							زمان بیشتری می‌برد. این حجم قابل تغییر نیست. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--4.11-->
+					<section data-background="images/veracrypt/veracrypt-09.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							رمز خود را با ویژگی‌های تعیین شده انتخاب کنید. آن را تکرار کنید. دکمه
+							next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--4.12-->
+					<section data-background="images/veracrypt/veracrypt-10.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							نرم‌افزار از مکان اشاره‌گر شما در صفحه کلید خود را می‌سازد. بنابراین باید
+							اشاره‌گر خود را روی صفحه نرم‌افزار حرکت دهید تا کادر پایین صفحه (random
+							collected from mouse movements) تکمیل شود. از بخش Options می‌توانید
+							تغییرات دلخواه را بدهید. وقتی کادر پایین پر شد، روی دکمه format کلید
+							کنید. با زدن روی yes می‌پذیرید که اطلاعات فایلتان پاک شوند. روی Ok کلیک
+							کنید. Container شما ساخته شد. روی exit کلیک کنید.
+						</blockquote>
+					</section>
+				</section>
+
+				<section><!--Encryption-->
+					<!--5.1-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<h2>افزودن اطلاعات برای رمزگذاری</h2>
+						<img class="big" src="images/Icons/smartphone01.svg">
+					</section>
+
+					<!--5.2-->
+					<section data-background="images/veracrypt/veracrypt-11.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							در صفحه اصلی وراکریپت، روی select file کلیک کنید و فایل container خود را
+							انتخاب کنید. یکی از درایوهای موجود در لیست را انتخاب کنید. دکمه mount را
+							بزنید.
+						</blockquote>
+					</section>
+
+					<!--5.3-->
+					<section data-background="images/veracrypt/veracrypt-12.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							رمز خود را وارد کنید. ok را بزنید.
+						</blockquote>
+					</section>
+
+					<!--5.4-->
+					<section data-background="images/veracrypt/veracrypt-13.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							وارد file explorer شوید. روی this PC کلیک کنید. اکنون می‌بینید که درایوی
+							با همان نام در دستگاهتان تشکیل شده‌است. روی آن کلیک کنید و وارد آن شوید.
+						</blockquote>
+					</section>
+
+					<!--5.5-->
+					<section data-background="images/veracrypt/veracrypt-14.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							اطلاعاتی که می‌خواهید رمزگذاری کنید را به این درایو منتقل کنید. به
+							وراکریپت برگردید. دکمه dismount را بزنید. حالا فایل ‌container خود را در
+							جایی امن قرار دهید. (ترجیحا بین فایل‌های مشابه که شک برانگیز نباشد اما
+							طوری که سهوا آن را حذف نکنید.)
+						</blockquote>
+					</section>
+				</section>
+
+				<section><!--Hidden Mode-->
+					<!--6.1-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<h2>حالت مخفی‌‌شده</h2>
+						<img class="big" src="images/Icons/smartphone01.svg">
+					</section>
+
+					<!--6.2-->
+					<section data-background="images/veracrypt/veracrypt-15.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							وارد نرم افزار شوید. روی دکمه create volume بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.3-->
+					<section data-background="images/veracrypt/veracrypt-16.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حالت مناسب خود را انتخاب کنید. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.4-->
+					<section data-background="images/veracrypt/veracrypt-17.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حالت مخفی‌ را انتخاب کنید. در این حالت، شما یک فایل رمزگذاری شده را داخل
+							یک فایل رمزگذاری شده دیگر قرار می‌دهید. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.5-->
+					<section data-background="images/veracrypt/veracrypt-18.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حالت نرمال را انتخاب کنید. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.6-->
+					<section data-background="images/veracrypt/veracrypt-19.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							روی ...select file کلیک کنید. فایلی بسازید و آن را انتخاب کنید. این فایل،
+							فایل بیرونی شماست. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.7-->
+					<section data-background="images/veracrypt/veracrypt-20.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							دکمه next را بزنید. در این بخش می‌توانید الگوریم رمزگذاری دلخواه خود را
+							انتخاب کنید. ما در آموزش از الگوریم AES و SHA-512 استفاده می‌کنیم.
+						</blockquote>
+					</section>
+
+					<!--6.8-->
+					<section data-background="images/veracrypt/veracrypt-21.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حجم اطلاعاتی که می‌خواهید رمزگذاری کنید را تعیین کنید تا Container با آن
+							حجم تشکیل شود. توجه کنید که حجم فایل بیرونی باید از حجم فایل درونی بیشتر
+							باشد. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.9-->
+					<section data-background="images/veracrypt/veracrypt-22.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							رمز خود را با ویژگی‌های تعیین شده انتخاب کنید. آن را تکرار کنید. توجه
+							کنید که رمز فایل بیرونی و درونی، باید باهم متفاوت باشد. دکمه next را
+							بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.10-->
+					<section data-background="images/veracrypt/veracrypt-23.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							باید اشاره‌گر خود را روی صفحه نرم‌افزار حرکت دهید تا کادر پایین صفحه
+							(random collected from mouse movements) تکمیل شود. از بخش Options
+							می‌توانید تغییرات دلخواه را بدهید. وقتی کادر پایین پر شد، روی دکمه format
+							کلید کنید. با زدن روی yes می‌پذیرید که اطلاعات فایلتان پاک شوند. روی Ok
+							کلیک کنید. درایو بیرونی شما آماده است.
+						</blockquote>
+					</section>
+
+					<!--6.11-->
+					<section data-background="images/veracrypt/veracrypt-24.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							روی Open outer volume کلیک کنید. فایل‌هایی که می‌خواهید در مرحله اول دیده
+							شوند را در این بخش قرار دهید. (می‌توانید اطلاعات بی‌اهمیت در این بخش
+							بگذارید، اما با توجه به این‌که این بخش هم رمزگذاری می‌شود، میتوان
+							اطلاعاتی با اهمیت پایین‌تر از اطلاعات اصلی را نیز در اینجا قرار داد.)
+						</blockquote>
+					</section>
+
+					<!--6.12-->
+					<section data-background="images/veracrypt/veracrypt-25.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حالا باید فایل درونی را بسازید. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.13-->
+					<section data-background="images/veracrypt/veracrypt-26.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							می‌توانید الگوریتم رمزگذاری دلخواه خود را انتخاب کنید. دکمه next را
+							بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.14-->
+					<section data-background="images/veracrypt/veracrypt-27.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حجم اطلاعاتی که می‌خواهید رمزگذاری کنید را تعیین کنید تا Container با آن
+							حجم تشکیل شود. توجه کنید که حجم فایل بیرونی باید از حجم فایل درونی بیشتر
+							باشد. دکمه next را بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.15-->
+					<section data-background="images/veracrypt/veracrypt-28.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							رمز خود را با ویژگی‌های تعیین شده انتخاب کنید. آن را تکرار کنید. توجه
+							کنید که رمز فایل بیرونی و درونی، باید باهم متفاوت باشد. دکمه next را
+							بزنید.
+						</blockquote>
+					</section>
+
+					<!--6.16-->
+					<section data-background="images/veracrypt/veracrypt-29.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							باید اشاره‌گر خود را روی صفحه نرم‌افزار حرکت دهید تا کادر پایین صفحه
+							(random collected from mouse movements) تکمیل شود. از بخش Options
+							می‌توانید تغییرات دلخواه را بدهید. وقتی کادر پایین پر شد، روی دکمه format
+							کلید کنید. روی Ok کلیک کنید.
+						</blockquote>
+					</section>
+
+					<!--6.17-->
+					<section data-background="images/veracrypt/veracrypt-30.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							نرم‌افزار به شما اعلام می‌کند که فایل درونی شما ساخته شده و در فایل
+							بیرونی قرار دارد. حتی اگر کسی بتواند وارد فایل بیرونی شود، متوجه وجود
+							فایل درونی نخواهد شد. و اخطار می‌دهد که اگر رمز فایل درونی را فراموش
+							کردید، روی فایل بیرونی چیزی ننویسید تا فایل درونی از بین نرود، شاید رمز
+							را به‌یاد آوردید! روی exit کلیک کنید.
+						</blockquote>
+					</section>
+				</section>
+
+				<section><!--Hidden Encryption-->
+					<!--7.1-->
+					<section data-transition="slide" data-background-color="#5d3a3a"
+						data-background-transition="zoom">
+						<h2>افزودن اطلاعات برای رمزگذاری</h2>
+						<img class="big" src="images/Icons/smartphone01.svg">
+					</section>
+
+					<!--7.2-->
+					<section data-background="images/veracrypt/veracrypt-31.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							مانند مراحل روش استاندارد، در صفحه اصلی وراکریپت، روی select file کلیک
+							کنید و فایل بیرونی خود را انتخاب کنید. یکی از درایوهای موجود در لیست را
+							انتخاب کنید. دکمه mount را بزنید.
+						</blockquote>
+					</section>
+
+					<!--7.3-->
+					<section data-background="images/veracrypt/veracrypt-32.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							رمز فایل بیرونی را وارد کنید. ok را بزنید.
+						</blockquote>
+					</section>
+
+					<!--7.4-->
+					<section data-background="images/veracrypt/veracrypt-33.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							وارد file explorer شوید. روی this PC کلیک کنید. اکنون می‌بینید که درایوی
+							با همان نام در دستگاهتان تشکیل شده‌است. روی آن کلیک کنید و وارد آن شوید.
+							همان‌طور که مشاهده می‌کنید، هیچ اثری از فایل درونی شما در این درایو نیست
+							و فقط اطلاعات کم‌اهمیتی که درمورد آن گفتیم اینجا قرار دارند. اطلاعاتی که
+							می‌خواهید رمزگذاری کنید را به این درایو منتقل کنید.
+						</blockquote>
+					</section>
+
+					<!--7.5-->
+					<section data-background="images/veracrypt/veracrypt-34.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							برای دسترسی به فایل درونی، به وراکریپت برگردید. روی dismount کلیک کنید.
+						</blockquote>
+					</section>
+
+					<!--7.6-->
+					<section data-background="images/veracrypt/veracrypt-35.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							دوباره فایل بیرونی خود را انتخاب کنید و mount را بزنید.
+						</blockquote>
+					</section>
+
+					<!--7.7-->
+					<section data-background="images/veracrypt/veracrypt-36.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							این‌بار رمز فایل درونی را وارد کنید. ok را بزنید.
+						</blockquote>
+					</section>
+
+					<!--7.8-->
+					<section data-background="images/veracrypt/veracrypt-37.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							حالا می‌توانید در file explorer خود فایل درونی و اطلاعات آن را ببینید و
+							اطلاعاتی که می‌خواهید را درون آن جایگذاری کنید.
+						</blockquote>
+					</section>
+
+					<!--7.9-->
+					<section data-background="images/veracrypt/veracrypt-38.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#5d3a3a">
+						<blockquote style="margin-top: 60%; font-size:50%;">
+							این‌بار برای پایان دادن، از Dismount all استفاده کنید.
+						</blockquote>
+					</section>
+				</section>
+				<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+				<section data-background="images/question.jpg">
+					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+						دارید؟</h2>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						خود را با ما در میان بگذارید.</span>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+					<a href="https://t.me/IranSec_Bot" class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+				</section>
+				<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+				<section data-transition="slide" data-background-color="#5d3a3a"
+					data-background-transition="zoom">
+					<h2>حق مولف و تشکر</h2>
+					<p class="icon"><i class="far fa-copyright"></i></p>
+					<p class="f50 justify">این نوشته به واسطه‌ی تجربه‌ی چند ساله در ارائه‌ی
+						مشاوره‌ی امنیتی به سازمان‌ها و
+						فعالان مدنی و حقوق بشر و روزنامه‌نگاران تهیه شده است. هر چند که تمام
+						تلاشم
+						را کرده‌ام که متن حاضر
+						به‌روز و بی‌نقص باشد، امکان ایراد وجود دارد پس با آغوش باز پذیرای نقدها و
+						پیشنهادات شما هستم. لازم
+						است یادآوری کنم که این جزوه‌ی امنیتی با <a
+							href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+							target="_blank">گواهی کریتو
+							کامنز (قابل استفاده‌ی غیر تجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
+						به حتم برای هر شکل از
+						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه دارید.</p>
+					<p class="f50 justify">در این پروژه‌ی آموزشی از محتوای دیگران با گواهی
+						قابل
+						انتشار و تغییر استفاده شده
+						است. از آن جمله می‌توان به <a
+							href="https://github.com/hakimel/reveal.js/"
+							target="_blan">ارائه‌گر
+							reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
+							target="_blan">لاله‌زار</a>
+						و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
+						و <a
+							href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
+						شکلک‌های <a
+							href="https://ionicons.com" target="_blan">ion</a> و <a
+							href="https://fontawesome.com"
+							target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
+						استفاده شده. در هر جای
+						پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
+						است
+						خوش‌حال می‌شوم که آن را
+						گوش‌زد کنید.</p>
+				</section>
+
+			</div>
+		</div>
+		<!--
+		################################################################################################################
+		################################################################################################################
+		################################################################################################################
+		-->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			// Change the presentation direction to be RTL
+			rtl: true,
+			// Hides the address bar on mobile devices
+			hideAddressBar: true,
+			// limit how many pages a slide may expand onto
+			pdfMaxPagesPerSlide: 1,
+			// Transition style
+			transition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Transition style for full page slide backgrounds
+			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+			// Enables touch navigation on devices with touch input
+			touch: true,
+			// Push each slide change to the browser history
+			history: true,
+			// Vertical centering of slides
+			center: true,
+			// Display the page number of the current slide
+			slideNumber: true,
+			dependencies: [
+				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+				{ src: 'plugin/search/search.js', async: true },
+				{ src: 'plugin/zoom-js/zoom.js', async: true },
+				{ src: 'plugin/notes/notes.js', async: true }
+			]
+		});
+	</script>
+	</body>
+
+</html>
