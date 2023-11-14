@@ -39,3 +39,20 @@
    - Windows 10 & 11
    - Android
    - iOS
+ 
+<hr />
+To run the presentation, open the project folder in your preferred editor or terminal. Then, execute the following commands:
+
+Set the execution policy for running scripts in PowerShell:
+`Set-ExecutionPolicy RemoteSigned`
+
+Install http-server:
+`npm install -g http-server`
+
+Or
+
+Install live-server:
+`npm install -g live-server`
+
+If you installed http-server, use the command `http-server` to run it.
+If you installed live-server, use `live-server` for execution."
