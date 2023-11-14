@@ -5,7 +5,8 @@
 		<meta charset="utf-8">
 
 		<title>☘️ آموزش امنیت عمومی برای فعالان مدنی</title>
-		<link rel="icon" href="images//General/general-security.png" type="image/x-icon">
+		<link rel="icon" href="images//General/general-security.png"
+			type="image/x-icon">
 
 		<meta name="description"
 			content="چرا امنیت دیجیتال برای فعالان مدنی و روزنامه‌نگاران مهم است و چگونه می‌توان امنیت عمومی فعالان حقوق بشر و روزنامه‌نگاران را تقویت کرد.">
@@ -82,21 +83,30 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#155e63">
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
 					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
-					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; امنیت عمومی &nbsp;&nbsp;}</h2>
+					<br />
+					<h2 style="margin-top: -6%;" id="g-topic">{&nbsp;&nbsp; امنیت عمومی
+						&nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
-							<a href="http://twitter.com/IranSecurity">IranSecurity 
-								<i class="fab fa-twitter"></i></a><br />
-							<a href="http://instagram.com/IranSec">IranSec 
-								<i class="fab fa-instagram"></i></a><br />
-							<a href="http://telegram.com/IranSec2">IranSec2 
-								<i class="fab fa-telegram"></i></a><br />
-										<!-- <br>تابستان ۱۴۰۲ -->
-									</span></p>
+								<a href="http://twitter.com/IranSecurity">IranSecurity
+									<i class="fab fa-twitter"></i></a><br />
+								<a href="http://instagram.com/IranSec">IranSec
+									<i class="fab fa-instagram"></i></a><br />
+								<a href="http://telegram.com/IranSec2">IranSec2
+									<i class="fab fa-telegram"></i></a><br />
+								<!-- <br>تابستان ۱۴۰۲ -->
+							</span></p>
 						<p class="f50" style="padding-top:10px;">این محتوا با <span
 								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
 									class="fas fa-heart"></i></span> و
@@ -122,418 +132,496 @@
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h1>امنیت عمومی</h1>
+						<h1 id="g-topic">امنیت عمومی</h1>
 						<img class="big" src="images/General/general-security.png">
-						<p><b>راه‌هایی ساده برای افزایش امنیت</b></p>
-						<span class="f40 o50"><!--آخرین به-روز-رسانی:--> تابستان ۱۴۰۲</span>
+						<p id="g-intro"><b>راه‌هایی ساده برای افزایش امنیت</b></p>
+						<span class="f40 o50" id="g-update"><!--آخرین به-روز-رسانی:--> تابستان
+							۱۴۰۲</span>
 					</section>
 
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background="images/General/General.png" data-background-size="60%"
 						data-background-transition="zoom">
-						<h2>ناگهان چقدر زود دیر می‌شود!</h2>
-						<blockquote class="f70 justify" style="margin-top: 50%; font-size: 50%;">
-							این پیام یکی از فعالان مدنی پس از بازجویی و ضبط دستگاه‌های ارتباطی اوست. پیش از آن که دیر شود، پیش‌گیری‌های لازم را انجام دهید.
+						<h2 id="g-intro1">ناگهان چقدر زود دیر می‌شود!</h2>
+						<blockquote class="f70 justify" style="margin-top: 50%; font-size: 50%;"
+							id="g-intro2">
+							این پیام یکی از فعالان مدنی پس از بازجویی و ضبط دستگاه‌های ارتباطی اوست.
+							پیش از آن که دیر شود، پیش‌گیری‌های لازم را انجام دهید.
 						</blockquote>
 					</section>
 
 					<!--2.3-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ ساده (۱)</h2>
+						<h2 id="g-tip">چند نکتۀ ساده (۱)</h2>
 						<ul class="f50 justify">
-							<li>برای هر شناسه رمزی یکتا داشته باشید و مرتب آن را عوض کنید.</li>
-							<li>هر تارنمایی (آدرس اینترنتی) را باز نکنید.</li>
-							<li>مراقب حملۀ دیدزدن (Shoulder Surfing) باشید.</li>
-							<li>از نوشتن (به صورت عمومی) دربارۀ مسائل شخصی‌تان بپرهیزید.</li>
-							<li>هنگام نصب برنامه‌ها، اجازۀ نصب برنامۀ دیگری را ندهید.</li>
-							<li>هر پیوندی را قبل از باز کردن بررسی کنید.</li>
-							<li>حافظۀ جانبی‌ای نامطمئن را به دستگاه خود وصل نکنید.</li>
-							<li>هر پیوستی را باز نکنید. از خود بپرسید که آیا منتظر پیوستی بوده‌ام؟</li>
-							<li>همواره آدرس فرستندۀ پیام/رایانامه را بررسی کنید.</li>
-							<li>اگر پیام مشکوکی گرفتید، صحتش را با فرستندۀ آن بررسی کنید.</li>
-							<li>مراقب صفحه‌های فیشینگ باشید.</li>
-							<li>مراقب پیوندهای کوتاه شده باشید.</li>
+							<li id="g-tip1">برای هر شناسه رمزی یکتا داشته باشید و مرتب آن را عوض
+								کنید.</li>
+							<li id="g-tip2">هر تارنمایی (آدرس اینترنتی) را باز نکنید.</li>
+							<li id="g-tip3">مراقب حملۀ دیدزدن (Shoulder Surfing) باشید.</li>
+							<li id="g-tip4">از نوشتن (به صورت عمومی) دربارۀ مسائل شخصی‌تان بپرهیزید.</li>
+							<li id="g-tip5">هنگام نصب برنامه‌ها، اجازۀ نصب برنامۀ دیگری را ندهید.</li>
+							<li id="g-tip6">هر پیوندی را قبل از باز کردن بررسی کنید.</li>
+							<li id="g-tip7">حافظۀ جانبی‌ای نامطمئن را به دستگاه خود وصل نکنید.</li>
+							<li id="g-tip8">هر پیوستی را باز نکنید. از خود بپرسید که آیا منتظر پیوستی
+								بوده‌ام؟</li>
+							<li id="g-tip9">همواره آدرس فرستندۀ پیام/رایانامه را بررسی کنید.</li>
+							<li id="g-tip10">اگر پیام مشکوکی گرفتید، صحتش را با فرستندۀ آن بررسی
+								کنید.</li>
+							<li id="g-tip11">مراقب صفحه‌های فیشینگ باشید.</li>
+							<li id="g-tip12">مراقب پیوندهای کوتاه شده باشید.</li>
 						</ul>
 					</section>
 
 					<!--2.4-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ ساده (۲)</h2>
+						<h2 id="g-tip">چند نکتۀ ساده (۲)</h2>
 						<ul class="f50 justify">
-							<li>برنامۀ ضد سرقت را روی دستگاه خود نصب کنید.</li>
-							<li>از اطلاعات خود به صورت منظم پشتیبان(Backup) تهیه کنید.</li>
-							<li>رمز پیچیده و یکتایی داشته باشید. آن را به صورت دوره‌ای عوض کنید.</li>
-							<li>نسبت به خطر Jailbreak/Root کردن گوشی خود آگاه باشید.</li>
-							<li>نرم‌افزارها و سیستم‌عامل خود را به‌روز نگه دارید.</li>
-							<li>نرم‌افزارهای مورد نیاز خود را از منابع ایمن دریافت کنید.</li>
-							<li>مراقب اطلاعات منتشرشده‌تان در شبکه‌های اجتماعی باشید.</li>
-							<li>ورود دومرحله‌ای (2Fa) را روی شناسه‌های خود فعال کنید.</li>
-							<li>مراقب اخبار دروغ و جهت‌دار باشید.</li>
-							<li>دوستان خود را پس از مواجهه با مشکل امنیتی مطلع کنید.</li>
-							<li>دستگاه خود را در هر مکانی رها نکنید، حتا برای یک‌لحظه.</li>
-							<li>اطلاعات خود را روی هارد، فلش مموری، گوشی و غیره رمزگذاری کنید.</li>
+							<li id="g-tip13">برنامۀ ضد سرقت را روی دستگاه خود نصب کنید.</li>
+							<li id="g-tip14">از اطلاعات خود به صورت منظم پشتیبان(Backup) تهیه کنید.</li>
+							<li id="g-tip15">رمز پیچیده و یکتایی داشته باشید. آن را به صورت دوره‌ای
+								عوض کنید.</li>
+							<li id="g-tip16">نسبت به خطر Jailbreak/Root کردن گوشی خود آگاه باشید.</li>
+							<li id="g-tip17">نرم‌افزارها و سیستم‌عامل خود را به‌روز نگه دارید.</li>
+							<li id="g-tip18">نرم‌افزارهای مورد نیاز خود را از منابع ایمن دریافت کنید.</li>
+							<li id="g-tip19">مراقب اطلاعات منتشرشده‌تان در شبکه‌های اجتماعی باشید.</li>
+							<li id="g-tip20">ورود دومرحله‌ای (2Fa) را روی شناسه‌های خود فعال کنید.</li>
+							<li id="g-tip21">مراقب اخبار دروغ و جهت‌دار باشید.</li>
+							<li id="g-tip22">دوستان خود را پس از مواجهه با مشکل امنیتی مطلع کنید.</li>
+							<li id="g-tip23">دستگاه خود را در هر مکانی رها نکنید، حتا برای یک‌لحظه.</li>
+							<li id="g-tip24">اطلاعات خود را روی هارد، فلش مموری، گوشی و غیره رمزگذاری
+								کنید.</li>
 						</ul>
 					</section>
-							
+
 					<!--2.5-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
 						<h2>چند نکتۀ ساده (VPN)</h2>
 						<ul class="f50 justify">
-							<li>VPN تنها امنیت را تامین می‌کند، نه لزوما ناشناسی را.</li>
-							<li>امنیت کاربر VPN، در گرو امنیت شرکت ارائه‌دهنده آن است.</li>
-							<li>از شرکت‌هایی که به آن‌ها اطمینان ندارید، VPN نگیرید.</li>
-							<li>هنگام استفاده از اینترنت عمومی، از VPN استفاده کنید.</li>
-							<li>در برخی کشورها (مثل ایران)، از VPN برای دور زدن سانسور اینترنتی استفاده می‌شود.</li>
-							<li>اگر از VPN نامعتبری تنها برای دور زدن سانسور استفاده می‌کنید، از آن برای کارهای حساس استفاده نکنید.</li>
-							<li>به حوزه حقوقی شرکت ارائه‌دهنده VPN توجه کنید؛ برخی از شرکت‌ها (مثلا در ایران) باید سیاهه فعالیت کاربر را تا مدتی طولانی نگه‌دارند و درصورت درخواست مقام قضایی، اطلاعات در اختیار آن‌ها قرار دهند.</li>
+							<li id="g-tip25">VPN تنها امنیت را تامین می‌کند، نه لزوما ناشناسی را.</li>
+							<li id="g-tip26">امنیت کاربر VPN، در گرو امنیت شرکت ارائه‌دهنده آن است.</li>
+							<li id="g-tip27">از شرکت‌هایی که به آن‌ها اطمینان ندارید، VPN نگیرید.</li>
+							<li id="g-tip28">هنگام استفاده از اینترنت عمومی، از VPN استفاده کنید.</li>
+							<li id="g-tip29">در برخی کشورها (مثل ایران)، از VPN برای دور زدن سانسور
+								اینترنتی استفاده می‌شود.</li>
+							<li id="g-tip30">اگر از VPN نامعتبری تنها برای دور زدن سانسور استفاده
+								می‌کنید، از آن برای کارهای حساس استفاده نکنید.</li>
+							<li id="g-tip31">به حوزه حقوقی شرکت ارائه‌دهنده VPN توجه کنید؛ برخی از
+								شرکت‌ها (مثلا در ایران) باید سیاهه فعالیت کاربر را تا مدتی طولانی
+								نگه‌دارند و درصورت درخواست مقام قضایی، اطلاعات در اختیار آن‌ها قرار
+								دهند.</li>
 						</ul>
 					</section>
 				</section>
 
 				<section><!--VPN-->
 					<!--3.1-->
-					<section data-background="images/general/How-VPN-Works.png" data-background-size="auto auto"
+					<section data-background="images/general/How-VPN-Works.png"
+						data-background-size="auto auto"
 						data-background-transition="zoom" data-background-color="#155e63">
-						<blockquote style="margin-top: 50%; font-size:50%;">
-							VPN ابزاری برای اتصال غیرمستقیم به یک سرور است. برای مثال اگر کسی از اصفهان بخواهد به سایت سازمان آمار وصل شود، درخواست خود را به سرویس‌دهندة اینترنت (و درگاه‌های بین مسیر) می‌فرستد. این شرکت درخواست دریافتی را به سرور سازمان آمار می‌دهد. نتیجه از همین طریق به کاربر برمی‌گردد. واضح است که تمام درگاه‌های در مسیر متوجه می‌شود که این کاربر چه صفحه‌ای را بازکرده و حتا در مواردی (نداشتن گواهی SSL) چه فعالیتی را انجام داده است. در واقع VPN این مسیر را به نیابت از کاربر طی می‌کند تا درگاه‌ها متوجه این ردوبدل اطلاعات نشوند.
+						<blockquote style="margin-top: 50%; font-size:50%;" id="g-vpn">
+							VPN ابزاری برای اتصال غیرمستقیم به یک سرور است. برای مثال اگر کسی از
+							اصفهان بخواهد به سایت سازمان آمار وصل شود، درخواست خود را به سرویس‌دهندة
+							اینترنت (و درگاه‌های بین مسیر) می‌فرستد. این شرکت درخواست دریافتی را به
+							سرور سازمان آمار می‌دهد. نتیجه از همین طریق به کاربر برمی‌گردد. واضح است
+							که تمام درگاه‌های در مسیر متوجه می‌شود که این کاربر چه صفحه‌ای را بازکرده
+							و حتا در مواردی (نداشتن گواهی SSL) چه فعالیتی را انجام داده است. در واقع
+							VPN این مسیر را به نیابت از کاربر طی می‌کند تا درگاه‌ها متوجه این ردوبدل
+							اطلاعات نشوند.
 						</blockquote>
 					</section>
 				</section>
 
-				
 				<section><!--Password-->
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h2>چرا رمز مهم است؟</h2>
-						<p class="f50 justify">
-							ما در دنیایی زندگی می‌کنیم که ارتباط رودررو کم شده‌است. بسیاری از خدمات و تفریح‌ها به فضای مجازی منتقل شده‌اند. جدای از خوبی‌ها و بدی‌های این اتفاق، از نگاه امنیتی با پدیده‌های جدیدی روبه‌رو هستیم: ماشینی‌شدن عملیات خرابکارانه و در نتیجه سرعت بالا، عدم وابستگی به زمان و مکان و در نهایت مواجه با نسل جدیدی از خراب‌کارها (گیک، نرد و عموماً کم سن‌وسال).
+						<h2 id="g-pass">چرا رمز مهم است؟</h2>
+						<p class="f50 justify" id="g-pass1">
+							ما در دنیایی زندگی می‌کنیم که ارتباط رودررو کم شده‌است. بسیاری از خدمات و
+							تفریح‌ها به فضای مجازی منتقل شده‌اند. جدای از خوبی‌ها و بدی‌های این
+							اتفاق، از نگاه امنیتی با پدیده‌های جدیدی روبه‌رو هستیم: ماشینی‌شدن عملیات
+							خرابکارانه و در نتیجه سرعت بالا، عدم وابستگی به زمان و مکان و در نهایت
+							مواجه با نسل جدیدی از خراب‌کارها (گیک، نرد و عموماً کم سن‌وسال).
 						</p>
-						<p class="f50 center">یک رمز ظرف چه مدت کشف می‌شود؟ (<a
-							href="https://howsecureismypassword.net/"
-							target="blank">منبع</a>)<p>
-							<div class="block">
-								<p class="f50 left" style="font-family: monospace;">
-									12345qwert <span style="padding-left:5em"> < 1 Second</span> <br/> 
-									password1 &nbsp;<span style="padding-left:5em"> < 1 Second</span> <br/>
-									iloveyou &nbsp; <span style="padding-left:5em"> < 1 Second</span> <br/> 
-									{May_P4$$} <span style="padding-left:5em">18 Years </span>
-								</p>
-							</div>
-					</section>
+						<p class="f50 center" id="g-pass2">یک رمز ظرف چه مدت کشف می‌شود؟ (<a
+								href="https://howsecureismypassword.net/"
+								target="blank" id="g-pass3">منبع</a>)<p>
+								<div class="block">
+									<p class="f50 left" style="font-family: monospace;">
+										12345qwert <span style="padding-left:5em"> < 1 Second</span> <br />
+										password1 &nbsp;<span style="padding-left:5em"> < 1 Second</span> <br />
+										iloveyou &nbsp; <span style="padding-left:5em"> < 1 Second</span> <br />
+										{May_P4$$} <span style="padding-left:5em">18 Years </span>
+									</p>
+								</div>
+							</section>
 
-					<!--4.2-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background-transition="zoom">
-						<h2>رمز قوی و یکتا</h2>
-						<p class="f50 justify" style="font-size: 50%;">
-							رمزی قوی شامل حرف/عدد متوالی یا کلمه‌های قابل حدس
-							<span class="f70">(نام خود یا اطرافیان، محل تولد، شماره تلفن و ...)</span>
-							نیست. طول آن حداقل ۱۰ حرف/عدد است. فقط برای یک شناسه استفاده و به‌صورت متناوب عوض می‌شود. برای انتخاب رمز قوی و به‌خاطر سپردن آن، نرم‌افزار مدیریت رمز به شما کمک می‌کند.
+							<!--4.2-->
+							<section data-transition="slide" data-background-color="#155e63"
+								data-background-transition="zoom">
+								<h2 id="g-pass4">رمز قوی و یکتا</h2>
+								<p class="f50 justify" style="font-size: 50%;" id="g-pass5">
+									رمزی قوی شامل حرف/عدد متوالی یا کلمه‌های قابل حدس
+									<span class="f70">(نام خود یا اطرافیان، محل تولد، شماره تلفن و ...)</span>
+									نیست. طول آن حداقل ۱۰ حرف/عدد است. فقط برای یک شناسه استفاده و به‌صورت
+									متناوب عوض می‌شود. برای انتخاب رمز قوی و به‌خاطر سپردن آن، نرم‌افزار
+									مدیریت رمز به شما کمک می‌کند.
+								</p>
+								<p class="f50 center" id="g-pass6">چند نمونه از رمز قوی؛ می‌توانید آن‌ها
+									را بخوانید؟</p>
+								<div class="block">
+									<p class="f50 left" style="font-family: monospace;">
+										/\/\y Stron9 Pa$$w0rd <span style="padding-left: 5em">3 x 10 <sup>14</sup>
+											Years</span></br>
+									$^hk52fktni%_]hZ3 &nbsp; &nbsp; <span style="padding-left: 5em">4 x 10
+										<sup>15</sup> Years</span></br>
+								Vlc o,f lk &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span
+									style="padding-left: 5em">2 x 10<sup>2&nbsp;</sup> Years</span></br>
+							{My_P4$$_*TW} &nbsp; &nbsp; &nbsp; &nbsp; <span style="padding-left: 5em">5
+								x 10<sup>9&nbsp;</sup> Years</span>
 						</p>
-						<p class="f50 center">چند نمونه از رمز قوی؛ می‌توانید آن‌ها را بخوانید؟</p>
-							<div class="block">
-								<p class="f50 left" style="font-family: monospace;">
-									/\/\y Stron9 Pa$$w0rd <span style="padding-left: 5em">3 x 10 <sup>14</sup> Years</span></br>
-									$^hk52fktni%_]hZ3 &nbsp; &nbsp; <span style="padding-left: 5em">4 x 10 <sup>15</sup>	Years</span></br>
-									Vlc o,f lk &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<span style="padding-left: 5em">2 x 10<sup>2&nbsp;</sup> Years</span></br>
-									{My_P4$$_*TW} &nbsp; &nbsp; &nbsp; &nbsp; <span style="padding-left: 5em">5 x 10<sup>9&nbsp;</sup> Years</span>
-								</p>
-							</div>
-					</section>
-
-					<!--4.3-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background="images/Password/Passwords-Underwear.png"
-						data-background-transition="zoom">
-						<blockquote class="f50 justify" style="margin-top: 60%;">
-							اریک گریفیرت معتقد است که 
-							<a href="https://www.pcmag.com/article2/0,2817,2368484,00.asp"
-								style="color: #FD151B;">Passwords are Like Underware</a>
-							(رمزها شبیه لباس زیرند). او سه شباهت بین این دو را این‌طور عنوان می‌کند: ۱- آن‌ها را مرتب عوض می‌کنید ۲- با دیگران به اشتراک نمی‌گذارید و ۳- کاری نمی‌کنید که بقیه آن‌ها را ببینند.
-						</blockquote>
-					</section>
-
-					<!--4.4-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background="images/Password/leet-table.png"
-						data-background-size="auto auto"
-						data-background-transition="zoom">
-						<blockquote class="f50 justify" style="margin-top: 60%;">
-							جدول 
-							<a href="https://fa.wikipedia.org/wiki/%D9%84%DB%8C%D8%AA"
-								style="color:#FD151B;">لیت</a> 
-							برای تبدیل حرف و عدد به کاراکترهای متفاوت است. این یک نمونه ترجمۀ جدول است.	خلاق باشید و جدول خود را بسازید. حتا انتخاب رمز خود را با شیوه‌های دیگر ترکیب کنید.
-						</blockquote>
-					</section>
+					</div>
 				</section>
 
+				<!--4.3-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background="images/Password/Passwords-Underwear.png"
+					data-background-transition="zoom">
+					<blockquote class="f50 justify" style="margin-top: 55%;" id="g-pass7">
+						اریک گریفیرت معتقد است که
+						<a href="https://www.pcmag.com/article2/0,2817,2368484,00.asp"
+							style="color: #FD151B;">Passwords are Like Underware</a>
+						(رمزها شبیه لباس زیرند). او سه شباهت بین این دو را این‌طور عنوان می‌کند:
+						۱- آن‌ها را مرتب عوض می‌کنید ۲- با دیگران به اشتراک نمی‌گذارید و ۳- کاری
+						نمی‌کنید که بقیه آن‌ها را ببینند.
+					</blockquote>
+				</section>
 
-				<section><!--social eng-->
-					<!--5.1-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background-transition="zoom">
-						<h2>مهندسی اجتماعی</h2>
-						<p class="f50 justify">
-							مهندسی اجتماعی سوءاستفاده از اطمینان یا فریب افراد
-							برای دسترسی به اطلاعاتی است که منجر به هک شخص یا سازمانی می‌شود. هکر
-							به‌جای استفاده از روش‌های معمول، از طریق فریفتن افرادی که به این اطلاعات
-							دسترسی دارند می‌پرازد. در صورت نیاز با اطلاعات جمع‌آوری‌شده، در نهایت به
-							هک فرد یا سازمان هدف می‌پردازد.
-						</p>
-						<p class="f50 center">این شکل از پیام‌ها برای شما آشنا نیستند؟</p>
-						<div class="block">
-							<p class="f50 right">
-								- کوت کنید بگید اولین ماشینی که داشتید چی بوده.</br>
-								- من عاشق کتاب «کیمیاگر»ام، شما چی دوست دارید؟</br>
-								- اونایی که شیراز به دنیا اومدن اعلام حضور کنن.</br>
-							</p>
-						</div>
-					</section>
+				<!--4.4-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background="images/Password/leet-table.png"
+					data-background-size="auto auto"
+					data-background-transition="zoom">
+					<blockquote class="f50 justify" style="margin-top: 55%;" id="g-pass8">
+						جدول
+						<a href="https://fa.wikipedia.org/wiki/%D9%84%DB%8C%D8%AA"
+							style="color:#FD151B;">لیت</a>
+						برای تبدیل حرف و عدد به کاراکترهای متفاوت است. این یک نمونه ترجمۀ جدول
+						است. خلاق باشید و جدول خود را بسازید. حتا انتخاب رمز خود را با شیوه‌های
+						دیگر ترکیب کنید.
+					</blockquote>
+				</section>
+			</section>
 
-					<!--5.2-->
-					<section data-transition="slide" data-background-color="#155e63"
+			<section><!--social eng-->
+				<!--5.1-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background-transition="zoom">
+					<h2 id="g-se">مهندسی اجتماعی</h2>
+					<p class="f50 justify" id="g-se1">
+						مهندسی اجتماعی سوءاستفاده از اطمینان یا فریب افراد
+						برای دسترسی به اطلاعاتی است که منجر به هک شخص یا سازمانی می‌شود. هکر
+						به‌جای استفاده از روش‌های معمول، از طریق فریفتن افرادی که به این اطلاعات
+						دسترسی دارند می‌پرازد. در صورت نیاز با اطلاعات جمع‌آوری‌شده، در نهایت به
+						هک فرد یا سازمان هدف می‌پردازد.
+					</p>
+					<p class="f50 center" id="g-se2">این شکل از پیام‌ها برای شما آشنا نیستند؟</p>
+					<div class="block">
+						<p class="f50 right" id="g-se3">- کوت کنید بگید اولین ماشینی که داشتید چی
+							بوده.</p>
+						<p class="f50 right" id="g-se4">- من عاشق کتاب «کیمیاگر»ام، شما چی دوست
+							دارید؟</p>
+						<p class="f50 right" id="g-se5">- اونایی که شیراز به دنیا اومدن اعلام حضور
+							کنن.</p>
+					</div>
+				</section>
+
+				<!--5.2-->
+				<section data-transition="slide" data-background-color="#155e63"
 					data-background="images/General/social-engineering.png"
 					data-background-size="60%"
 					data-background-transition="zoom">
-						<blockquote class="f50 justify" style="margin-top: 60%;">
-							هکرها از شیوه‌های
-							مختلفی برای این کار استفاده می‌کنند. یکی از ابتدایی‌ترین روش، طرح
-							پرسش‌هایی با انگیزۀ خاص در شبکه‌های اجتماعی یا پیغام خصوصی است.
-						</blockquote>
-					</section>
+					<blockquote class="f50 justify" style="margin-top: 55%;" id="g-se6">
+						هکرها از شیوه‌های
+						مختلفی برای این کار استفاده می‌کنند. یکی از ابتدایی‌ترین روش، طرح
+						پرسش‌هایی با انگیزۀ خاص در شبکه‌های اجتماعی یا پیغام خصوصی است.
+					</blockquote>
+				</section>
+			</section>
+
+			<section><!--phishing-->
+				<!--6.1-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background-transition="zoom">
+					<h2 id="g-ph">حمله فیشینگ</h2>
+					<p class="f50 justify" id="g-ph1">
+						حمله فیشینگ (Phishing) برای به‌دست‌آوردن اطلاعات
+						مهمی مانند رمز عبور، از راه جعل یک سایت، آدرس ایمیل یا محتوای آن انجام
+						می‌شود. قصد چنین حمله‌ای فریب قربانی با جعل هویت یک فرد، سازمان یا شرکت
+						است.
+					</p>
+					<p class="f50 center"><a href="https://iransec.org/phishing-attack-2017/"
+							id="g-ph2">گزارش یک حمله گستردۀ فیشینگ علیه فعالان مدنی ایرانی</a></p>
+					<div class="block">
+						<p class="f50 right" id="g-ph3">- عکس جنجالی بازیگران زن</p>
+						<p class="f50 right" id="g-ph4">- کلیک کن و یه آیفون 14 جایزه بگیر</p>
+						<p class="f50 right" id="g-ph5">- یک‌شبه میلیونر شو</p>
+						<p class="f50 right" id="g-ph6">- فایل رو بخون و نظرت رو بگو</p>
+					</div>
 				</section>
 
-
-				<section><!--phishing-->
-					<!--6.1-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background-transition="zoom">
-						<h2>حمله فیشینگ</h2>
-						<p class="f50 justify">
-							حمله فیشینگ (Phishing) برای به‌دست‌آوردن اطلاعات
-							مهمی مانند رمز عبور، از راه جعل یک سایت، آدرس ایمیل یا محتوای آن انجام
-							می‌شود. قصد چنین حمله‌ای فریب قربانی با جعل هویت یک فرد، سازمان یا شرکت
-							است.
-						</p>
-						<p class="f50 center"><a href="https://iransec.org/phishing-attack-2017/">گزارش یک حمله گستردۀ فیشینگ علیه فعالان مدنی ایرانی</a></p>
-						<div class="block">
-							<p class="f50 right">
-								- عکس جنجالی بازیگران زن</br>
-								- کلیک کن و یه آیفون 14 جایزه بگیر</br>
-								- یک‌شبه میلیونر شو</br>
-								- فایل رو بخون و نظرت رو بگو
-							</p>
-						</div>
-					</section>
-
-					<!--6.2-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background="images/Phishing/phishing-molaverdi.jpg"
-						data-background-size="40%"
-						data-background-transition="zoom">
-						<blockquote class="f50 justify" style="margin-top: 60%;">
-							در اردی‌بهشت ۱۳۹۵،
-							ایمیل شهین‌دخت ملاوردی هک شد. هکرها با استفاده از ایمیل او فایل‌های فیشینگ
-							را برای فعالان مدنی ارسال کردند.
-						</blockquote>
-					</section>
-
-					<!--6.3-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background="images/Phishing/phishing02.jpg" data-background-size="50%"
-						data-background-transition="zoom">
-						<blockquote class="f50 justify" style="margin-top: 60%;">
-							نمونه‌ای از یک ایمیل
-							فیشینگ. فعالان مدنی در ماه‌های نزدیک به انتخابات ریاست‌جمهوری ۱۳۹۶ شبیه آن
-							را دریافت کردند.
-							<a href="https://iransec.org/phishing-attack-2017/" style="color:#FD151B;">گزارش کامل</a>
-						</blockquote>
-					</section>
+				<!--6.2-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background="images/Phishing/phishing-molaverdi.jpg"
+					data-background-size="40%"
+					data-background-transition="zoom">
+					<blockquote class="f50 justify" style="margin-top: 55%;" id="g-ph7">
+						در اردی‌بهشت ۱۳۹۵،
+						ایمیل شهین‌دخت ملاوردی هک شد. هکرها با استفاده از ایمیل او فایل‌های فیشینگ
+						را برای فعالان مدنی ارسال کردند.
+					</blockquote>
 				</section>
 
+				<!--6.3-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background="images/Phishing/phishing02.jpg" data-background-size="50%"
+					data-background-transition="zoom">
+					<blockquote class="f50 justify" style="margin-top: 55%;" id="g-ph8">
+						نمونه‌ای از یک ایمیل
+						فیشینگ. فعالان مدنی در ماه‌های نزدیک به انتخابات ریاست‌جمهوری ۱۳۹۶ شبیه آن
+						را دریافت کردند.
+						<a href="https://iransec.org/phishing-attack-2017/" style="color:#FD151B;"
+							id="g-ph9">گزارش کامل</a>
+					</blockquote>
+				</section>
+			</section>
 
-				<section><!--tools-->
-					<!--7.1-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background-transition="zoom">
-						<h2>ابزارهای امنیتی</h2>
-						<p class="f50 justify">
-							ابزارهای امنیتی به شما کمک می‌کنند که در مقابل
-							حمله‌های تکرارپذیر یا آلودگی‌های کشف شده مقاوم‌تر باشید. این بدان معنی نیست
-							که داشتن این ابزارها امنیت شما را به‌تنهایی تضمین می‌کنند. به عبارت دیگر
-						</p>
-						<h3 style="color: #FD151B;">ابزار امنیتی لازم است اما کافی نیست.</h3>
-					</section>
+			<section><!--tools-->
+				<!--7.1-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background-transition="zoom">
+					<h2 id="g-tool">ابزارهای امنیتی</h2>
+					<p class="f50 justify" id="g-tool1">
+						ابزارهای امنیتی به شما کمک می‌کنند که در مقابل
+						حمله‌های تکرارپذیر یا آلودگی‌های کشف شده مقاوم‌تر باشید. این بدان معنی
+						نیست
+						که داشتن این ابزارها امنیت شما را به‌تنهایی تضمین می‌کنند. به عبارت دیگر
+					</p>
+					<h3 style="color: #FD151B;" id="g-tool2">ابزار امنیتی لازم است اما کافی
+						نیست.</h3>
+				</section>
 
-					<!--7.2-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background-transition="zoom">
-						<table>
-							<thead>
-								<tr>
-									<th class="center">رایانامه<br>
-										<span class="f70 o50">Riseup</span><br>
-										<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
-											<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
-											<i class="fab fa-apple"></i><i class="fab fa-android"></i></span></th>
-									<th class="center">پیام‌رسان<br>
-										<span class="f70 o50">Signal</span><br>
-										<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
-											<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
-											<i class="fab fa-apple"></i><i class="fab fa-android"></span></th>
-									<th class="center">مرورگر<br>
-										<span class="f70 o50">TOR</span><br>
-										<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
-											<i class="fab fa-windows"></i><i class="fab fa-apple"></i>
-											<i class="fab fa-android"></i></span></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> رمزگذاری کامل</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> رمزگذاری نقطه-به-نقطه</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> ناشناسی</td>
-								</tr>
-								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> دانایی صفر<span class="f40"> (<a href="https://fa.wikipedia.org/wiki/اثبات_دانایی_صفر" target="_blank"> یعنی چی؟</a>)</span></td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> مکالمۀ صوتی و تصویری</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> تغییر هویت آسان</td>
-								</tr>
-								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> بدون ردگذاری</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> رمزگذاری روی پایگاه‌داده</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> دورزدن فیلترینگ</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td class="center" style="vertical-align: middle;">
-										<img class="plain" width="140px;" src="images/logo-riseup.svg"></td>
-									<td class="center" style="vertical-align: middle;">
-										<img class="plain" width="140px;" src="images/logo-signal.png"></td>
-									<td class="center" style="vertical-align: middle;">
-										<img class="plain" width="140px;" src="images/logo-tor.png"></td>
-								</tr>
-							</tfoot>
-						</table>
-					</section>
-
-					<!--7.3-->
-					<section data-transition="slide" data-background-color="#155e63"
-						data-background-transition="zoom">
-						<table>
-							<thead>
-								<tr>
-									<th class="center"> ضد ویروس<br><span class="f70 o50">Avira</span><br><span
-											class="f40 o50" style="text-shadow: 1px 1px 10px #666;"><i
-												class="fab fa-windows"></i> <i class="fab fa-ubuntu"></i> <i
-												class="fab fa-apple"></i> <i class="fab fa-android"></span></th>
-									<th class="center"> بارو<br><span class="f70 o50">GlassWire</span><br><span
-												class="f40 o50" style="text-shadow: 1px 1px 10px #666;"><i
-													class="fab fa-windows"></i> <i class="fab fa-android"></span></th>
-									<th class="center"> ضد بدافزار<br><span class="f70 o50">MalwareBytes</span><br><span
-													class="f40 o50" style="text-shadow: 1px 1px 10px #666;"><i
-														class="fab fa-windows"></i> <i class="fab fa-apple"></i> <i
-														class="fab fa-android"></i></span></th>
-								</tr>
-							</thead>
-							<tbody>
-								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> مقابله با ویروس‌ها</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> جلوگیری از ترافیک مشکوک</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> مقابله با سایر بدافزارها</td>
-								</tr>
-								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> مقابلۀ لحظه‌ای</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> پایش شبکه و ثبت آن</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> مقابلۀ لحظه‌ای</td>
-								</tr>
-							</tbody>
-							<tfoot>
-								<tr>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
-										width="140px;" src="images/logo-avira.png"></td>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
-										width="140px;" src="images/logo-glasswire.png"></td>
-											<td class="center" style="vertical-align: middle;"><img class="plain"
-													width="140px;"
-													src="images/logo-malwarebytes.png"></td>
-										</tr>
-									</tfoot>
-								</table>
-								<p style="font-size:50%;"> بدون به‌روز-رسانی، این ابزارها امنیت را تضمین نمی‌کنند.</p>
-								<br>
-					</section>
-
-					<!--7.4-->
-					<section data-transition="slide" data-background-color="#155e63"
-			data-background-transition="zoom"><table>
-				<thead>
-					<tr>
-						<th class="center">پشتیبان‌گیری<br><span class="f70 o50">Duplicati</span><br><span
-								class="f40 o50" style="text-shadow: 1px 1px 10px #666;"><i
-									class="fab fa-windows"></i> <i class="fab fa-ubuntu"></i> <i
-									class="fab fa-apple"></i> <i class="fab fa-android"></span></th>
-							<th class="center">پاک‌سازی امن<br><span class="f70 o50">BleachBit</span><br><span
-									class="f40 o50" style="text-shadow: 1px 1px 10px #666;"><i
-										class="fab fa-windows"></i> <i class="fab fa-ubuntu"></i> <i
-										class="fab fa-apple"></i></span></th>
-							<th class="center">مدیریت رمز*<br><span class="f70 o50">Bitwarden</span><br><span
-									class="f40 o50" style="text-shadow: 1px 1px 10px #666;"><i
-										class="fab fa-windows"></i> <i class="fab fa-ubuntu"></i> <i
-										class="fab fa-apple"></i> <i class="fab fa-android"></span></th>
+				<!--7.2-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background-transition="zoom">
+					<table>
+						<thead>
+							<tr>
+								<th class="center"><span class="f70 o50">Riseup</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
+										<i class="fab fa-apple"></i><i class="fab fa-android"></i></span></th>
+								<th class="center"><span class="f70 o50">Signal</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
+										<i class="fab fa-apple"></i><i class="fab fa-android"></i></span></th>
+								<th class="center"><span class="f70 o50">TOR</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-apple"></i>
+										<i class="fab fa-android"></i></span></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr class="f60 right">
-								<td><span class="feature"><i class="fas fa-check"></i></span> اتصال به
-									فضای ابری</td>
-								<td><span class="feature"><i class="fas fa-check"></i></span> پاک‌سازی
-									امن</td>
-								<td><span class="feature"><i class="fas fa-check"></i></span>
-									دسته‌بندی/اشتراک‌گذاری
-								</td>
+								<td id="g-t1-cell11"><span class="feature"><i class="fas fa-check"></i></span>رایانامه</td>
+								<td id="g-t1-cell12"><span class="feature"><i class="fas fa-check"></i></span>پیام‌رسان</td>
+								<td id="g-t1-cell13"><span class="feature"><i class="fas fa-check"></i></span>مرورگر</td>
 							</tr>
 							<tr class="f60 right">
-								<td><span class="feature"><i class="fas fa-check"></i></span> رمزگذاری
-									روی فایل‌ها</td>
-								<td><span class="feature"><i class="fas fa-check"></i></span> پاک‌سازی
-									رجیستری</td>
-								<td><span style="color:#E84A5F; text-shadow: 1px 1px 10px #666;"><i
-											class="fas fa-times"></i></span> پایگاه‌داده‌ی آنلاین</td>
+								<td id="g-t1-cell21"><span class="feature"><i class="fas fa-check"></i></span>
+									رمزگذاری کامل</td>
+								<td id="g-t1-cell22"><span class="feature"><i class="fas fa-check"></i></span>
+									رمزگذاری نقطه-به-نقطه</td>
+								<td id="g-t1-cell23"><span class="feature"><i class="fas fa-check"></i></span>
+									ناشناسی</td>
+							</tr>
+							<tr class="f60 right">
+								<td id="g-t1-cell31"><span class="feature"><i class="fas fa-check"></i></span>
+									دانایی صفر<span class="f40"> (<a
+											href="https://fa.wikipedia.org/wiki/اثبات_دانایی_صفر"
+											target="_blank" id="g-t1-cell-desc"> یعنی چی؟</a>)</span></td>
+								<td id="g-t1-cell32"><span class="feature"><i class="fas fa-check"></i></span>
+									مکالمۀ صوتی و تصویری</td>
+								<td id="g-t1-cell33"><span class="feature"><i class="fas fa-check"></i></span>
+									تغییر هویت آسان</td>
+							</tr>
+							<tr class="f60 right">
+								<td id="g-t1-cell41"><span class="feature"><i class="fas fa-check"></i></span>
+									بدون ردگذاری</td>
+								<td id="g-t1-cell42"><span class="feature"><i class="fas fa-check"></i></span>
+									رمزگذاری روی پایگاه‌داده</td>
+								<td id="g-t1-cell43"><span class="feature"><i class="fas fa-check"></i></span>
+									دورزدن فیلترینگ</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td class="center" style="vertical-align: middle;">
+									<img class="plain" width="140px;" src="images/logo-riseup.svg"></td>
+								<td class="center" style="vertical-align: middle;">
+									<img class="plain" width="140px;" src="images/logo-signal.png"></td>
+								<td class="center" style="vertical-align: middle;">
+									<img class="plain" width="140px;" src="images/logo-tor.png"></td>
+							</tr>
+						</tfoot>
+					</table>
+				</section>
+
+				<!--7.3-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background-transition="zoom">
+					<table>
+						<thead>
+							<tr>
+								<th class="center"><span class="f70 o50">Avira</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i> <i class="fab fa-ubuntu"></i>
+										<i class="fab fa-apple"></i> <i class="fab fa-android"></i></span></th>
+								<th class="center"><span class="f70 o50">GlassWire</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-android"></i></span></th>
+								<th class="center"><span class="f70 o50">MalwareBytes</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-apple"></i>
+										<i class="fab fa-android"></i></span></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="f60 right">
+								<td><span class="feature" id="g-t2-cell11"><i class="fas fa-check"></i></span>
+									ضد ویروس</td>
+								<td><span class="feature" id="g-t2-cell12"><i class="fas fa-check"></i></span>
+									بارو</td>
+								<td><span class="feature" id="g-t2-cell13"><i class="fas fa-check"></i></span>
+									ضد بدافزار</td>
+							</tr>
+							<tr class="f60 right">
+								<td id="g-t2-cell21"><span class="feature"><i class="fas fa-check"></i></span>
+									مقابله با ویروس‌ها</td>
+								<td id="g-t2-cell22"><span class="feature"><i class="fas fa-check"></i></span>
+									جلوگیری از ترافیک مشکوک</td>
+								<td id="g-t2-cell23"><span class="feature"><i class="fas fa-check"></i></span>
+									مقابله با سایر بدافزارها</td>
+							</tr>
+							<tr class="f60 right">
+								<td id="g-t2-cell31"><span class="feature"><i class="fas fa-check"></i></span>
+									مقابلۀ لحظه‌ای</td>
+								<td id="g-t2-cell32"><span class="feature"><i class="fas fa-check"></i></span>
+									پایش شبکه و ثبت آن</td>
+								<td id="g-t2-cell33"><span class="feature"><i class="fas fa-check"></i></span>
+									مقابلۀ لحظه‌ای</td>
 							</tr>
 						</tbody>
 						<tfoot>
 							<tr>
 								<td class="center" style="vertical-align: middle;"><img class="plain"
+										width="140px;" src="images/logo-avira.png"></td>
+								<td class="center" style="vertical-align: middle;"><img class="plain"
+										width="140px;" src="images/logo-glasswire.png"></td>
+								<td class="center" style="vertical-align: middle;"><img class="plain"
+										width="140px;"
+										src="images/logo-malwarebytes.png"></td>
+							</tr>
+						</tfoot>
+					</table>
+					<p style="font-size:50%;" id="g-t2-desc"> بدون به‌روز-رسانی، این ابزارها
+						امنیت را تضمین نمی‌کنند.</p>
+					<br>
+				</section>
+
+				<!--7.4-->
+				<section data-transition="slide" data-background-color="#155e63"
+					data-background-transition="zoom"><table>
+						<thead>
+							<tr>
+								<th class="center"><span class="f70 o50">Duplicati</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
+										<i class="fab fa-apple"></i><i class="fab fa-android"></i></span>
+								</th>
+								<th class="center"><span class="f70 o50">BleachBit</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
+										<i class="fab fa-apple"></i></span>
+								</th>
+								<th class="center"><span class="f70 o50">Bitwarden</span><br>
+									<span class="f40 o50" style="text-shadow: 1px 1px 10px #666;">
+										<i class="fab fa-windows"></i><i class="fab fa-ubuntu"></i>
+										<i class="fab fa-apple"></i><i class="fab fa-android"></i></span>
+								</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr class="f60 right">
+								<td id="g-t3-cell11"><span class="feature"><i class="fas fa-check"></i></span>
+									پشتیبان‌گیری</td>
+								<td id="g-t3-cell12"><span class="feature"><i class="fas fa-check"></i></span>
+									پاک‌سازی امن</td>
+								<td id="g-t3-cell13"><span class="feature"><i class="fas fa-check"></i></span>
+									مدیریت رمز</td>
+							</tr>
+							<tr class="f60 right">
+								<td id="g-t3-cell21"><span class="feature"><i class="fas fa-check"></i></span>
+									اتصال به فضای ابری</td>
+								<td id="g-t3-cell22"><span class="feature"><i class="fas fa-check"></i></span>
+									پاک‌سازی امن</td>
+								<td id="g-t3-cell23"><span class="feature"><i class="fas fa-check"></i></span>
+									دسته‌بندی/اشتراک‌گذاری</td>
+							</tr>
+							<tr class="f60 right">
+								<td id="g-t3-cell31"><span class="feature"><i class="fas fa-check"></i></span>
+									رمزگذاری روی فایل‌ها</td>
+								<td id="g-t3-cell32"><span class="feature"><i class="fas fa-check"></i></span>
+									پاک‌سازی رجیستری</td>
+								<td id="g-t3-cell33"><span class="feature"><i class="fas fa-check"></i></span>
+									پایگاه‌داده‌ی آنلاین</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<tr>
+								<td class="center" style="vertical-align: middle;"><img
+										class="plain"
 										width="140px;"
 										src="images/logo-duplicati.png"></td>
-								<td class="center" style="vertical-align: middle;"><img class="plain"
+								<td class="center" style="vertical-align: middle;"><img
+										class="plain"
 										width="140px;"
 										src="images/logo-bleachbit.png"></td>
-								<td class="center" style="vertical-align: middle;"><img class="plain"
+								<td class="center" style="vertical-align: middle;"><img
+										class="plain"
 										width="140px;"
 										src="images/logo-Bitwarden.png"></td>
 							</tr>
 						</tfoot>
 					</table>
-					<p style="font-size:50%;">* امن‌ترین گزینه برای مدیریت رمز Bitwarden است.</p>
+					<p style="font-size:50%;" id="g-t3-desc">
+						* امن‌ترین گزینه برای مدیریت رمز Bitwarden است.</p>
 					<br>
-					</section>
+				</section>
 
-					<!--7.5-->
-					<section data-transition="slide" data-background-color="#155e63"
+				<!--7.5-->
+				<section data-transition="slide" data-background-color="#155e63"
 					data-background-transition="zoom">
 					<table>
 						<thead>
 							<tr>
 								<th class="center" style="font-size: 97%;">ورود دو مرحله‌ای<br><span
-										class="f70 o50">Google Authenticator</span><br><span class="f40 o50"
+										class="f70 o50">Google Authenticator</span><br><span
+										class="f40 o50"
 										style="text-shadow: 1px 1px 10px #666;"><i class="fab fa-windows"></i>
 										<i
 											class="fab fa-apple"></i> <i class="fab fa-android"></i></span></th>
@@ -551,45 +639,55 @@
 							</thead>
 							<tbody>
 								<tr style="font-size: 55%; text-align:right;">
-									<td><span class="feature"><i class="fas fa-check"></i></span> افزودن یک
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										افزودن یک
 										مرحله به رمز
 									</td>
 									<td><span class="feature"><i class="fas fa-check"></i></span> امکان
 										تبدیل شدن به VPN
 									</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> ردیابی
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										ردیابی
 										دستگاه/عکس گرفتن
 									</td>
 								</tr>
 								<tr style="font-size: 55%; text-align:right;">
-									<td><span class="feature"><i class="fas fa-check"></i></span> بدون نیاز
+									<td><span class="feature"><i class="fas fa-check"></i></span> بدون
+										نیاز
 										به اینترنت/GSM
 									</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> پشتیبانی
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										پشتیبانی
 										از زبان فارسی
 									</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> پاک‌کردن
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										پاک‌کردن
 										اطلاعات دستگاه
 									</td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="130px;"
 											src="images/logo-google-authenticator.png"></td>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="130px;"
 											src="images/logo-orbot.svg"></td>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="130px;"
 											src="images/logo-prey.png"></td>
 								</tr>
 							</tfoot>
 						</table>
 						<p style="font-size:50%;">*به جای Prey می‌توان از نرم افزارهای پیش فرض
-							محصولات اپل و اندروید با نام Find my Device استفاده کرد. لازم است که آن
-							را در دستگاه فعال کنید. برای دستگاه ویندوزی اما نیاز به نصب یک نرم افزار
+							محصولات اپل و اندروید با نام Find my Device استفاده کرد. لازم است که
+							آن
+							را در دستگاه فعال کنید. برای دستگاه ویندوزی اما نیاز به نصب یک نرم
+							افزار
 							جانبی دارید.</p>
 						<br>
 					</section>
@@ -610,19 +708,22 @@
 								<tr class="f60 right">
 									<td><span class="feature"><i class="fas fa-check"></i></span> بررسی
 										فایل و پیوند</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> پشتیبانی
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										پشتیبانی
 										از بیشتر سرویس‌ها
 									</td>
 									<td><span class="feature"><i class="fas fa-check"></i></span> عدم
 										ذخیره‌ی جست‌وجوها</td>
 								</tr>
 								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> بررسی در
+									<td><span class="feature"><i class="fas fa-check"></i></span> بررسی
+										در
 										۶۶ پایگاه</td>
 									<td><span class="feature"><i class="fas fa-check"></i></span> امکان
 										بررسی امنیتی پیوند
 									</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> دانایی
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										دانایی
 										صفر<span
 											class="f40"> (<a
 												href="https://fa.wikipedia.org/wiki/اثبات_دانایی_صفر"
@@ -631,13 +732,16 @@
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="140px;"
 											src="images/logo-virustotal.png"></td>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="140px;"
 											src="images/logo-checkshorturl.jpg"></td>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="140px;"
 											src="images/logo-duckduckgo.png"></td>
 								</tr>
@@ -657,24 +761,32 @@
 							</thead>
 							<tbody>
 								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> ناشناسی</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> ناشناسی</td>
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										ناشناسی</td>
+									<td><span class="feature"><i class="fas fa-check"></i></span>
+										ناشناسی</td>
 								</tr>
 								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> تغییر هویت آسان</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> تغییر هویت آسان</td>
+									<td><span class="feature"><i class="fas fa-check"></i></span> تغییر
+										هویت آسان</td>
+									<td><span class="feature"><i class="fas fa-check"></i></span> تغییر
+										هویت آسان</td>
 								</tr>
 								<tr class="f60 right">
-									<td><span class="feature"><i class="fas fa-check"></i></span> دور زدن فیلترینگ</td>
-									<td><span class="feature"><i class="fas fa-check"></i></span> دور زدن فیلترینگ</td>
+									<td><span class="feature"><i class="fas fa-check"></i></span> دور
+										زدن فیلترینگ</td>
+									<td><span class="feature"><i class="fas fa-check"></i></span> دور
+										زدن فیلترینگ</td>
 								</tr>
 							</tbody>
 							<tfoot>
 								<tr>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="140px;"
 											src="images/v2rayN.png"></td>
-									<td class="center" style="vertical-align: middle;"><img class="plain"
+									<td class="center" style="vertical-align: middle;"><img
+											class="plain"
 											width="140px;"
 											src="images/openconnect.png"></td>
 								</tr>
@@ -686,15 +798,17 @@
 				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
-		<section data-background="images/question.jpg">
-			<h1 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک دارید؟</h2>
-			<span class="o70" style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
-				خود را با ما در میان بگذارید.</span>
-			<span class="o70"
-				style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
-			<a href="https://t.me/IranSec_Bot" class="o70"
-				style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
-		</section>
+				<section data-background="images/question.jpg">
+					<h1 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به
+						کمک دارید؟</h2>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						خود را با ما در میان بگذارید.</span>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+					<a href="https://t.me/IranSec_Bot" class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+				</section>
 				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
@@ -702,20 +816,26 @@
 					data-background-transition="zoom">
 					<h2>حق مؤلف و تشکر</h2>
 					<p class="icon"><i class="far fa-copyright"></i></p>
-					<p class="f50 justify">ااین نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
-						امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده است.
-						هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد، اما
-						امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما هستیم.
+					<p class="f50 justify">ااین نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌
+						مشاورۀ
+						امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده
+						است.
+						هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد،
+						اما
+						امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما
+						هستیم.
 						لازم
 						است یادآوری کنیم که این جزوه‌ی امنیتی با <a
 							href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
 							target="_blank">گواهی کریتو
-							کامنز (قابل استفاده‌ی غیر تجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
+							کامنز (قابل استفاده‌ی غیر تجاری، تخصیص و سهم یک‌سان)</a> منتشر شده
+						است.
 						به حتم برای هر شکل از
 						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه است.</p>
 					<p class="f50 justify">در این پروژه‌ی آموزشی از محتوای دیگران با گواهی
 						قابل‌انتشار و تغییر استفاده شده
-						است. از آن جمله می‌توان به <a href="https://github.com/hakimel/reveal.js/"
+						است. از آن جمله می‌توان به <a
+							href="https://github.com/hakimel/reveal.js/"
 							target="_blan">ارائه‌گر
 							reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
 							target="_blan">لاله‌زار</a>
@@ -727,7 +847,8 @@
 							href="https://fontawesome.com"
 							target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
 						استفاده شده. در هر جای
-						پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده است
+						پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
+						است
 						خوش‌حال می‌شویم که آن را
 						گوش‌زد کنید.</p>
 				</section>
@@ -773,6 +894,50 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
 		});
+	</script>
+
+		<!-- Translation Script -->
+		<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['General'];
+					document.title = Data['g-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
 	</script>
 	</body>
 

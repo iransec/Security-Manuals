@@ -86,6 +86,7 @@
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
+					<br/>
 					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; امنیت تلفن همراه &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
@@ -164,7 +165,7 @@
 					<section data-background="images/Mobile/Android-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#BE3144">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							به طور منظم دسترسی‌هایی که برنامه‌ها درخواست می‌دهند را بررسی کنید و
 							اطمینان حاصل کنید که معقول هستند؛ برای این کار، وارد تنظیمات شده و روی
 							Apps بزنید. روی یکی از نرم‌افزارها بزنید. وارد Permissions شوید.
@@ -175,7 +176,7 @@
 					<section data-background="images/Mobile/Android-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#BE3144">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							در بخش Allowed، لیستی از دست‌رسی‌های نرم‌افزار را مشاهده می‌کنید. روی یکی
 							از موارد بزنید. می‌توانید انتخاب کنید که این دست‌رسی هنگام استفاده از
 							نرم‌افزار فعال باشد، هربار از شما برای دست‌رسی سوال شود، و یا دست‌رسی
@@ -239,7 +240,7 @@
 					<section data-background="images/Mobile/iPhone-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#BE3144">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							در تنظیمات، روی پروفایل خود کلیک کنید و وارد iCloud شوید. روی Passwords
 							and Keychain بزنید. با روشن کردن این کلید، رمزهای عبور و اطلاعات کارت
 							اعتباری شما، به‌صورت ایمن ذخیره می‌شوند.
@@ -250,7 +251,7 @@
 					<section data-background="images/Mobile/iPhone-03.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#BE3144">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							در تنظیمات وارد Privacy and Security شوید. روی Apple Advertising بزنید.
 							با خاموش کردن این کلید، اطلاعاتتان برای تنظیم تبلیغات مرتبط ارسال
 							نمی‌شود.
@@ -261,7 +262,7 @@
 					<section data-background="images/Mobile/iPhone-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#BE3144">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							در تنظیمات وارد Face ID & Passcode شوید. رمز خود را وارد کنید. با روشن
 							کردن کلید Erase Data، درصورتی که رمز ورودتان را ده بار اشتباه وارد کنید،
 							اطلاعات دستگاهتان کاملا پاک می‌شوند.
@@ -372,6 +373,50 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
 		});
+	</script>
+
+	<!-- Translation Script -->
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['Moble'];
+					document.title = Data['cp-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
 	</script>
 	</body>
 

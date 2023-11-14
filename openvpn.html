@@ -78,6 +78,13 @@
 	<div class="reveal">
 		<div class="slides">
 			<section data-background="images/01-falling.svg" data-background-size="70%" data-background-color="#f2fdff">
+				<!-- Choose Language  button -->
+				<div id="Language-Chooser">
+					<button onclick="readJSON('Fa')">فارسی</button>
+					<button onclick="readJSON('En')">English</button>
+					<button onclick="readJSON('Ar')">العربیه</button>
+					<button onclick="readJSON('Tur')">Turkish</button>
+				</div>
 				<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 				<p class="icon" style="font-size: 170px;">
 					<ion-icon name="finger-print"></ion-icon>
@@ -114,65 +121,14 @@
 				<section data-transition="slide" data-background-color="#f2fdff" data-background-transition="zoom">
 					<h1>OpenVPN</h1>
 					<img class="big" src="images/logo-openvpn.svg">
-					<p>راهنمای استفاده</p>
-					<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:--> پاییز ۱۴۰۲</span>
+					<p id="o-topic">راهنمای استفاده</p>
+					<span style="font-size:40%; opacity: 0.5;" id="o-update">
+						<!--آخرین به-روز-رسانی:--> پاییز ۱۴۰۲</span>
 				</section>
 
 				<!--2.2-->
 				<section data-transition="slide" data-background-color="#f2fdff" data-background-transition="zoom">
-					<h2>چند نکته</h2>
-					<ul style="font-size: 50%; text-align: justify;">
-						<li>OpenVPN نرم‌افزاری رایگان و متن‌باز است.</li>
-						<li>OpenVPN شبیه به برنامه‌های پراکسی نیست و نیاز به فایل تنظیمات دارد که باید از ارائه‌دهنده‌ی
-							آن این فایل را بگیرید. پس پیش از ادامه نیاز دارید که فایل تنظیمات و شناسه/رمز خود را داشته
-							باشید.</li>
-						<li>برنامه را تنها از تارنمای
-							آن دریافت کنید. در جدول زیر شکلک برنامه و پیوند دریافت آن برای هر سیستم عاملی گذاشته شده
-							است.</li>
-					</ul>
-					<table>
-						<thead>
-							<tr>
-								<th style="text-align:center;"><span style="font-size:70%; opacity:0.5;">ویندوز</span>
-								</th>
-								<th style="text-align:center;"><span style="font-size:70%; opacity:0.5;">مک</span></th>
-								<th style="text-align:center;"><span style="font-size:70%; opacity:0.5;">اندروید</span>
-								</th>
-								<th style="text-align:center;"><span style="font-size:70%; opacity:0.5;">آیفون</span>
-								</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td style="text-align: center; vertical-align: middle;"><img class="plain"
-										width="140px;" src="images/logo-openvpn.svg"></p>
-								</td>
-								<td style="text-align: center; vertical-align: middle;"><img class="plain"
-										width="140px;" src="images/logo-tunnelblick.png"></p>
-								</td>
-								<td style="text-align: center; vertical-align: middle;"><img class="plain"
-										width="140px;" src="images/logo-openvpn.svg"></p>
-								</td>
-								<td style="text-align: center; vertical-align: middle;"><img class="plain"
-										width="140px;" src="images/logo-openvpn.svg"></p>
-								</td>
-
-						</tbody>
-						<tfoot>
-							<tr>
-								<td style="text-align: center; vertical-align: middle; font-size: 50%;"><a
-										href="https://openvpn.net/community-downloads/" target="_blank">دریافت</a></td>
-								<td style="text-align: center; vertical-align: middle; font-size: 50%;"><a
-										href="https://tunnelblick.net/downloads.html" target="_blank">دریافت</a></td>
-								<td style="text-align: center; vertical-align: middle; font-size: 50%;"><a
-										href="https://play.google.com/store/apps/details?id=net.openvpn.openvpn&hl=en"
-										target="_blank">دریافت</a></td>
-								<td style="text-align: center; vertical-align: middle; font-size: 50%;"><a
-										href="https://apps.apple.com/us/app/openvpn-connect/id590379981"
-										target="_blank">دریافت</a></td>
-							</tr>
-						</tfoot>
-					</table>
+					<p style="font-size: 50%; text-align: justify;" id="o-intro"></p>
 				</section>
 			</section>
 			
@@ -181,13 +137,13 @@
 				<section data-transition="slide" data-background-color="#f2fdff" data-background-transition="zoom">
 					<h2>OpenVPN</h2>
 					<img class="big" src="images/logo-openvpn.svg">
-					<p>استفاده روی ویندوز</p>
+					<p id="o-win">استفاده روی ویندوز</p>
 				</section>
 				
 				<!--3.2-->
 				<section data-background="images/OpenVPN/OpenVPN-01.png" data-background-size="70%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-win1">
 						به تارنمای رسمی 
 						<a href="https://openvpn.net/client/">OpenVPN</a> 
 						مراجعه کنید و دکمۀ Download OpenVPN Connect for Windows را بزنید و نرم افزار را نصب کنید.
@@ -197,7 +153,7 @@
 				<!--3.3-->
 				<section data-background="images/OpenVPN/OpenVPN-02.png" data-background-size="70%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-win2">
 						پس از نصب باید فایل تنظیمات را به OpenVPN بدهید. فایل‌هایی که از ارائه‌دهنده‌ی VPN دریافت کردید را باز کنید و رمز و شناسه‌ی خود را در فایل رمز وارد کنید. برای این کار باید از نرم‌افزاری مثل Notepad استفاده کنید. شناسه را در خط اول و رمز را در خط دوم بنویسید و فایل را ذخیره کنید.
 					</blockquote>
 				</section>
@@ -205,7 +161,7 @@
 				<!--3.4-->
 				<section data-background="images/OpenVPN/OpenVPN-03.png" data-background-size="70%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-win3">
 						فایل رمز و فایل تنظیمات را به محل نصب برنامه‌ OpenVPN و پوشه‌ Config منتقل کنید. مسیر پیش‌فرض مشخص شده است.
 					</blockquote>
 				</section>
@@ -213,7 +169,7 @@
 				<!--3.5-->
 				<section data-background="images/OpenVPN/OpenVPN-04.png" data-background-size="70%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-win4">
 						پس از اجرای برنامه، شکلک آن در نوار ویندوز به شکل نمایشگری با قفل و رنگ سیاه نشان داده می‌شود. (ممکن است در Hidden Icons باشد.) برای اتصال به VPN کافی است روی نمایشگر کلیک-راست کنید و سپس از فهرست سرور مورد نظر را انتخاب کرده و گزینه‌ Connect را بزنید.
 					</blockquote>
 				</section>
@@ -221,7 +177,7 @@
 				<!--3.6-->
 				<section data-background="images/OpenVPN/OpenVPN-05.png" data-background-size="70%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-win5">
 						با این کار صفحه‌ای باز می‌شود که مراحل اتصال به
 						سرور را نمایش می‌دهد. در این حال رنگ نمایشگر به زرد تغییر پیدا می‌کند.
 					</blockquote>
@@ -233,13 +189,13 @@
 				<section data-transition="slide" data-background-color="#f2fdff" data-background-transition="zoom">
 					<h2>OpenVPN</h2>
 					<img class="big" src="images/logo-openvpn.svg">
-					<p>استفاده روی اندروید</p>
+					<p id="o-apk">استفاده روی اندروید</p>
 				</section>
 
 				<!--4.2-->
 				<section data-background="images/OpenVPN/OpenVPN-06.png" data-background-size="50%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-apk1">
 						روی علامت + پایین صفحه بزنید. در بخش Upload file، روی BROWSE کلیک کنید و فایل‌های اجرایی را انتخاب کنید. باید فایل تنظیمات را در گوشی خود داشته باشید. ممکن است نیاز باشد به برنامه اجازه دهید که به فایل‌های روی گوشی شما دست‌رسی داشته باشد. در هر مرحله فقط می‌توانید یک فایل انتخاب کنید.
 					</blockquote>
 				</section>
@@ -247,7 +203,7 @@
 				<!--4.2-->
 				<section data-background="images/OpenVPN/OpenVPN-07.png" data-background-size="50%"
 					data-background-transition="zoom" data-background-color="#f2fdff">
-					<blockquote style="margin-top: 60%; font-size:50%;">
+					<blockquote style="margin-top: 55%; font-size:50%;" id="o-apk2">
 						نام کاربری خود را وارد و انتخاب کنید که برنامه، رمز شما را به‌یاد بسپارد یا خیر. اگر این گزینه خاموش باشد برای هر بار اتصال باید رمز را وارد کنید. دکمه CONNECT را بزنید. سپس رمز خود را وارد کنید و روی OK کلیک کنید. برای اتصال به هر کدام، کافی است که روی دکمه‌ خاکستری بزنید تا سبز شود.						
 					</blockquote>
 				</section>
@@ -328,6 +284,50 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
 		});
+	</script>
+
+	<!-- Translation Script -->
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['OpenVPN'];
+					document.title = Data['o-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
 	</script>
 </body>
 

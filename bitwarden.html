@@ -82,11 +82,19 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#fffb00">
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
 					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
-					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; مدیریت رمز &nbsp;&nbsp;}</h2>
+					<br/>
+					<h2 style="margin-top: -6%;" id="b-topic">{&nbsp;&nbsp; مدیریت رمز &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
@@ -127,15 +135,15 @@
 						data-background-transition="zoom">
 						<!--<h1>BitWarden</h1>-->
 						<img class="big" src="images/Bitwarden.png">
-						<p><b>برنامه‌ای برای مدیریت رمز</b></p>
-						<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
+						<p id="b-intro"><b>برنامه‌ای برای مدیریت رمز</b></p>
+						<span style="font-size:40%; opacity: 0.5;" id="b-update"><!--آخرین به-روز-رسانی:-->
 							تابستان ۱۴۰۲</span>
 					</section>
 
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#fffb00"
 						data-background-transition="zoom">
-						<p style="font-size: 50%; text-align: justify;">
+						<p style="font-size: 50%; text-align: justify;" id="b-intro-desc">
 							یکی از راه‌های حفظ امنیت اطلاعات، عدم استفاده از رمز یکسان در چندین سایت
 							متفاوت و عدم ذخیرۀ اطلاعات ورود
 							به سایت‌هاست. برای سادگی این کار از ابزارهای مدیریت رمز استفاده می‌کنیم
@@ -150,19 +158,19 @@
 					<!--2.3-->
 					<section data-transition="slide" data-background-color="#fffb00"
 						data-background-transition="zoom">
-						<h2>ویژگی‌های مهم بیت‌واردن</h2>
+						<h2 id="b-list">ویژگی‌های مهم بیت‌واردن</h2>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>امکان ذخیره‌ی اطلاعات لازم برای پر کردن فرم‌های اینترنتی</li>
-							<li>پیشنهاد خودکار رمز پیچیده و یکتا</li>
-							<li>امکان اشتراک‌گذاری یک به یک</li>
-							<li>دسته‌بندی رمزها</li>
-							<li>امکان نصب روی گوشی تلفن همراه</li>
-							<li>تغییر خودکار رمز تارنماهای محبوب</li>
-							<li>امکان دست‌رسی یک فرد مطمئن به شناسه در شرایط حاد</li>
-							<li>هشدار لو رفتن اطلاعات</li>
-							<li>محدود کردن ورود بر اساس کشور، IP و ...</li>
-							<li>یادداشت‌های امن</li>
-							<li>احراز هویت چند عاملی</li>
+							<li id="b-list1">امکان ذخیره‌ی اطلاعات لازم برای پر کردن فرم‌های اینترنتی</li>
+							<li id="b-list2">پیشنهاد خودکار رمز پیچیده و یکتا</li>
+							<li id="b-list3">امکان اشتراک‌گذاری یک به یک</li>
+							<li id="b-list4">دسته‌بندی رمزها</li>
+							<li id="b-list5">امکان نصب روی گوشی تلفن همراه</li>
+							<li id="b-list6">تغییر خودکار رمز تارنماهای محبوب</li>
+							<li id="b-list7">امکان دست‌رسی یک فرد مطمئن به شناسه در شرایط حاد</li>
+							<li id="b-list8">هشدار لو رفتن اطلاعات</li>
+							<li id="b-list9">محدود کردن ورود بر اساس کشور، IP و ...</li>
+							<li id="b-list10">یادداشت‌های امن</li>
+							<li id="b-list11">احراز هویت چند عاملی</li>
 						</ul>
 					</section>
 				</section>
@@ -171,7 +179,7 @@
 					<!--3.1-->
 					<section data-transition="slide" data-background-color="#fffb00"
 						data-background-transition="zoom">
-						<h2>تشکیل حساب کاربری<br>بیت‌واردن</h2>
+						<h2 id="b-reg">تشکیل حساب کاربری<br>بیت‌واردن</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -179,14 +187,12 @@
 					<section data-background="images/Bitwarden/Bitwarden-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-reg1">
 							به
 							<a href="https://bitwarden.com/download/">تارنمای رسمی BitWarden</a>
 							مراجعه کنید و دکمۀ Create a Free Account را بزنید.
-
 							فرم ثبت نام را تکمیل کنید. Master password رمز ورود به نرم‌افزار/افزونۀ
 							مدیریت رمز شماست.
-							<br />
 							توجه کنید که Master password hint را طوری انتخاب کنید که با دیدن آن رمز
 							را فقط خودتان بتوانید به‌یاد بیاورید. تیک پذیرش قوانین را زده و دکمۀ
 							Create account را بزنید.
@@ -197,7 +203,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-reg2">
 							به‌طور خودکار به صفحۀ ورود سایت منتقل می‌شوید. ایمیل خود را وارد کنید.
 							اگر در این مرحله مرورگرتان از شما برای ذخیرۀ ایمیل و رمز سوال کرد، بهتر
 							است که نپذیرید.
@@ -210,8 +216,8 @@
 					<!--3.4-->
 					<section data-background="images/Bitwarden/Bitwarden-03.png"
 						data-background-size="60%"
-						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						data-background-transition="zoom" data-background-color="#fffb00" id="b-reg3">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							اکنون در صفحۀ حساب کاربری خود قرار دارید. گوشۀ صفحه بخش VERIFY EMAIL
 							قرار دارد. دکمۀ Send email را
 							بزنید تا حسابتان را با ایمیل خود تایید کنید.
@@ -222,7 +228,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-reg4">
 							ایمیل خود را باز کنید و وارد ایمیل دریافتی از سوی بیت‌واردن شوید. روی
 							دکمۀ آبی رنگ داخل ایمیل بزنید
 							<br />
@@ -235,7 +241,7 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#fffb00"
 						data-background-transition="zoom">
-						<h2>راه‌اندازی افزونۀ<br>بیت‌واردن</h2>
+						<h2 id="b-ex">راه‌اندازی افزونۀ<br>بیت‌واردن</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -243,7 +249,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-05.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-ex1">
 							به تارنمای بیت‌واردن برگردید و کمی پایین‌تر، در بخش Web Browser مرورگر
 							خود را انتخاب کنید.
 							(احتمالا مراحل این بخش در ایران فیلتر است و نیاز به VPN خواهید داشت.
@@ -258,7 +264,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-06.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-ex2">
 							به‌صورت خودکار به صفحۀ افزونۀ بیت‌واردن منتقل می‌شوید. روی Get کلیک
 							کنید.
 							<br />
@@ -270,7 +276,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-07.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-ex3">
 							از بالای صفحۀ مرورگر، منوی افزونه‌ها را باز کنید.
 							<br />
 							دکمۀ چشم (یا هر علامت دیگری در مرورگر خودتان)
@@ -283,7 +289,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-08.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-ex4">
 							روی افزونه کلیک کنید و وارد حساب کاربری خود شوید. به صلاح‌دید خود انتخاب
 							کنید که ایمیلتان را به‌یاد بسپارد یا
 							خیر.
@@ -297,7 +303,7 @@
 					<!--5.1-->
 					<section data-transition="slide" data-background-color="#fffb00"
 						data-background-transition="zoom">
-						<h2>ساخت رمز با<br>بیت‌واردن</h2>
+						<h2 id="b-gen">ساخت رمز با<br>بیت‌واردن</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -305,7 +311,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-09.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-gen1">
 							روی افزونه کلیک و رمز خود را وارد کنید تا وارد حسابتان شوید. در هربار
 							ورود، باید از رمز استفاده کنید؛ ما در اینجا از
 							تکرار آن صرف‌نظر کرده‌ایم.
@@ -323,7 +329,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-10.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-gen2">
 							بعد از ورود اولیه به هر سایت،
 							به‌طور خودکار افزونه از شما سوال می‌کند که آیا قصد ذخیرۀ اطلاعاتتان را
 							دارید یا خیر. روی دکمۀ آبی رنگ بالای صفحه
@@ -336,7 +342,7 @@
 					<!--6.1-->
 					<section data-transition="slide" data-background-color="#fffb00"
 						data-background-transition="zoom">
-						<h2>دست‌رسی به اطلاعات در<br>بیت‌واردن</h2>
+						<h2 id="b-use">دست‌رسی به اطلاعات در<br>بیت‌واردن</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -344,7 +350,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-11.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-use1">
 							هرگاه قصد ورود به حسابی را داشتید، وارد صفحۀ ورود (Login) شوید. سپس با
 							کلیک روی افزونۀ بیت‌واردن، وارد آن
 							شوید. به‌طور خودکار اطلاعات حساب شما نمایش داده می‌شود. روی نام آن کلیک
@@ -359,7 +365,7 @@
 					<section data-background="images/Bitwarden/Bitwarden-12.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#fffb00">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="b-use2">
 							همچنین می‌توانید با سرچ یک سایت در صفحه اصلی، به اطلاعاتتان دسترسی داشته
 							باشید و با کلیک روی دکمۀ
 							Lunch
@@ -471,6 +477,50 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
 		});
+	</script>
+
+	<!-- Translation Script -->
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['BitWarden'];
+					document.title = Data['b-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
 	</script>
 		</body>
 

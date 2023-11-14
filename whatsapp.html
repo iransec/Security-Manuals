@@ -83,10 +83,18 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#1d5464">
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
 					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
+					<br/>
 					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; امنیت واتس‌اَپ &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
@@ -161,7 +169,7 @@
 					<section data-background="images/WhatsApp/whats-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							به‌طور مرتب صفحۀ
 							Linked Devices
 							را بررسی کنید. با انتخاب دستگاه‌های متصل غیر آشنا و گزینه
@@ -182,7 +190,7 @@
 					<section data-background="images/WhatsApp/Whats-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							وارد
 							Settings
 							شوید. از قسمت
@@ -280,7 +288,7 @@
 					<section data-background="images/WhatsApp/whats-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;">
 							وارد
 							Settings
 							شوید. از قسمت
@@ -411,6 +419,50 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
 		});
+	</script>
+
+	<!-- Translation Script -->
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['WhatsApp'];
+					document.title = Data['w-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
 	</script>
 	</body>
 

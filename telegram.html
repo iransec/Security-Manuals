@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>☘️ آموزش امنیت تلگرام برای فعالان مدنی</title>
+		<title>آموزش امنیت تلگرام برای فعالان مدنی</title>
 		<link rel="icon" href="images/logo-telegram.png" type="image/x-icon">
 
 		<meta name="description"
@@ -82,11 +82,20 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#480032">
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
 					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
-					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; امنیت تلگرام &nbsp;&nbsp;}</h2>
+					<br />
+					<h2 style="margin-top: -6%;" id="t-topic">{&nbsp;&nbsp; امنیت تلگرام
+						&nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
@@ -118,49 +127,48 @@
 				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
-
 				<section> <!--Tips-->
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h1>امنیت تلگرام</h1>
+						<h1 id="t-topic">امنیت تلگرام</h1>
 						<img class="big" src="images/logo-telegram.png">
-						<p>مروری بر مهم‌ترین تنظیمات امنیتی</p>
-						<span style="font-size:40%; opacity: 0.5;">
-							<!--آخرین به-روز-رسانی:-->
-							تابستان ۱۴۰۲</span>
+						<p id="t-intro">مروری بر مهم‌ترین تنظیمات امنیتی</p>
+						<span style="font-size:40%; opacity: 0.5;" id="t-update">
+							<!--آخرین به-روز-رسانی:-->تابستان ۱۴۰۲</span>
 					</section>
 
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ مهم تلگرامی</h2>
-						<p style="font-size: 50%; text-align: justify;">
-							&#x2022;
-							یکی از شیوه‌های متعارف در هک شناسۀ تلگرام دسترسی به آن از طریق دستگاه
-							دیگری است که به آن
-							Device
-							می‌گویند. برای جلوگیری از دسترسی غیرمجاز باید تأیید دومرحله‌ای
-							<span style="font-size:70%;">(Two-Step Verification)</span>
-							را فعال کرد.<br>
-							نکته‌ی مهم این است که بعضی از کنشگران تایید دو مرحله‌ای را با گذاشتن رمز
-							روی برنامۀ تلگرام
-							<span style="font-size:70%;">(Passcode Lock)</span>
-							اشتباه می‌گیرند. اولی امکان اتصال از
-							<b>هیچ دستگاهی</b>
-							را
-							<span style="font-size:70%;">(که رمز دوم را ندارد)</span>
-							نمی‌دهد و دومی تنها اجازۀ باز کردن تلگرام روی
-							<b>همان دستگاهی</b>
-							که این رمز تعریف شده است را نمی‌دهد.<br />
+						<h2 id="t-list">چند نکتۀ مهم تلگرامی</h2>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li id="t-list1">
+								یکی از شیوه‌های متعارف در هک شناسۀ تلگرام دسترسی به آن از طریق دستگاه
+								دیگری است که به آن
+								Device
+								می‌گویند. برای جلوگیری از دسترسی غیرمجاز باید تأیید دومرحله‌ای
+								<span style="font-size:70%;">(Two-Step Verification)</span>
+								را فعال کرد.<br>
+								نکته‌ی مهم این است که بعضی از کنشگران تایید دو مرحله‌ای را با گذاشتن رمز
+								روی برنامۀ تلگرام
+								<span style="font-size:70%;">(Passcode Lock)</span>
+								اشتباه می‌گیرند. اولی امکان اتصال از
+								<b>هیچ دستگاهی</b>
+								را
+								<span style="font-size:70%;">(که رمز دوم را ندارد)</span>
+								نمی‌دهد و دومی تنها اجازۀ باز کردن تلگرام روی
+								<b>همان دستگاهی</b>
+								که این رمز تعریف شده است را نمی‌دهد.
+							</li>
+							<li id="t-list2">
+								شیوۀ دیگر، ترغیب کاربران به استفاده از نسخه‌های مبتنی بر تلگرام است؛ چه
+								به اسم آزادی دست‌رسی به اینترنت و چه با ادعای سالم‌سازی آن. در چنین
+								شرایطی، خطر دزدیده‌شدن و دست‌کاری اطلاعات، بسیار بالاست.
+							</li>
+						</ul>
 
-							&#x2022;
-							شیوۀ دیگر، ترغیب کاربران به استفاده از نسخه‌های مبتنی بر تلگرام است؛ چه
-							به اسم آزادی دست‌رسی به اینترنت و چه با ادعای سالم‌سازی آن. در چنین
-							شرایطی، خطر دزدیده‌شدن و دست‌کاری اطلاعات، بسیار بالاست.
-						</p>
-
-						<p style="font-size: 50%; text-align: justify; opacity: 0.6;">
+						<p style="font-size: 50%; text-align: justify; opacity: 0.6;" id="t-list3">
 							برای مثال اگر کسی برای تلگرام روی گوشی سامسونگ خود
 							Passcode
 							بگذارد اما تایید دو مرحله‌ای نگذارد، آن‌گاه یک هکر
@@ -180,52 +188,73 @@
 					<!--2.3-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ مهم تلگرامی</h2>
+						<h2 id="t-list">چند نکتۀ مهم تلگرامی</h2>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>در سال ۱۳۹۶ تلگرام اعلام کرد که سرورهای
+							<li id="t-list4">
+								در سال ۱۳۹۶ تلگرام اعلام کرد که سرورهای
 								CDN
 								خود را به ایران منتقل کرده است. اگر این ادعا درست باشد، جای نگرانی خاصی
 								نیست اما بهتر است در ساحل امن بمانید و
 								<b>برای کارهای حساس از تلگرام استفاده نکنید</b>.
 								مسئله این است که وقتی سرورها در ایران باشند به این معنی است که تابع
-								قوانین ایران خواهند بود.</li>
-							<li>در سال ۱۳۹۷ تلگرام در چند کشور من‌جمله ایران مسدود و سرویس‌های مبتنی
-								بر تلگرام برای دور زدن فیلترینگ تولید شدند؛ هیچ یک از آن‌ها امن نیستند.</li>
-							<li>به‌صورت مداوم
+								قوانین ایران خواهند بود.
+							</li>
+							<li id="t-list5">
+								در سال ۱۳۹۷ تلگرام در چند کشور من‌جمله ایران مسدود و سرویس‌های مبتنی
+								بر تلگرام برای دور زدن فیلترینگ تولید شدند؛ هیچ یک از آن‌ها امن نیستند.
+							</li>
+							<li id="t-list6">
+								به‌صورت مداوم
 								Active Sessions
 								تلگرام خود را بررسی کنید. این مسئله به شما اطمینان می‌دهد که کسی غیر از
-								شما به تلگرامتان وصل نیست.</li>
-							<li>تلگرام لیست مخاطبان و پیام‌ها را روی سرور خود ذخیره می‌کند. این بدان
+								شما به تلگرامتان وصل نیست.
+							</li>
+							<li id="t-list7">
+								تلگرام لیست مخاطبان و پیام‌ها را روی سرور خود ذخیره می‌کند. این بدان
 								معنی است که اگر کسی به‌صورت غیرمجاز به تلگرام شما وصل شود، فهرست مخاطبان
-								و پیام‌هایتان را خواهد داشت.</li>
-							<li>تلگرام گزینه‌ی
+								و پیام‌هایتان را خواهد داشت.
+							</li>
+							<li id="t-list8">
+								تلگرام گزینه‌ی
 								Secret Chat
 								دارد که براساس ادعای توسعه‌دهندگان آن امنیت را به‌صورت نقطه-به-نقطه
 								تامین می‌کند. اگر از آن استفاده نکنید، امنیت نقطه-به-نقطه فعال نیست،
-								یعنی امنیت تلگرام با نرم‌افزارهای دیگر مثل وایبر تفاوت معناداری ندارد.</li>
+								یعنی امنیت تلگرام با نرم‌افزارهای دیگر مثل وایبر تفاوت معناداری ندارد.
+							</li>
 						</ul>
 					</section>
 
 					<!--2.4-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ مهم تلگرامی</h2>
+						<h2 id="t-list">چند نکتۀ مهم تلگرامی</h2>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>کانال‌های تلگرامی بسیار محبوب‌اند، عضویت شما در آن‌ها برای گردانندگان
+							<li id="t-list9">
+								کانال‌های تلگرامی بسیار محبوب‌اند، عضویت شما در آن‌ها برای گردانندگان
 								قابل دیدن است؛ به جای عضویت در کانال‌های دردسرساز می‌توانید به صورت مرتب
-								به آن‌ها سر بزنید.</li>
-							<li>عضویت شما در گروه‌های تلگرامی برای همه‌ی اعضای گروه قابل مشاهده است،
+								به آن‌ها سر بزنید.
+							</li>
+							<li id="t-list10">
+								عضویت شما در گروه‌های تلگرامی برای همه‌ی اعضای گروه قابل مشاهده است،
 								در صورتی که عضویت شما در کانال‌های تلگرامی تنها برای مدیران کانال قابل
-								مشاهده است.</li>
-							<li>در تلگرام می‌توانید پیام‌های فرستاده شده را حذف/ویرایش کنید که برای
+								مشاهده است.
+							</li>
+							<li id="t-list11">
+								در تلگرام می‌توانید پیام‌های فرستاده شده را حذف/ویرایش کنید که برای
 								گیرنده نیز حذف/ویرایش شود. ویرایش پیام باید ظرف ۴۸ساعت انجام شود اما
-								محدودیتی برای حذف کردن پیام ندارید.</li>
-							<li>اگر کانال تلگرامی دارید و نگران لو رفتن هویت خود هستید، شناسۀ جدیدی
-								بسازید و با آن شناسه کانال خود را مدیریت کنید.</li>
-							<li>اگر خطر از دست دادن شناسۀ تلگرامتان بالاست، همیشه در کانال‌های تحت
+								محدودیتی برای حذف کردن پیام ندارید.
+							</li>
+							<li id="t-list12">
+								اگر کانال تلگرامی دارید و نگران لو رفتن هویت خود هستید، شناسۀ جدیدی
+								بسازید و با آن شناسه کانال خود را مدیریت کنید.
+							</li>
+							<li id="t-list13">
+								اگر خطر از دست دادن شناسۀ تلگرامتان بالاست، همیشه در کانال‌های تحت
 								مدیریت خود، یک شناسۀ دیگر را نیز مدیر کنید که اگر شناسۀ شما هک شد، کانال
-								شما نیز از بین نرود.</li>
-							<li>اگر امنیت برایتان مهم است به
+								شما نیز از بین نرود.
+							</li>
+							<li id="t-list14">
+								اگر امنیت برایتان مهم است به
 								<a href="https://en.wikipedia.org/wiki/Signal_(software)"
 									target="_blank">سیگنال</a>
 								یا
@@ -233,7 +262,8 @@
 								کوچ کنید. این دو برنامه امنیت نقطه-به-نقطه برای مکالمه‌های متنی، صوتی و
 								تصویری بدون ضعف امنیتی در پشتی
 								<span style="font-size:70%;">(Backdoor)</span>
-								را تضمین می‌کنند.</li>
+								را تضمین می‌کنند.
+							</li>
 						</ul>
 					</section>
 
@@ -242,16 +272,21 @@
 						data-background-size="auto auto"
 						data-background-transition="zoom" data-background-color="#480032">
 						<blockquote style="margin-top: 40%; font-size:60%;">
-							<h2>نسخه‌های مبتنی بر تلگرام</h2>
-							پس از مسدود شدن تلگرام در ایران، موج عرضۀ برنامه‌های مبتنی بر تلگرام در
-							داخل و خارج از کشور شدت گرفت. قاعدۀ کلی این است که
-							<b>هیچ‌یک</b>
-							از آن‌ها امن نیستند؛ چه مدعی گردش آزاد اطلاعات باشند، چه قصد پاک‌سازی
-							محتوای نامطلوب! را داشته باشند، چه مورد حمایت نهادهای امنیتی باشند و چه
-							کشورهای حامی آزادی و دموکراسی.<br />
-							تصویر پس‌زمینه نشان می‌دهد که اطلاعات چگونه بین سرورهای چنین شرکت‌هایی رد
-							و بدل می‌شود؛ سرورهای آن‌ها امکان شنود و دست‌کاری محتوای دریافتی/ارسالی
-							را دارند.
+							<h2 id="t-version">نسخه‌های مبتنی بر تلگرام</h2>
+							<span id="t-version1">
+								پس از مسدود شدن تلگرام در ایران، موج عرضۀ برنامه‌های مبتنی بر تلگرام در
+								داخل و خارج از کشور شدت گرفت. قاعدۀ کلی این است که
+								<b>هیچ‌یک</b>
+								از آن‌ها امن نیستند؛ چه مدعی گردش آزاد اطلاعات باشند، چه قصد پاک‌سازی
+								محتوای نامطلوب! را داشته باشند، چه مورد حمایت نهادهای امنیتی باشند و چه
+								کشورهای حامی آزادی و دموکراسی.
+							</span>
+							<span id="t-version2">
+								تصویر پس‌زمینه نشان می‌دهد که اطلاعات چگونه بین سرورهای چنین شرکت‌هایی
+								رد
+								و بدل می‌شود؛ سرورهای آن‌ها امکان شنود و دست‌کاری محتوای دریافتی/ارسالی
+								را دارند.
+							</span>
 						</blockquote>
 					</section>
 				</section>
@@ -260,7 +295,7 @@
 					<!--3.1-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h2>ورود به تنظیمات<br>تــلــگــرام</h2>
+						<h2 id="t-settings">ورود به تنظیمات<br>تــلــگــرام</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -268,7 +303,7 @@
 					<section data-background="images/Telegram/Telegram-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#480032">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-settings-desc">
 							برای اعمال تنظیم‌های امنیتی، به
 							Settings
 							مراجعه کنید. از فهرست نمایش‌داده‌شده،
@@ -276,7 +311,8 @@
 							را انتخاب کنید.
 							Two-Step Verification , Auto-Delete Messages, Passcode Lock و Devices
 							چهار گزینۀ مهم امنیتی در
-							Securityاند. </blockquote>
+							Securityاند.
+						</blockquote>
 					</section>
 				</section>
 
@@ -284,7 +320,7 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h2>تنظیم ورود دو مرحله‌ای<br>تــلــگــرام</h2>
+						<h2 id="t-2fa">تنظیم ورود دو مرحله‌ای<br>تــلــگــرام</h2>
 						<img class="big" src="images/Icons/smartphone02.svg">
 					</section>
 
@@ -292,7 +328,7 @@
 					<section data-background="images/Telegram/Telegram-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#480032">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-2fa1">
 							برای فعال‌سازی،
 							Two-Step Verification
 							را انتخاب کنید. سپس یک رمز مناسب
@@ -310,17 +346,17 @@
 					<!--4.3-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h3>نکته‌ای درمورد بازیابی رمز ورود دومرحله‌ای</h3>
+						<h3 id="t-2fal">نکته‌ای درمورد بازیابی رمز ورود دومرحله‌ای</h3>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>
+							<li id="t-2fal1">
 								برای بازیابی رمز درصورت فراموشی، تلگرام این امکان را به شما می‌دهد که از
 								ایمیل استفاده کنید.
 							</li>
-							<li>
+							<li id="t-2fal2">
 								می‌توانید از این مرحله عبور کنید اما توجه داشته باشید که درصورت فراموشی
 								رمز، هیچ راهی برای بازیابی آن وجود نخواهد داشت.
 							</li>
-							<li>
+							<li id="t-2fal3">
 								باتوجه به اینکه استفاده از ایمیل شخصی برای این کار چندان امن نیست، توصیه
 								می‌شود اکانت جدیدی
 								<span style="font-size:70%;">(ایمیل فیک)</span>
@@ -333,228 +369,228 @@
 					<section data-background="images/Telegram/Telegram-03.png"
 						data-background-size="40%"
 						data-background-transition="zoom" data-background-color="#480032">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-2fa2">
 							ایمیلتان را وارد کنید. کد تأیید بلافاصله به ایمیل ارسال می‌شود. کد را
 							وارد کنید. پس از پایان مراحل، پیغام مرتبط با فعال‌سازی ورود دومرحله‌ای از
-							طرف تلگرام به شما ارسال می‌شود.<br><span></blockquote>
-						</section>
+							طرف تلگرام به شما ارسال می‌شود.
+						</blockquote>
 					</section>
+				</section>
 
-					<section> <!--Auto-Delete Messages-->
-						<!--5.1-->
-						<section data-transition="slide" data-background-color="#480032"
-							data-background-transition="zoom">
-							<h2>حذف خودکار پیام‌ها در<br>تــلــگــرام</h2>
-							<img class="big" src="images/Icons/smartphone02.svg">
-						</section>
-
-						<!--5.2-->
-						<section data-background="images/Telegram/Telegram-04.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#480032">
-							<blockquote style="margin-top: 55%; font-size:50%;">
-								وارد
-								Auto-Delete Messages
-								شده و از بین گزینه‌های موجود، زمان‌بندی مناسب حذف خودکار پیام‌ها را
-								انتخاب کنید. همچنین می‌توانید از بخش
-								Set Custom Time
-								خودتان تعیین کنید که هر چند روز/هفته/ماه/سال پیام‌های شما به‌طور خودکار
-								حذف شوند.
-								توجه کنید که این تنظیمات فقط برای چت‌هایی فعال می‌شود که از این به بعد
-								آغاز خواهید کرد؛ برای فعال شدن حذف خودکار برای چت‌های فعلی،
-								از گزینۀ آبی رنگ پایین استفاده کنید و چت‌هایی که می‌خواهید این تنظیمات
-								در آن‌ها اعمال شوند را انتخاب کنید.
-							</blockquote>
-						</section>
-
-						<!--5.3-->
-						<section data-background="images/Telegram/Telegram-05.png"
-							data-background-size="40%"
-							data-background-transition="zoom" data-background-color="#480032">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								روش دیگر تنظیم حذف خودکار برای هر چت دلخواه، استفاده از منوی صفحۀ
-								پروفایل فرد است. وارد
-								Auto-Delete
-								شده و زمان‌بندی دلخواه خود را انتخاب یا دستی تنظیم کنید.<br>
-								همچنین می‌توانید از طریق گزینه
-								Disable
-								آن را غیرفعال کنید.
-							</blockquote>
-						</section>
-					</section>
-
-					<section> <!--Passcode Lock-->
-						<!--6.1-->
-						<section data-transition="slide" data-background-color="#480032"
-							data-background-transition="zoom">
-							<h2>رمز گذاشتن روی برنامۀ<br>تــلــگــرام</h2>
-							<img class="big" src="images/Icons/smartphone04.svg">
-						</section>
-
-						<!--6.2-->
-						<section data-background="images/Telegram/Telegram-06.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#480032">
-							<blockquote style="margin-top: 58%; font-size:50%;">
-								رمز تلگرام از ورود بیگانه به تلگرام در نبودتان جلوگیری می‌کند.
-								Passcode Lock
-								با ورود دومرحله‌ای فرق می‌کند. حتی با فعال‌کردن آن، باید برای هر دستگاه
-								رمز انتخاب کنید. یک رمز چهاررقمی انتخاب کنید. سپس در قسمت
-								Auto-lock
-								مدت‌زمان قفل خودکار را تعیین کنید. همه گزینه‌های امنیت شناسۀ تلگرام شما
-								فعال شده است.</blockquote>
-						</section>
-					</section>
-
-					<section> <!--Content Lock-->
-						<!--7.1-->
-						<section data-transition="slide" data-background-color="#480032"
-							data-background-transition="zoom">
-							<h2>جلوگیری از گرفتن اسکرین‌شات در<br>تــلــگــرام</h2>
-							<img class="big" src="images/Icons/smartphone04.svg">
-						</section>
-
-						<!--7.2-->
-						<section data-background="images/Telegram/Telegram-07.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#480032">
-							<blockquote style="margin-top: 58%; font-size:50%;">
-								وارد
-								Passcode Lock
-								شده و رمزتان را وارد کنید. با خاموش کردن گزینه
-								Show Content
-								تا وقتی داخل برنامه نیستید محتوای تلگرام شما قابل مشاهده نیست، و هنگامی
-								که داخل برنامه هستید هم برنامه به شما اجازۀ گرفتن اسکرین‌شات نمی‌دهد.
-							</blockquote>
-						</section>
-					</section>
-
-					<section> <!--Devices-->
-						<!--8.1-->
-						<section data-transition="slide" data-background-color="#480032"
-							data-background-transition="zoom">
-							<h2>بررسی دست‌رسی‌ها به<br>تــلــگــرام</h2>
-							<img class="big" src="images/Icons/hacker03.svg">
-						</section>
-
-						<!--8.2-->
-						<section data-background="images/Telegram/Telegram-08.png"
-							data-background-size="40%"
-							data-background-transition="zoom" data-background-color="#480032">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								یکی از شیوه‌های هکرها، اتصال به شناسۀ تلگرام قربانی است. به‌طور مرتب
-								صفحۀ
-								Devices
-								را بررسی کنید. دسترسی دستگاه‌های متصل غیر آشنا را قطع کنید. گزینه
-								Terminate All sessions
-								دسترسی همه دستگاه‌های دیگر
-								<span style="font-size:70%;">(جز دستگاهی که با آن این کار را انجام
-									می‌دهید)</span>
-								را قطع می‌کند.
-							</blockquote>
-						</section>
-
-						<!--8.3-->
-						<section data-transition="slide" data-background-color="#480032"
-							data-background-transition="zoom">
-							<h3>نکته‌ای درمورد نشست‌های فعال</h3>
-							<ul style="font-size: 50%; text-align: justify;">
-								<li>
-									بعد از ورود به شناسۀ تلگرام با یک دستگاه جدید، تا ۲۴ساعت اجازۀ اعمال
-									تنظیمات امنیتی را با آن دستگاه نخواهید داشت.
-								</li>
-
-								<li>
-									در نسخۀ دسکتاپ تلگرام، امکان استخراج پیام‌ها وجود دارد؛ پس
-									<b>نشست‌های فعال در دسکتاپ‌ها</b>
-									را جدی بگیرید.
-								</li>
-							</ul>
-						</section>
-					</section>
-
-					<section> <!--Delete Account-->
-						<!--9.1-->
-						<section data-transition="slide" data-background-color="#480032"
-							data-background-transition="zoom">
-							<h2>پاک کردن حساب کاربری<br>تــلــگــرام</h2>
-							<img class="big" src="images/Icons/hacker03.svg">
-						</section>
-
-						<!--9.2-->
-						<section data-background="images/Telegram/Telegram-09.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#480032">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								برای پاک‌کردن حساب کاربری تلگرام، به آدرس
-								<a href="https://my.telegram.org">https://my.telegram.org</a>
-								مراجعه کنید. گزینۀ
-								Delete Account
-								را انتخاب کنید. شماره موبایلتان را وارد کنید. پس از آن کدی به تلگرامتان
-								ارسال می‌شود. با ثبت کد، حساب کاربری شما پاک می‌شود.
-							</blockquote>
-						</section>
-					</section>
-
-					<!-- ###########################################################################################################
-		################################################################################################################
-		################################################################################################################ -->
-					<section data-background="images/question.jpg">
-						<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
-							دارید؟</h2>
-						<span class="o70"
-							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
-							خود را با ما در میان بگذارید.</span>
-						<span class="o70"
-							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
-						<a href="https://t.me/IranSec_Bot" class="o70"
-							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
-					</section>
-					<!-- ###########################################################################################################
-		################################################################################################################
-		################################################################################################################ -->
+				<section> <!--Auto-Delete Messages-->
+					<!--5.1-->
 					<section data-transition="slide" data-background-color="#480032"
 						data-background-transition="zoom">
-						<h2>حق مؤلف و تشکر</h2>
-						<p class="icon"><i class="far fa-copyright"></i></p>
-						<p class="f50 justify">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
-							امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده
-							است. هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد،
-							اما امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما
-							هستیم. لازم
-							است یادآوری کنیم که این جزوه‌ی امنیتی با <a
-								href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
-								target="_blank">گواهی کریتو
-								کامنز (قابل استفادۀ غیرتجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است. به
-							حتم برای هر شکل از
-							استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه است.</p>
-						<p class="f50 justify">در این پروژۀ آموزشی از محتوای دیگران با گواهی
-							قابل‌انتشار و تغییر استفاده شده
-							است. از آن جمله می‌توان به <a
-								href="https://github.com/hakimel/reveal.js/" target="_blan">ارائه‌گر
-								reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
-								target="_blan">لاله‌زار</a>
-							و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
-							و <a
-								href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
-							شکلک‌های <a
-								href="https://ionicons.com" target="_blan">ion</a> و <a
-								href="https://fontawesome.com"
-								target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
-							استفاده شده. در هر جای
-							پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
-							است خوش‌حال می‌شویم که آن را
-							گوش‌زد کنید.</p>
+						<h2 id="t-adm">حذف خودکار پیام‌ها در<br>تــلــگــرام</h2>
+						<img class="big" src="images/Icons/smartphone02.svg">
 					</section>
-				</div>
-			</div>
-			<!-- ###########################################################################################################
+
+					<!--5.2-->
+					<section data-background="images/Telegram/Telegram-04.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#480032">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-adm1">
+							وارد
+							Auto-Delete Messages
+							شده و از بین گزینه‌های موجود، زمان‌بندی مناسب حذف خودکار پیام‌ها را
+							انتخاب کنید. همچنین می‌توانید از بخش
+							Set Custom Time
+							خودتان تعیین کنید که هر چند روز/هفته/ماه/سال پیام‌های شما به‌طور خودکار
+							حذف شوند.
+							توجه کنید که این تنظیمات فقط برای چت‌هایی فعال می‌شود که از این به بعد
+							آغاز خواهید کرد؛ برای فعال شدن حذف خودکار برای چت‌های فعلی،
+							از گزینۀ آبی رنگ پایین استفاده کنید و چت‌هایی که می‌خواهید این تنظیمات
+							در آن‌ها اعمال شوند را انتخاب کنید.
+						</blockquote>
+					</section>
+
+					<!--5.3-->
+					<section data-background="images/Telegram/Telegram-05.png"
+						data-background-size="40%"
+						data-background-transition="zoom" data-background-color="#480032">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-adm2">
+							روش دیگر تنظیم حذف خودکار برای هر چت دلخواه، استفاده از منوی صفحۀ
+							پروفایل فرد است. وارد
+							Auto-Delete
+							شده و زمان‌بندی دلخواه خود را انتخاب یا دستی تنظیم کنید.<br>
+							همچنین می‌توانید از طریق گزینه
+							Disable
+							آن را غیرفعال کنید.
+						</blockquote>
+					</section>
+				</section>
+
+				<section> <!--Passcode Lock-->
+					<!--6.1-->
+					<section data-transition="slide" data-background-color="#480032"
+						data-background-transition="zoom">
+						<h2 id="t-pl">رمز گذاشتن روی برنامۀ<br>تــلــگــرام</h2>
+						<img class="big" src="images/Icons/smartphone04.svg">
+					</section>
+
+					<!--6.2-->
+					<section data-background="images/Telegram/Telegram-06.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#480032">
+						<blockquote style="margin-top: 58%; font-size:50%;" id="t-pl-desc">
+							رمز تلگرام از ورود بیگانه به تلگرام در نبودتان جلوگیری می‌کند.
+							Passcode Lock
+							با ورود دومرحله‌ای فرق می‌کند. حتی با فعال‌کردن آن، باید برای هر دستگاه
+							رمز انتخاب کنید. یک رمز چهاررقمی انتخاب کنید. سپس در قسمت
+							Auto-lock
+							مدت‌زمان قفل خودکار را تعیین کنید. همه گزینه‌های امنیت شناسۀ تلگرام شما
+							فعال شده است.</blockquote>
+					</section>
+				</section>
+
+				<section> <!--Content Lock-->
+					<!--7.1-->
+					<section data-transition="slide" data-background-color="#480032"
+						data-background-transition="zoom">
+						<h2 id="t-cl">جلوگیری از گرفتن اسکرین‌شات در<br>تــلــگــرام</h2>
+						<img class="big" src="images/Icons/smartphone04.svg">
+					</section>
+
+					<!--7.2-->
+					<section data-background="images/Telegram/Telegram-07.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#480032">
+						<blockquote style="margin-top: 58%; font-size:50%;" id="t-cl-desc">
+							وارد
+							Passcode Lock
+							شده و رمزتان را وارد کنید. با خاموش کردن گزینه
+							Show Content
+							تا وقتی داخل برنامه نیستید محتوای تلگرام شما قابل مشاهده نیست، و هنگامی
+							که داخل برنامه هستید هم برنامه به شما اجازۀ گرفتن اسکرین‌شات نمی‌دهد.
+						</blockquote>
+					</section>
+				</section>
+
+				<section> <!--Devices-->
+					<!--8.1-->
+					<section data-transition="slide" data-background-color="#480032"
+						data-background-transition="zoom">
+						<h2 id="t-devices">بررسی دست‌رسی‌ها به<br>تــلــگــرام</h2>
+						<img class="big" src="images/Icons/hacker03.svg">
+					</section>
+
+					<!--8.2-->
+					<section data-background="images/Telegram/Telegram-08.png"
+						data-background-size="40%"
+						data-background-transition="zoom" data-background-color="#480032">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-devices-desc">
+							یکی از شیوه‌های هکرها، اتصال به شناسۀ تلگرام قربانی است. به‌طور مرتب
+							صفحۀ
+							Devices
+							را بررسی کنید. دسترسی دستگاه‌های متصل غیر آشنا را قطع کنید. گزینه
+							Terminate All sessions
+							دسترسی همه دستگاه‌های دیگر
+							<span style="font-size:70%;">(جز دستگاهی که با آن این کار را انجام
+								می‌دهید)</span>
+							را قطع می‌کند.
+						</blockquote>
+					</section>
+
+					<!--8.3-->
+					<section data-transition="slide" data-background-color="#480032"
+						data-background-transition="zoom">
+						<h3 id="t-devicesl">نکته‌ای درمورد نشست‌های فعال</h3>
+						<ul style="font-size: 50%; text-align: justify;">
+							<li id="t-devicesl1">
+								بعد از ورود به شناسۀ تلگرام با یک دستگاه جدید، تا ۲۴ساعت اجازۀ اعمال
+								تنظیمات امنیتی را با آن دستگاه نخواهید داشت.
+							</li>
+							<li id="t-devicesl2">
+								در نسخۀ دسکتاپ تلگرام، امکان استخراج پیام‌ها وجود دارد؛ پس
+								<b>نشست‌های فعال در دسکتاپ‌ها</b>
+								را جدی بگیرید.
+							</li>
+						</ul>
+					</section>
+				</section>
+
+				<section> <!--Delete Account-->
+					<!--9.1-->
+					<section data-transition="slide" data-background-color="#480032"
+						data-background-transition="zoom">
+						<h2 id="t-da">پاک کردن حساب کاربری<br>تــلــگــرام</h2>
+						<img class="big" src="images/Icons/hacker03.svg">
+					</section>
+
+					<!--9.2-->
+					<section data-background="images/Telegram/Telegram-09.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#480032">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="t-da-desc">
+							برای پاک‌کردن حساب کاربری تلگرام، به آدرس
+							<a href="https://my.telegram.org">https://my.telegram.org</a>
+							مراجعه کنید. گزینۀ
+							Delete Account
+							را انتخاب کنید. شماره موبایلتان را وارد کنید. پس از آن کدی به تلگرامتان
+							ارسال می‌شود. با ثبت کد، حساب کاربری شما پاک می‌شود.
+						</blockquote>
+					</section>
+				</section>
+
+				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
-			<script src="lib/js/head.min.js"></script>
-			<script src="js/reveal.js"></script>
+				<section data-background="images/question.jpg">
+					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+						دارید؟</h2>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						خود را با ما در میان بگذارید.</span>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+					<a href="https://t.me/IranSec_Bot" class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+				</section>
+				<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+				<section data-transition="slide" data-background-color="#480032"
+					data-background-transition="zoom">
+					<h2>حق مؤلف و تشکر</h2>
+					<p class="icon"><i class="far fa-copyright"></i></p>
+					<p class="f50 justify">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
+						امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده
+						است. هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد،
+						اما امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما
+						هستیم. لازم
+						است یادآوری کنیم که این جزوه‌ی امنیتی با <a
+							href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+							target="_blank">گواهی کریتو
+							کامنز (قابل استفادۀ غیرتجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است. به
+						حتم برای هر شکل از
+						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه است.</p>
+					<p class="f50 justify">در این پروژۀ آموزشی از محتوای دیگران با گواهی
+						قابل‌انتشار و تغییر استفاده شده
+						است. از آن جمله می‌توان به <a
+							href="https://github.com/hakimel/reveal.js/" target="_blan">ارائه‌گر
+							reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
+							target="_blan">لاله‌زار</a>
+						و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
+						و <a
+							href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
+						شکلک‌های <a
+							href="https://ionicons.com" target="_blan">ion</a> و <a
+							href="https://fontawesome.com"
+							target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
+						استفاده شده. در هر جای
+						پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
+						است خوش‌حال می‌شویم که آن را
+						گوش‌زد کنید.</p>
+				</section>
+			</div>
+		</div>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-			<script>
+		<script>
 		// More info about config & dependencies:
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
@@ -588,6 +624,50 @@
 			]
 		});
 	</script>
-		</body>
 
-	</html>
+		<!-- Translation Script -->
+		<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['Telegram'];
+					document.title = Data['t-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
+	</script>
+	</body>
+
+</html>

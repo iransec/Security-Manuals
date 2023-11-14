@@ -81,11 +81,19 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#FFAEC9">
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
 					<h3>امـنـیـت رایـانـه<br>برای شهروندان </h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
-					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; نرم‌افزار VPN &nbsp;&nbsp;}</h2>
+					<br/>
+					<h2 style="margin-top: -6%;" id="v-topic">{&nbsp;&nbsp; نرم‌افزار VPN &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
@@ -116,24 +124,26 @@
 				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
-				<section><!--tips-->
+				<section><!--Intro-->
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#FFAEC9"
 						data-background-transition="zoom">
 						<h1>V2ray</h1>
 						<img class="big" src="images/v2rayN.png"><br />
-						<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
-							تابستان
-							۱۴۰۲</span>
+						<span style="font-size:40%; opacity: 0.5;" id="v-update">
+							<!--آخرین به-روز-رسانی:-->تابستان ۱۴۰۲</span>
 					</section>
 
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#FFAEC9"
 						data-background-transition="zoom">
 						<ul style="font-size: 50%;">
-							<li>سعی کنید همواره از آخرین نسخه نرم‌افزار استفاده کنید تا روش‌های جدید
-								عبور از فیلترینگ را پوشش دهد.</li>
-							<li>به‌جای
+							<li id="v-intro1">
+								سعی کنید همواره از آخرین نسخه نرم‌افزار استفاده کنید تا روش‌های جدید
+								عبور از فیلترینگ را پوشش دهد.
+							</li>
+							<li id="v-intro2">
+								به‌جای
 								V2ray
 								می‌توان از هر نرم‌افزار مشابه دیگری نیز استفاده کرد.
 							</li>
@@ -145,7 +155,7 @@
 					<!--3.1-->
 					<section data-transition="slide" data-background-color="#FFAEC9"
 						data-background-transition="zoom">
-						<h2>نصب روی کامپیوتر</h2>
+						<h2 id="v-compi">نصب روی کامپیوتر</h2>
 						<img class="big" src="images/Icons/computer.png">
 					</section>
 
@@ -153,7 +163,7 @@
 					<section data-background="images/V2ray/V2ray-01.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compi1">
 							به آدرس
 							<a href="https://github.com/2dust/v2rayn/releases">https://github.com/2dust/v2rayn/releases</a>
 							بروید. در این آدرس نسخه‌های مختلف
@@ -170,7 +180,7 @@
 					<section data-background="images/V2ray/V2ray-02.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compi2">
 							فایل را از حالت فشرده خارج کرده و روی
 							V2ray.exe
 							<span style="font-size:70%">(که آیکن V2ray را دارد)</span>
@@ -184,7 +194,7 @@
 					<section data-background="images/V2ray/V2ray-03.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compi3">
 							اگر هنگام اجرا از شما اجازه نصب نرم‌افزار
 							NET.
 							را خواست، با کلیک روی دکمه
@@ -200,7 +210,7 @@
 					<section data-background="images/V2ray/V2ray-04.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compi4">
 							برای تغییر زبان، از منوی بالای صفحه، روی سه نقطه بالای صفحه کلیک کنید.
 						</blockquote>
 					</section>
@@ -209,7 +219,7 @@
 					<section data-background="images/V2ray/V2ray-05.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compi5">
 							روی آخرین گرینه کلیک و زبان دلخواه خود را انتخاب کنید.
 						</blockquote>
 					</section>
@@ -218,7 +228,7 @@
 					<section data-background="images/V2ray/V2ray-06.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compi6">
 							ممکن است برای اعمال تنظیمات نیاز باشد یک بار برنامه را بسته و مجدد وارد
 							شوید. روی آیکن
 							V2ray
@@ -236,7 +246,7 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#FFAEC9"
 						data-background-transition="zoom">
-						<h2>نحوه استفاده در کامپیوتر</h2>
+						<h2 id="v-compu">نحوه استفاده در کامپیوتر</h2>
 						<img class="big" src="images/Icons/computer-0.png">
 					</section>
 
@@ -244,7 +254,7 @@
 					<section data-background="images/V2ray/V2ray-07.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compu1">
 							لینک
 							<span style="font-size:70%">(config)</span>های
 							مربوط به
@@ -260,7 +270,7 @@
 					<section data-background="images/V2ray/V2ray-08.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compu2">
 							گزینه
 							<span style="font-size:70%">Import bulk URL from Clipboard (Ctrl+V)</span>
 							را انتخاب کنید. حالا لیست لینک‌ها را در برنامه مشاهده می‌کنید.
@@ -271,7 +281,7 @@
 					<section data-background="images/V2ray/V2ray-09.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compu3">
 							درصورتی که چندین لینک دارید، برای استفاده بهتر، روی مثلث کوچک گوشه
 							بالا-چپ جدول کلیک کنید و سپس
 							Ctrl+O
@@ -283,7 +293,7 @@
 					<section data-background="images/V2ray/V2ray-10.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compu4">
 							حالا روی ستون
 							Delay(ms)
 							جدول کلیک کنید تا لینک‌ها به ترتیب سرعت برای شما مرتب شوند. با کلیک +
@@ -296,7 +306,7 @@
 					<section data-background="images/V2ray/V2ray-11.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compu5">
 							برای اتصال/عدم اتصال دستگاه به
 							VPN،
 							روی
@@ -309,7 +319,7 @@
 					<section data-background="images/V2ray/V2ray-12.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-compu6">
 							برای اتصال از
 							Set system proxy
 							و برای قطع اتصال از
@@ -323,7 +333,7 @@
 					<!--5.1-->
 					<section data-transition="slide" data-background-color="#FFAEC9"
 						data-background-transition="zoom">
-						<h2>نحوه استفاده در تلفن همراه</h2>
+						<h2 id="v-mob">نحوه استفاده در تلفن همراه</h2>
 						<img class="big" src="images/Icons/phone.png">
 					</section>
 
@@ -331,7 +341,7 @@
 					<section data-background="images/V2ray/V2ray-13.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-mob1">
 							لینک
 							<span style="font-size:70%">(config)</span>های
 							مربوط به
@@ -346,7 +356,7 @@
 					<section data-background="images/V2ray/V2ray-14.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-mob2">
 							درصورتی که چندین لینک دارید، برای استفاده بهتر، دوباره روی سه نقطه بالای
 							صفحه بزنید و
 							Tcping all configuration
@@ -361,7 +371,7 @@
 					<section data-background="images/V2ray/V2ray-15.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-mob3">
 							با انتخاب هر لینک به آن وصل میشوید. برای اتصال دستگاه به VPN نیز روی دکمه
 							گرد پایین صفحه بزنید تا روشن
 							شود. (رنگ آن عوض شود.)
@@ -373,7 +383,7 @@
 					<!--5.1-->
 					<section data-transition="slide" data-background-color="#FFAEC9"
 						data-background-transition="zoom">
-						<h2>افزودن Subscription</h2>
+						<h2 id="v-sub">افزودن Subscription</h2>
 						<img class="big" src="images/Icons/phone.png">
 					</section>
 
@@ -381,7 +391,7 @@
 					<section data-background="images/V2ray/V2ray-16.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-sub1">
 							روی منوی همبرگری گوشه صفحه بزنید و وارد
 							Subscription group setting
 							شوید.<br />
@@ -397,7 +407,7 @@
 					<section data-background="images/V2ray/V2ray-17.png"
 						data-background-size="60%" data-background-transition="zoom"
 						data-background-color="#FFAEC9">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="v-sub2">
 							در صفحه اصلی روی سه نقطه بالای صفحه بزنید و گزینه
 							Update subscription
 							را انتخاب کنید تا لینک‌ها به‌روز شوند. حالا طبق مراحلی که در بخش قبل
@@ -495,6 +505,50 @@
 				{ src: 'plugin/notes/notes.js', async: true }
 			]
 		});
+	</script>
+
+	<!-- Translation Script -->
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['V2Ray'];
+					document.title = Data['v-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
 	</script>
 	</body>
 

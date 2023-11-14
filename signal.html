@@ -83,11 +83,20 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#1a91eb">
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
 					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
-					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; امنیت سیگنال &nbsp;&nbsp;}</h2>
+					<br />
+					<h2 style="margin-top: -6%;" id="si-topic">{&nbsp;&nbsp; امنیت سیگنال
+						&nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
@@ -122,18 +131,18 @@
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h1>سیگنال</h1>
+						<h1 id="si-topic">Signal</h1>
 						<img class="big" src="images/logo-signal.png">
-						<p>مروری بر مهم‌ترین تنظیمات امنیتی</p>
-						<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
-							تابستان ۱۴۰۲</span>
+						<p id="si-intro">مروری بر مهم‌ترین تنظیمات امنیتی</p>
+						<span style="font-size:40%; opacity: 0.5;" id="si-update">
+							<!--آخرین به-روز-رسانی:-->تابستان ۱۴۰۲</span>
 					</section>
 
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>«چرا سیگنال؟»</h2>
-						<p style="font-size: 50%; text-align: justify;">
+						<h2 id="si-intro1">«چرا سیگنال؟»</h2>
+						<p style="font-size: 50%; text-align: justify;" id="si-intro2">
 							سیگنال نرم‌افزاری امن و قابل‌اعتماد است. این نرم‌افزار با استفاده از
 							رمزگذاری نقطه-به-نقطه نه تنها روی مکالمات متنی، صوتی و تصویری بلکه روی
 							فایل‌های ارسالی و گفت‌وگوی گروهی، امکان شنود مکالمات را به حداقل
@@ -144,17 +153,25 @@
 					<!--2.3-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ مهم سیگنالی</h2>
+						<h2 id="si-list">چند نکتۀ مهم سیگنالی</h2>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>سیگنال نسخۀ رومیزی (دسکتاپ) نیز دارد. از آنجایی که واتس‌اَپ رمزگذاری
+							<li id="si-list1">
+								سیگنال نسخۀ رومیزی (دسکتاپ) نیز دارد. از آنجایی که واتس‌اَپ رمزگذاری
 								خود را بر مبنای سیگنال قرار داده، نرم‌افزار رومیزی سیگنال بسیار شبیه به
-								نرم‌افزار رومیزی واتس‌اَپ است.</li>
-							<li>بابا اخلال در شبکۀ اینترنت، گاهی امکان اتصال به سیگنال امکان‌پذیر
-								نیست. بهتر است برای چنین مواقعی راه جایگزینی پیش‌بینی کرده باشید.</li>
-							<li>سیگنال امکان استفادۀ چند شناسه به صورت همزمان را ندارد. پس اگر گوشی
-								شما دو سیم کارت دارد، فقط امکان استفاده از یکی از آن‌ها را دارید.</li>
-							<li>به پیام‌های امنیتی‌ای که در صفحه می‌بینید حساس باشید. موارد را بررسی
-								کنید و از امنیت مکالمه مطمئن شوید.</li>
+								نرم‌افزار رومیزی واتس‌اَپ است.
+							</li>
+							<li id="si-list2">
+								بابا اخلال در شبکۀ اینترنت، گاهی امکان اتصال به سیگنال امکان‌پذیر
+								نیست. بهتر است برای چنین مواقعی راه جایگزینی پیش‌بینی کرده باشید.
+							</li>
+							<li id="si-list3">
+								سیگنال امکان استفادۀ چند شناسه به صورت همزمان را ندارد. پس اگر گوشی
+								شما دو سیم کارت دارد، فقط امکان استفاده از یکی از آن‌ها را دارید.
+							</li>
+							<li id="si-list4">
+								به پیام‌های امنیتی‌ای که در صفحه می‌بینید حساس باشید. موارد را بررسی
+								کنید و از امنیت مکالمه مطمئن شوید.
+							</li>
 						</ul>
 					</section>
 				</section>
@@ -163,16 +180,16 @@
 					<!--3.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>سیگنال</h2>
+						<h2>Signal</h2>
 						<img class="big" src="images/Icons/communication08.svg">
-						<p>فعال‌سازی رمز ورود دو-مرحله‌ای</p>
+						<p id="si-tfa">فعال‌سازی رمز ورود دو-مرحله‌ای</p>
 					</section>
 
 					<!--3.2-->
 					<section data-background="images/Signal/Signal-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-tfa1">
 							با کلیک بر روی عکس پروفایل، به صفحۀ تنظیمات هدایت می‌شوید. وارد Account
 							شوید. کلید Pin reminder را روشن کنید. رمز دلخواهتان را وارد کرده و آن را
 							تکرار کنید تا فعال‌سازی انجام شود. توصیه می‌شود با استفاده از Enter
@@ -184,7 +201,7 @@
 					<section data-background="images/Signal/Signal-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-tfa2">
 							به صفحۀ Accounts بازگشته و این‌بار کلید Registration Lock را روشن کنید.
 							روی Turn on کلیک و رمز خود را وارد و تکرار کنید. توصیۀ ما در این مرحله
 							نیز استفاده از Create alphanumeric PIN و تعیین رمزی متشکل از حروف و اعداد
@@ -198,16 +215,16 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>سیگنال</h2>
+						<h2>Signal</h2>
 						<img class="big" src="images/Icons/communication01.svg">
-						<p>پاک کردن حساب کاربری</p>
+						<p id="si-da">پاک کردن حساب کاربری</p>
 					</section>
 
 					<!--4.2-->
 					<section data-background="images/Signal/Signal-03.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-da-desc">
 							با کلیک بر روی عکس پروفایل، به صفحۀ تنظیمات هدایت می‌شوید. وارد Account
 							شوید. Delete account را انتخاب کرده و شمارۀ خود را وارد کنید. با زدن
 							دکمۀ قرمز رنگ، شناسۀ شما حذف می‌شود.
@@ -219,16 +236,16 @@
 					<!--5.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>سیگنال</h2>
+						<h2>Signal</h2>
 						<img class="big" src="images/Icons/communication09.svg">
-						<p>بررسی دست‌رسی‌ها</p>
+						<p id="si-devices">بررسی دست‌رسی‌ها</p>
 					</section>
 
 					<!--5.2-->
 					<section data-background="images/Signal/Signal-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-devices-desc">
 							این که بدانید چه دستگاه‌هایی به سیگنال شما متصلند یک نکته امنیتی بسیار
 							مهم است. پس به صورت مداوم به این صفحه سر بزنید و دستگاه‌های متصل را بررسی
 							کنید. برای این کار با کلیک روی عکس پروفایل وارد تنظیمات شده و روی گزینۀ
@@ -241,16 +258,16 @@
 					<!--6.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>سیگنال</h2>
+						<h2>Signal</h2>
 						<img class="big" src="images/Icons/Settings01.svg">
-						<p>پشتیبان‌گیری از اطلاعات</p>
+						<p id="si-bu">پشتیبان‌گیری از اطلاعات</p>
 					</section>
 
 					<!--6.2-->
 					<section data-background="images/Signal/Signal-05.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-bu1">
 							پشتیبان‌گیری از محتوای حساب کاربری سیگنال، همانند واتس‌َاپ انجام می‌شود؛
 							سیگنال ادعا دارد که آن را بر روی هیچ سرویس ابری‌ای ذخیره نمی‌کند و فایل
 							رمزگذاری شدۀ اطلاعات شما تنها روی گوشی شما ذخیره می‌شود. اما توجه داشته
@@ -265,7 +282,7 @@
 					<section data-background="images/Signal/Signal-06.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 50%; font-size:50%;">
+						<blockquote style="margin-top: 50%; font-size:50%;" id="si-bu2">
 							روی TURN ON کلیک و از طریق Choose folder در مدیریت فایلتان پوشه‌ای را
 							برای این کار انتخاب کرده یا تشکیل دهید. با زدن دکمۀ USE THIS FOLDER در
 							پایین صفحه، پوشه مورد نظر برای پشتیبان‌گیری انتخاب می‌شود. انگشتتان را
@@ -286,188 +303,197 @@
 					<!--7.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>سیگنال</h2>
+						<h2>Signal</h2>
 						<img class="big" src="images/logo-signal.png">
-						<p>تنظیم اعلان‌ها</p>
+						<p id="si-notif">تنظیم اعلان‌ها</p>
 					</section>
 
 					<!--7.2-->
 					<section data-background="images/Signal/Signal-07.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1a91eb">
-						<blockquote style="margin-top: 60%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-notif-desc">
 							برای اینکه فرستنده و متن پیام‌های شما هنگامی که در برنامه نیستید در بالای
 							صفحه نمایش داده نشود، در تنظیمات وارد Notifications شده و از بخش Show
 							مورد سوم را انتخاب کنید.
-						</section>
+						</blockquote>
 					</section>
+				</section>
 
-					<section><!--Auto-delete messages-->
-						<!--8.1-->
-						<section data-transition="slide" data-background-color="#1a91eb"
-							data-background-transition="zoom">
-							<h2>سیگنال</h2>
-							<img class="big" src="images/logo-signal.png">
-							<p>حذف خودکار پیام‌ها</p>
-						</section>
-
-						<!--8.2-->
-						<section data-background="images/Signal/Signal-08.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#1a91eb">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								این امکان همۀ محتواها را پس از بازۀ زمانی تعیین‌شده پاک می‌کند. برای
-								فعال‌سازی، در تنظیمات وارد Privacy شده و در بخش Default timer for new
-								chats بازۀ زمانی دلخواهتان را انتخاب یا تعیین(time Custome) و Save
-								کنید. توجه کنید که این تنظیمات فقط برای چت‌هایی فعال می‌شود که از این به
-								بعد آغاز خواهید کرد.
-							</blockquote>
-						</section>
-
-						<!--8.3-->
-						<section data-background="images/Signal/Signal-09.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#1a91eb">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								روش دیگر تنظیم حذف خودکار برای هر چت دلخواه، استفاده از منوی صفحۀ
-								پروفایل فرد است. در صفحۀ چت، سه نقطۀ بالای صفحه را زده تا امکانات
-								برایتان نمایش داده شود. وارد Disappearing messages شده و بازۀ زمانی
-								دلخواهتان را انتخاب و Save کنید. توجه کنید که اینجا هم این تنظیمات فقط
-								برای پیام‌هایی فعال میشود که از این به بعد ارسال/دریافت خواهید کرد.
-							</blockquote>
-						</section>
-					</section>
-
-					<section><!--calls-->
-						<!--9.1-->
-						<section data-transition="slide" data-background-color="#1a91eb"
-							data-background-transition="zoom">
-							<h2>سیگنال</h2>
-							<img class="big" src="images/logo-signal.png">
-							<p>امنیت تماس‌ها</p>
-						</section>
-
-						<!--9.2-->
-						<section data-background="images/Signal/Signal-10.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#1a91eb">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								از تنظیمات، وارد Privacy شوید. در بخش Advanced تنظیمات را مانند تصویر
-								فعال کنید. توجه کنید که فعالسازی کلید Always relay calls آدرس IP شما را
-								هنگام تماس پنهان می‌کند اما کیفیت تماس را کاهش می‌دهد. البته تا زمانی که
-								از VPN استفاده می‌کنید فعال بودن آن ضرورت ندارد و به انتخاب خودتان است.
-							</blockquote>
-						</section>
-					</section>
-
-					<section><!--other tips-->
-						<!--10.1-->
-						<section data-transition="slide" data-background-color="#1a91eb"
-							data-background-transition="zoom">
-							<h2>سیگنال</h2>
-							<img class="big" src="images/logo-signal.png">
-							<p>چند ترفند امنیتی</p>
-						</section>
-
-						<!--10.2-->
-						<section data-background="images/Signal/Signal-11.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#1a91eb">
-							<blockquote style="margin-top: 55%; font-size:50%;">
-								در تنظیمات وارد Privacy شده و در منوی security App؛<br />
-								برای قفل صفحه Screen lock را روشن و از بخش پایین آن بازۀ زمانی قفل شدن
-								صفحه را انتخاب کنید.<br />
-								برای جلوگیری از گرفتن اسکرین‌شات Screen security،<br />
-								و برای اینکه کلماتی که تایپ می‌کنید توسط کیبورد ذخیره و پیشنهاد نشوند،
-								Incognito keyboard را روشن کنید.
-							</blockquote>
-						</section>
-
-						<!--10.3-->
-						<section data-background="images/Signal/Signal-12.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#1a91eb">
-							<blockquote style="margin-top: 55%; font-size:50%;">
-								در هنگام گفت‌وگوی سیگنالی می‌توانید تنظیماتی برای مکالمه داشته باشید.
-								برای این کار روی سه-نقطۀ بالای صفحه کلیک کنید و Conversation settings
-								را انتخاب کنید. برای برای تایید هویت مخاطبتان وارد View safety number
-								شوید. یک کد QR و رشته‌ای از اعداد به شما نمایش داده خواهدشد. از یک شیوۀ
-								امن با مخاطب خود تماس بگیرید و این رشته اعداد را مطابقت دهید. اگر کنار
-								هم هستید با کلیک روی کد QR می‌توانید آن را اسکن کنید. اگر همه اعداد
-								مطابق است دکمۀ Mark as Verified را بزنید.
-							</blockquote>
-						</section>
-
-						<!--10.4-->
-						<section data-background="images/Signal/Signal-13.png"
-							data-background-size="60%"
-							data-background-transition="zoom" data-background-color="#1a91eb">
-							<blockquote style="margin-top: 60%; font-size:50%;">
-								می‌توانید برای محتوای غیر متنی (فایل، عکس، ویدئو و غیره) محدویت نمایش
-								بگذارید. این محدودیت شامل یک‌بار مشاهده یا مشاهدۀ نامحدود می‌شود. در
-								این تصویر شیوۀ تغییر آن با فلش قرمز رنگ مشخص شده‌است.
-							</blockquote>
-						</section>
-					</section>
-					<!-- ###########################################################################################################
-		################################################################################################################
-		################################################################################################################ -->
-					<section data-background="images/question.jpg">
-						<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
-							دارید؟</h2>
-						<span class="o70"
-							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
-							خود را با ما در میان بگذارید.</span>
-						<span class="o70"
-							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
-						<a href="https://t.me/IranSec_Bot" class="o70"
-							style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
-					</section>
-					<!-- ###########################################################################################################
-		################################################################################################################
-		################################################################################################################ -->
+				<section><!--Auto-delete messages-->
+					<!--8.1-->
 					<section data-transition="slide" data-background-color="#1a91eb"
 						data-background-transition="zoom">
-						<h2>حق مؤلف و تشکر</h2>
-						<p class="icon"><i class="far fa-copyright"></i></p>
-						<p class="f50 justify">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
-							امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده
-							است. هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد،
-							اما امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما
-							هستیم. لازم
-							است یادآوری کنیم که این جزوۀ امنیتی با <a
-								href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
-								target="_blank">گواهی کریتو
-								کامنز (قابل استفاده‌ی غیرتجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
-							به حتم برای هر شکل از
-							استفادۀ تجاری از این مجموعه نیاز به کسب اجازه است.</p>
-						<p class="f50 justify">در این پروژۀ آموزشی از محتوای دیگران با گواهی
-							قابل‌انتشار و تغییر استفاده شده
-							است. از آن جمله می‌توان به <a
-								href="https://github.com/hakimel/reveal.js/" target="_blan">ارائه‌گر
-								reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
-								target="_blan">لاله‌زار</a>
-							و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
-							و <a
-								href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
-							شکلک‌های <a
-								href="https://ionicons.com" target="_blan">ion</a> و <a
-								href="https://fontawesome.com"
-								target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
-							استفاده شده. در هر جای
-							پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
-							است خوش‌حال می‌شویم که آن را
-							گوش‌زد کنید.</p>
+						<h2>Signal</h2>
+						<img class="big" src="images/logo-signal.png">
+						<p id="si-adm">حذف خودکار پیام‌ها</p>
 					</section>
-				</div>
-			</div>
-			<!-- ###########################################################################################################
+
+					<!--8.2-->
+					<section data-background="images/Signal/Signal-08.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#1a91eb">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-adm1">
+							این امکان همۀ محتواها را پس از بازۀ زمانی تعیین‌شده پاک می‌کند. برای
+							فعال‌سازی، در تنظیمات وارد Privacy شده و در بخش Default timer for new
+							chats بازۀ زمانی دلخواهتان را انتخاب یا تعیین(time Custome) و Save
+							کنید. توجه کنید که این تنظیمات فقط برای چت‌هایی فعال می‌شود که از این به
+							بعد آغاز خواهید کرد.
+						</blockquote>
+					</section>
+
+					<!--8.3-->
+					<section data-background="images/Signal/Signal-09.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#1a91eb">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-adm2">
+							روش دیگر تنظیم حذف خودکار برای هر چت دلخواه، استفاده از منوی صفحۀ
+							پروفایل فرد است. در صفحۀ چت، سه نقطۀ بالای صفحه را زده تا امکانات
+							برایتان نمایش داده شود. وارد Disappearing messages شده و بازۀ زمانی
+							دلخواهتان را انتخاب و Save کنید. توجه کنید که اینجا هم این تنظیمات فقط
+							برای پیام‌هایی فعال میشود که از این به بعد ارسال/دریافت خواهید کرد.
+						</blockquote>
+					</section>
+				</section>
+
+				<section><!--calls-->
+					<!--9.1-->
+					<section data-transition="slide" data-background-color="#1a91eb"
+						data-background-transition="zoom">
+						<h2>Signal</h2>
+						<img class="big" src="images/logo-signal.png">
+						<p id="si-call">امنیت تماس‌ها</p>
+					</section>
+
+					<!--9.2-->
+					<section data-background="images/Signal/Signal-10.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#1a91eb">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-call-desc">
+							از تنظیمات، وارد Privacy شوید. در بخش Advanced تنظیمات را مانند تصویر
+							فعال کنید. توجه کنید که فعالسازی کلید Always relay calls آدرس IP شما را
+							هنگام تماس پنهان می‌کند اما کیفیت تماس را کاهش می‌دهد. البته تا زمانی که
+							از VPN استفاده می‌کنید فعال بودن آن ضرورت ندارد و به انتخاب خودتان است.
+						</blockquote>
+					</section>
+				</section>
+
+				<section><!--other tips-->
+					<!--10.1-->
+					<section data-transition="slide" data-background-color="#1a91eb"
+						data-background-transition="zoom">
+						<h2>Signal</h2>
+						<img class="big" src="images/logo-signal.png">
+						<p id="si-tips">چند ترفند امنیتی</p>
+					</section>
+
+					<!--10.2-->
+					<section data-background="images/Signal/Signal-11.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#1a91eb">
+						<blockquote style="margin-top: 55%; font-size:50%;">
+							<span id="si-tips1">
+							در تنظیمات وارد Privacy شده و در منوی security App؛
+							</span>
+							<span id="si-tips2">
+							برای قفل صفحه Screen lock را روشن و از بخش پایین آن بازۀ زمانی قفل شدن
+							صفحه را انتخاب کنید.
+							</span>
+							<span id="si-tips3">
+							برای جلوگیری از گرفتن اسکرین‌شات Screen security،
+							</span>
+							<span id="si-tips4">
+							و برای اینکه کلماتی که تایپ می‌کنید توسط کیبورد ذخیره و پیشنهاد نشوند،
+							Incognito keyboard را روشن کنید.
+							</span>
+						</blockquote>
+					</section>
+
+					<!--10.3-->
+					<section data-background="images/Signal/Signal-12.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#1a91eb">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-tips5">
+							در هنگام گفت‌وگوی سیگنالی می‌توانید تنظیماتی برای مکالمه داشته باشید.
+							برای این کار روی سه-نقطۀ بالای صفحه کلیک کنید و Conversation settings
+							را انتخاب کنید. برای برای تایید هویت مخاطبتان وارد View safety number
+							شوید. یک کد QR و رشته‌ای از اعداد به شما نمایش داده خواهدشد. از یک شیوۀ
+							امن با مخاطب خود تماس بگیرید و این رشته اعداد را مطابقت دهید. اگر کنار
+							هم هستید با کلیک روی کد QR می‌توانید آن را اسکن کنید. اگر همه اعداد
+							مطابق است دکمۀ Mark as Verified را بزنید.
+						</blockquote>
+					</section>
+
+					<!--10.4-->
+					<section data-background="images/Signal/Signal-13.png"
+						data-background-size="60%"
+						data-background-transition="zoom" data-background-color="#1a91eb">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="si-tips6">
+							می‌توانید برای محتوای غیر متنی (فایل، عکس، ویدئو و غیره) محدویت نمایش
+							بگذارید. این محدودیت شامل یک‌بار مشاهده یا مشاهدۀ نامحدود می‌شود. در
+							این تصویر شیوۀ تغییر آن با فلش قرمز رنگ مشخص شده‌است.
+						</blockquote>
+					</section>
+				</section>
+				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
-			<script src="lib/js/head.min.js"></script>
-			<script src="js/reveal.js"></script>
+				<section data-background="images/question.jpg">
+					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+						دارید؟</h2>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						خود را با ما در میان بگذارید.</span>
+					<span class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
+					<a href="https://t.me/IranSec_Bot" class="o70"
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">t.me/IranSec_Bot</a>
+				</section>
+				<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+				<section data-transition="slide" data-background-color="#1a91eb"
+					data-background-transition="zoom">
+					<h2>حق مؤلف و تشکر</h2>
+					<p class="icon"><i class="far fa-copyright"></i></p>
+					<p class="f50 justify">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
+						امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده
+						است. هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد،
+						اما امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما
+						هستیم. لازم
+						است یادآوری کنیم که این جزوۀ امنیتی با <a
+							href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
+							target="_blank">گواهی کریتو
+							کامنز (قابل استفاده‌ی غیرتجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
+						به حتم برای هر شکل از
+						استفادۀ تجاری از این مجموعه نیاز به کسب اجازه است.</p>
+					<p class="f50 justify">در این پروژۀ آموزشی از محتوای دیگران با گواهی
+						قابل‌انتشار و تغییر استفاده شده
+						است. از آن جمله می‌توان به <a
+							href="https://github.com/hakimel/reveal.js/" target="_blan">ارائه‌گر
+							reveal.js</a>، قلم‌های <a href="https://github.com/BornaIz/Lalezar"
+							target="_blan">لاله‌زار</a>
+						و <a href="https://github.com/rastikerdar/vazir-font" target="_blan">وزیر</a>
+						و <a
+							href="https://fonts2u.com/b-yekan.font" target="_blan">بی-یکان</a>،
+						شکلک‌های <a
+							href="https://ionicons.com" target="_blan">ion</a> و <a
+							href="https://fontawesome.com"
+							target="_blan">awesome</a> و <a href target="_blan">flat icons</a>
+						استفاده شده. در هر جای
+						پروژه که عکسی استفاده شده منبع آن ذکر شده است. اگر منبعی از قلم افتاده
+						است خوش‌حال می‌شویم که آن را
+						گوش‌زد کنید.</p>
+				</section>
+			</div>
+		</div>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
 
-			<script>
+		<script>
 		// More info about config & dependencies:
 		// - https://github.com/hakimel/reveal.js#configuration
 		// - https://github.com/hakimel/reveal.js#dependencies
@@ -501,6 +527,50 @@
 			]
 		});
 	</script>
-		</body>
 
-	</html>
+		<!-- Translation Script -->
+		<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['Signal'];
+					document.title = Data['si-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
+	</script>
+	</body>
+
+</html>

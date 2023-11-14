@@ -7,7 +7,7 @@
 		<title>آموزش امنیت رایانه برای فعالان مدنی</title>
 		<link rel="icon" href="images/question.jpg" type="image/x-icon">
 
-		<meta name="description"
+		<meta name="description" id="desc"
 			content="چرا امنیت دیجیتال برای فعالان مدنی و روزنامه‌نگاران مهم است و چگونه می‌توان امنیت عمومی فعالان حقوق بشر و روزنامه‌نگاران را تقویت کرد.">
 		<meta name="author" content="ایرانسک">
 
@@ -80,10 +80,18 @@
 		<div class="reveal">
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%">
-					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<!-- Choose Language  button -->
+					<div id="Language-Chooser">
+						<button onclick="readJSON('Fa')">فارسی</button>
+						<button onclick="readJSON('En')">English</button>
+						<button onclick="readJSON('Ar')">العربیه</button>
+						<button onclick="readJSON('Tur')">Turkish</button>
+					</div>
+					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
+					<br/>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
@@ -94,7 +102,7 @@
 									<i class="fab fa-telegram"></i></a><br />
 								<!-- <br>تابستان ۱۴۰۲ -->
 							</span></p>
-						<p class="f50" style="padding-top:10px;">این محتوا با <span
+						<p class="f50" style="padding-top:10px;" id="more">این محتوا با <span
 								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
 									class="fas fa-heart"></i></span> و
 							تحت گواهی <i class="fab fa-creative-commons"></i><i
@@ -107,18 +115,53 @@
 					</div>
 					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90"
 							style="font-family: Lalezar; color: #fbf9fa; background: #342056; padding: 15px;"><i
-								class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
+								class="fas fa-hand-holding-usd" id="support"></i>&nbsp;&nbsp; حمایت از این پروژه
 							&nbsp;&nbsp;<i
 								class="fas fa-hand-holding-usd fa-flip-horizontal"></i></a></p>
 				</section>
 				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
+				<section>
+					<div id="button">
+						<button style="height: 50px;"><a style="color: black;" href="2fa.html">Two-Factor Authentication</a><img src="images/2FA/2FA.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Bitwarden.html">Bitwarden</a><img src="images/Bitwarden.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="cleaner.html">Cleaner</a><img src="images/ccleaner.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Computer.html">Computer</a><img src="images/computer.png"></button>
+						<br />
+						<button style="height: 50px;"><a style="color: black;" href="Facebook.html">Facebook</a><img src="images/logo-facebook.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="General.html">General Security</a><img src="images/General/General.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="In-Danger.html">In-Danger</a><img src="images/"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Instagram.html">Instagram</a><img src="images/instagram.svg"></button>
+						<br />
+						<button style="height: 50px;"><a style="color: black;" href="Jitsi.html">Jitsi</a><img src="images/logo-jitsi.svg"></button>
+						<button style="height: 50px;"><a style="color: black;" href="LastPass.html">LastPass</a><img src="images/logo-lastpass.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="LinkedIn.html">LinkedIn</a><img src="images/linkedin.webp"></button>
+						<button style="height: 50px;"><a style="color: black;" href="MailVelope.html">MailVelope</a><img src="images/mailvelope.svg"></button>
+						<br />
+						<button style="height: 50px;"><a style="color: black;" href="Mobile.html">Mobile</a><img src="images/Icons/smartphone01.svg"></button>
+						<button style="height: 50px;"><a style="color: black;" href="OpenVPN.html">OpenVPN</a><img src="images/logo-openvpn.svg"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Signal.html">Signal</a><img src="images/logo-signal.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Skype.html">Skype</a><img src="images/logo-skype.png"></button>
+						<br />
+						<button style="height: 50px;"><a style="color: black;" href="Telegram.html">Telegram</a><img src="images/telegram.svg"></button>
+						<button style="height: 50px;"><a style="color: black;" href="TikTok.html">TikTok</a><img src="images/TikTok-Logo.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Twitter.html">Twitter</a><img src="images/logo-twitter.svg"></button>
+						<button style="height: 50px;"><a style="color: black;" href="V2ray.html">V2ray</a><img src="images/v2rayN.png"></button>
+						<br />
+						<button style="height: 50px;"><a style="color: black;" href="VeraCrypt.html">VeraCrypt</a><img src="images/veracrypt.png"></button>
+						<button style="height: 50px;"><a style="color: black;" href="Whatsapp.html">Whatsapp</a><img src="images/logo-whatsapp.png"></button>
+					</div>
+				</section>
+		<!-- ###########################################################################################################
+		################################################################################################################
+		################################################################################################################ -->
+				
 				<section data-background="images/question.jpg">
-					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;" id="help">نیاز به کمک
 						دارید؟</h2>
 					<span class="o70"
-						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;" id="ask">پرسش‌های
 						خود را با ما در میان بگذارید.</span>
 					<span class="o70"
 						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
@@ -129,9 +172,9 @@
 		################################################################################################################
 		################################################################################################################ -->
 				<section data-transition="slide" data-background-transition="zoom">
-					<h2>حق مولف و تشکر</h2>
+					<h2 id="auth">حق مولف و تشکر</h2>
 					<p class="icon"><i class="far fa-copyright"></i></p>
-					<p class="f50 justify">این نوشته به واسطه‌ی تجربه‌ی چند ساله در ارائه‌ی
+					<p class="f50 justify" id="auth1">این نوشته به واسطه‌ی تجربه‌ی چند ساله در ارائه‌ی
 						مشاوره‌ی امنیتی به سازمان‌ها و
 						فعالان مدنی و حقوق بشر و روزنامه‌نگاران تهیه شده است. هر چند که تمام تلاشم
 						را کرده‌ام که متن حاضر
@@ -143,7 +186,7 @@
 							کامنز (قابل استفاده‌ی غیر تجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
 						به حتم برای هر شکل از
 						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه دارید.</p>
-					<p class="f50 justify">در این پروژه‌ی آموزشی از محتوای دیگران با گواهی قابل
+					<p class="f50 justify" id="auth2">در این پروژه‌ی آموزشی از محتوای دیگران با گواهی قابل
 						انتشار و تغییر استفاده شده
 						است. از آن جمله می‌توان به <a href="https://github.com/hakimel/reveal.js/"
 							target="_blan">ارائه‌گر
@@ -202,6 +245,52 @@
 			]
 		});
 	</script>
+
+	<!-- Translation Script -->
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['Index'];
+					document.title = Data['title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								console.log(Data[key]);
+								element.innerHTML = Data[key];
+							}
+						}
+					}
+				}
+			};
+
+			xhr.send();
+
+		}
+	</script>
+	
 	</body>
 
 </html>
