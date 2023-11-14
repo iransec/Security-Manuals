@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>☘️ آموزش امنیت واتس‌اَپ برای فعالان مدنی</title>
+		<title>آموزش امنیت واتس‌اَپ برای فعالان مدنی</title>
 		<link rel="icon" href="images/logo-whatsapp.png" type="image/x-icon">
 
 		<meta name="description"
@@ -90,12 +90,12 @@
 						<button onclick="readJSON('Ar')">العربیه</button>
 						<button onclick="readJSON('Tur')">Turkish</button>
 					</div>
-					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
 					<br/>
-					<h2 style="margin-top: -6%;">{&nbsp;&nbsp; امنیت واتس‌اَپ &nbsp;&nbsp;}</h2>
+					<h2 style="margin-top: -6%;" id="w-topic">{&nbsp;&nbsp; امنیت واتس‌اَپ &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
 						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
@@ -106,7 +106,7 @@
 									<i class="fab fa-telegram"></i></a><br />
 								<!-- <br>تابستان ۱۴۰۲ -->
 							</span></p>
-						<p class="f50" style="padding-top:10px;">این محتوا با <span
+						<p class="f50" style="padding-top:10px;" id="more">این محتوا با <span
 								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
 									class="fas fa-heart"></i></span> و
 							تحت گواهی <i class="fab fa-creative-commons"></i><i
@@ -117,7 +117,7 @@
 									href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
 									target="_blank">بیش‌تر بخوانید</a>)</span></p>
 					</div>
-					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90"
+					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90" id="support"
 							style="font-family: Lalezar; color: #fbf9fa; background: #2c3848; padding: 15px;"><i
 								class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
 							&nbsp;&nbsp;<i
@@ -126,33 +126,38 @@
 				<!-- ###########################################################################################################
 		################################################################################################################
 		################################################################################################################ -->
-				<section> <!--tips-->
+				<section> <!--Intro-->
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h1>امنیت واتس‌اَپ</h1>
+						<h1 id="w-topic2">امنیت واتس‌اَپ</h1>
 						<img class="big" src="images/logo-whatsapp.png">
-						<p>مروری بر مهم‌ترین تنظیمات امنیتی</p>
-						<span style="font-size:40%; opacity: 0.5;">تابستان ۱۴۰۲</span>
+						<p id="w-intro">مروری بر مهم‌ترین تنظیمات امنیتی</p>
+						<span style="font-size:40%; opacity: 0.5;" id="w-update">
+							تابستان ۱۴۰۲</span>
 					</section>
 
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ مهم واتس‌اَپی</h2>
+						<h2 id="w-list">چند نکتۀ مهم واتس‌اَپی</h2>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>واتس‌اَپ از رمزگذاری نقطه-به-نقطه به‌صورت پیش‌فرض استفاده می‌کند. این
+							<li  id="w-list1">
+								واتس‌اَپ از رمزگذاری نقطه-به-نقطه به‌صورت پیش‌فرض استفاده می‌کند. این
 								شیوهٔ رمزگذاری در چت گروهی نیز اعمال شده‌است. بر اساس گزارش‌هایی اما این
 								رمزگذاری قابل شکستن است
 								(<a
 									href="https://www.wired.com/story/whatsapp-security-flaws-encryption-group-chats/"
-									target="_blank">پیوند خبر</a>).</li>
-							<li>واتس‌اَپ متعلق به شرکت فیس‌بوک است و به‌صورت پیش‌فرض اطلاعات شما را
+									target="_blank" id="w-list3">پیوند خبر</a>).
+							</li>
+							<li id="w-list2">
+								واتس‌اَپ متعلق به شرکت فیس‌بوک است و به‌صورت پیش‌فرض اطلاعات شما را
 								با این شرکت به اشتراک می‌گذارد. هر چند که در برخی کشورها مثل اعضای
 								اتحادیهٔ اروپا این امر غیر قانونی است.
 								(<a
 									href="https://www.theverge.com/2018/3/14/17120446/whatsapp-user-data-sharing-facebook-uk-privacy-ico-protection-gdpr-europe"
-									target="_blank">پیوند خبر</a>).</li>
+									target="_blank" id="w-list3">پیوند خبر</a>).
+							</li>
 						</ul>
 					</section>
 				</section>
@@ -161,7 +166,7 @@
 					<!--3.1-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h2>بررسی دست‌رسی‌ها به<br>واتس‌اَپ</h2>
+						<h2 id="w-devices">بررسی دست‌رسی‌ها به<br>واتس‌اَپ</h2>
 						<img class="big" src="images/Icons/hacker03.svg">
 					</section>
 
@@ -169,7 +174,7 @@
 					<section data-background="images/WhatsApp/whats-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="w-devices-desc">
 							به‌طور مرتب صفحۀ
 							Linked Devices
 							را بررسی کنید. با انتخاب دستگاه‌های متصل غیر آشنا و گزینه
@@ -182,7 +187,7 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h2>تنظیم اعلان‌های امنیتی<br>واتس‌اَپ</h2>
+						<h2 id="w-sa">تنظیم اعلان‌های امنیتی<br>واتس‌اَپ</h2>
 						<img class="big" src="images/Icons/smartphone02.svg">
 					</section>
 
@@ -190,7 +195,7 @@
 					<section data-background="images/WhatsApp/Whats-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="w-sa-desc">
 							وارد
 							Settings
 							شوید. از قسمت
@@ -200,21 +205,20 @@
 							را انتخاب کرده و آن را فعال کنید.
 						</blockquote>
 					</section>
-
 				</section>
 
 				<section> <!--Two-Step Verification-->
 					<!--5.1-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h2>تنظیم ورود دو مرحله‌ای<br>واتس‌اَپ</h2>
+						<h2 id="w-tfa">تنظیم ورود دو مرحله‌ای<br>واتس‌اَپ</h2>
 						<img class="big" src="images/Icons/smartphone02.svg">
 					</section>
 
 					<!--5.2-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<p style="font-size: 50%; text-align: justify;">
+						<p style="font-size: 50%; text-align: justify;" id="w-tfa1">
 							یکی از شیوه‌های هک شناسۀ واتس‌اَپ، همچون تلگرام، دسترسی به آن از طریق
 							دستگاه دیگری است که به آن استفاده از
 							WhatsApp Web
@@ -234,7 +238,7 @@
 					<section data-background="images/WhatsApp/whats-03.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="w-tfa2">
 							وارد
 							Settings
 							شوید. از قسمت
@@ -249,26 +253,23 @@
 					<!--5.4-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h3>نکته‌ای درمورد بازیابی رمز ورود دومرحله‌ای</h3>
+						<h3 id="w-tfal">نکته‌ای درمورد بازیابی رمز ورود دومرحله‌ای</h3>
 						<ul style="font-size: 50%; text-align: justify;">
-							<li>
+							<li id="w-tfal1">
 								برای بازیابی رمز درصورت فراموشی، این امکان وجود دارد که از ایمیل استفاده
 								کنید.
 							</li>
-
-							<li>
+							<li id="w-tfal2">
 								می‌توانید از این مرحله عبور کنید اما توجه داشته باشید که درصورت فراموشی
 								رمز، هیچ راهی برای بازیابی آن وجود نخواهد داشت.
 							</li>
-
-							<li>
+							<li id="w-tfal3">
 								باتوجه به اینکه استفاده از ایمیل شخصی برای این کار چندان امن نیست، توصیه
 								می‌شود اکانت جدیدی
 								<span style="font-size:70%;">(ایمیل فیک)</span>
 								در گوشی یک فرد امن ساخته و از آن استفاده کنید.
 							</li>
-
-							<li>
+							<li id="w-tfal4">
 								ایمیلتان را وارد کنید. کد تأیید بلافاصله به ایمیل ارسال می‌شود. کد را
 								وارد کنید. رمز ورود دو-مرحله‌ای فعال شده‌است.
 							</li>
@@ -280,7 +281,7 @@
 					<!--6.1-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h2>پاک کردن حساب کاربری<br>واتس‌اَپ</h2>
+						<h2 id="w-da">پاک کردن حساب کاربری<br>واتس‌اَپ</h2>
 						<img class="big" src="images/Icons/hacker03.svg">
 					</section>
 
@@ -288,7 +289,7 @@
 					<section data-background="images/WhatsApp/whats-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="w-da-desc">
 							وارد
 							Settings
 							شوید. از قسمت
@@ -306,7 +307,7 @@
 					<!--7.1-->
 					<section data-transition="slide" data-background-color="#1d5464"
 						data-background-transition="zoom">
-						<h2>حذف کلی پیام‌ها در<br>واتس‌اَپ</h2>
+						<h2 id="w-adm">حذف کلی پیام‌ها در<br>واتس‌اَپ</h2>
 						<img class="big" src="images/Icons/smartphone02.svg">
 					</section>
 
@@ -314,7 +315,7 @@
 					<section data-background="images/WhatsApp/whats-05.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#1d5464">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="w-adm-desc">
 							وارد
 							Settings
 							شوید. از قسمت
@@ -332,10 +333,12 @@
 		################################################################################################################
 		################################################################################################################ -->
 				<section data-background="images/question.jpg">
-					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;" id="help">
+						نیاز به کمک
 						دارید؟</h2>
 					<span class="o70"
-						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;" id="ask">
+						پرسش‌های
 						خود را با ما در میان بگذارید.</span>
 					<span class="o70"
 						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
@@ -347,9 +350,9 @@
 		################################################################################################################ -->
 				<section data-transition="slide" data-background-color="#1d5464"
 					data-background-transition="zoom">
-					<h2>حق مؤلف و تشکر</h2>
+					<h2 id="auth">حق مؤلف و تشکر</h2>
 					<p class="icon"><i class="far fa-copyright"></i></p>
-					<p class="f50 justify">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
+					<p class="f50 justify" id="auth1">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
 						امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده است.
 						هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد، اما
 						امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما هستیم.
@@ -360,7 +363,7 @@
 							کامنز (قابل استفاده‌ی غیرتجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است. به
 						حتم برای هر شکل از
 						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه است.</p>
-					<p class="f50 justify">در این پروژۀ آموزشی از محتوای دیگران با گواهی
+					<p class="f50 justify" id="auth2">در این پروژۀ آموزشی از محتوای دیگران با گواهی
 						قابل‌انتشار و تغییر استفاده شده
 						است. از آن جمله می‌توان به <a href="https://github.com/hakimel/reveal.js/"
 							target="_blan">ارائه‌گر
@@ -454,6 +457,16 @@
 							var element = document.getElementById(key);
 							if (element) {
 								element.innerHTML = Data[key];
+							}
+						}
+					}
+
+					var indexData = data['Index'];
+					for (var key in indexData) {
+						if (indexData.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = indexData[key];
 							}
 						}
 					}

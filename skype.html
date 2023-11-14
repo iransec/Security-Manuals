@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>☘️ آموزش امنیت اسکایپ برای فعالان مدنی</title>
+		<title>آموزش امنیت اسکایپ برای فعالان مدنی</title>
 		<link rel="icon" href="images/logo-skype.png" type="image/x-icon">
 
 		<meta name="description"
@@ -88,7 +88,7 @@
 						<button onclick="readJSON('Ar')">العربیه</button>
 						<button onclick="readJSON('Tur')">Turkish</button>
 					</div>
-					<h3>امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران </h3>
+					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران </h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
@@ -104,7 +104,7 @@
 									<i class="fab fa-telegram"></i></a><br />
 								<!-- <br>تابستان ۱۴۰۲ -->
 							</span></p>
-						<p class="f50" style="padding-top:10px;">این محتوا با <span
+						<p class="f50" style="padding-top:10px;" id="more">این محتوا با <span
 								style="color:#A94242; text-shadow: 1px 1px 10px #666;"><i
 									class="fas fa-heart"></i></span> و
 							تحت گواهی <i class="fab fa-creative-commons"></i><i
@@ -115,7 +115,7 @@
 									href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fa"
 									target="_blank">بیش‌تر بخوانید</a>)</span></p>
 					</div>
-					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90"
+					<p><a href="https://paypal.me/112354aadcfr" class="f60 o90" id="support"
 							style="font-family: Lalezar; color: #fbf9fa; background: #342056; padding: 15px;"><i
 								class="fas fa-hand-holding-usd"></i>&nbsp;&nbsp; حمایت از این پروژه
 							&nbsp;&nbsp;<i
@@ -128,7 +128,7 @@
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#393e6f"
 						data-background-transition="zoom">
-						<h1 id="s-topic">امنیت اسکایپ</h1>
+						<h1 id="s-topic2">امنیت اسکایپ</h1>
 						<img class="big" src="images/logo-skype.png">
 						<p id="s-intro">مروری بر مهم‌ترین تنظیمات امنیتی</p>
 						<span style="font-size:40%; opacity: 0.5;" id="s-update">
@@ -273,10 +273,12 @@
 		################################################################################################################
 		################################################################################################################ -->
 				<section data-background="images/question.jpg">
-					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;">نیاز به کمک
+					<h2 style="color:#fff; margin-top:-125px; line-height: 200%;" id="help">
+						نیاز به کمک
 						دارید؟</h2>
 					<span class="o70"
-						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">پرسش‌های
+						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;" id="ask">
+						پرسش‌های
 						خود را با ما در میان بگذارید.</span>
 					<span class="o70"
 						style="color:#aaa; font-family: 'Lalezar'; font-size: 100%; padding:20px;">support@iransec.org</span>
@@ -288,9 +290,9 @@
 		################################################################################################################ -->
 				<section data-transition="slide" data-background-color="#393e6f"
 					data-background-transition="zoom">
-					<h2>حق مؤلف و تشکر</h2>
+					<h2 id="auth">حق مؤلف و تشکر</h2>
 					<p class="icon"><i class="far fa-copyright"></i></p>
-					<p class="f50 justify">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
+					<p class="f50 justify" id="auth1">این نوشته به‌واسطه تجربۀ چندساله در ارائه‌‌ مشاورۀ
 						امنیتی به سازمان‌ها، کنشگران مدنی، روزنامه‌نگاران و شهروندان تهیه شده
 						است. هرچند که تمام تلاشمان را کرده‌ایم که متن حاضر به‌روز و بی‌نقص باشد،
 						اما امکان ایراد وجود دارد. پس با آغوش باز پذیرای نقدها و پیشنهادها شما
@@ -301,7 +303,7 @@
 							کامنز (قابل استفاده‌ی غیرتجاری، تخصیص و سهم یک‌سان)</a> منتشر شده است.
 						به حتم برای هر شکل از
 						استفاده‌ی تجاری از این مجموعه نیاز به کسب اجازه است.</p>
-					<p class="f50 justify">در این پروژۀ آموزشی از محتوای دیگران با گواهی
+					<p class="f50 justify" id="auth2">در این پروژۀ آموزشی از محتوای دیگران با گواهی
 						قابل‌انتشار و تغییر استفاده شده
 						است. از آن جمله می‌توان به <a
 							href="https://github.com/hakimel/reveal.js/" target="_blan">ارائه‌گر
@@ -394,6 +396,16 @@
 							var element = document.getElementById(key);
 							if (element) {
 								element.innerHTML = Data[key];
+							}
+						}
+					}
+
+					var indexData = data['Index'];
+					for (var key in indexData) {
+						if (indexData.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = indexData[key];
 							}
 						}
 					}
