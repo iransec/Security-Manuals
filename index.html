@@ -57,10 +57,6 @@
 			color: #90b8f8;
 			text-shadow: 1px 1px 10px #666;
 		}
-
-		#butty :hover{
-			border: 3px solid #17ff2a;
-		}
 	</style>
 		<!-- ###########################################################################################################
 		################################################################################################################
@@ -80,17 +76,18 @@
 
 	</head>
 
-	<body>
+	<body>		
+		<!-- Choose Language  button -->
+		<div id="Language-Chooser" style="direction: rtl;">
+			<button onclick="readJSON('Fa')">فارسی</button>
+			<button onclick="readJSON('En')">English</button>
+			<button onclick="readJSON('Ar')">العربیه</button>
+			<button onclick="readJSON('Tur')">Turkish</button>
+		</div>
 		<div class="reveal">
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%">
-					<!-- Choose Language  button -->
-					<div id="Language-Chooser">
-						<button onclick="readJSON('Fa')">فارسی</button>
-						<button onclick="readJSON('En')">English</button>
-						<button onclick="readJSON('Ar')">العربیه</button>
-						<button onclick="readJSON('Tur')">Turkish</button>
-					</div>
+					
 					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
@@ -129,34 +126,34 @@
 				<section>
 					<div id="button">
 						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="2fa.html">Two-Factor Authentication</a><img style="position: absolute; top: 2px; left: 2px;" src="images/Google_Authenticator.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Bitwarden.html">Bitwarden</a><img style="position: absolute; top: 2px; left: 2px;" src="images/Bitwarden.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="cleaner.html">Cleaner</a><img style="position: absolute; top: 2px; left: 2px;" src="images/ccleaner.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Bitwarden.html">Bitwarden Use</a><img style="position: absolute; top: 2px; left: 2px;" src="images/Bitwarden-logo.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="cleaner.html">Safe Cleaner</a><img style="position: absolute; top: 2px; left: 2px;" src="images/ccleaner.png"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Computer.html">Computer</a><img style="position: absolute; top: 2px; left: 2px;" src="images/computer.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Facebook.html">Facebook</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-facebook.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="General.html">General Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/General/General.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Computer.html">Computer Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/computer.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Facebook.html">Facebook Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-facebook.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="General.html">General Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images//General/general-security.png"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="In-Danger.html">In-Danger</a><img style="position: absolute; top: 2px; left: 2px;" src="images/"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Instagram.html">Instagram</a><img style="position: absolute; top: 2px; left: 2px;" src="images/instagram.svg"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Jitsi.html">Jitsi</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-jitsi.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="In-Danger.html">In-Danger Tips</a><img style="position: absolute; top: 2px; left: 2px;" src="images/Icons/hacked01.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Instagram.html">Instagram Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/instagram.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Jitsi.html">Jitsi Use</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-jitsi.svg"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="LastPass.html">LastPass</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-lastpass.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="LinkedIn.html">LinkedIn</a><img style="position: absolute; top: 2px; left: 2px;" src="images/linkedin.webp"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="MailVelope.html">MailVelope</a><img style="position: absolute; top: 2px; left: 2px;" src="images/mailvelope.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="LastPass.html">LastPass Use</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-lastpass.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="LinkedIn.html">LinkedIn Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/linkedin.webp"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="MailVelope.html">MailVelope Use</a><img style="position: absolute; top: 2px; left: 2px;" src="images/mailvelope.svg"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Mobile.html">Mobile</a><img style="position: absolute; top: 2px; left: 2px;" src="images/Icons/smartphone01.svg"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="OpenVPN.html">OpenVPN</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-openvpn.svg"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Signal.html">Signal</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-signal.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Mobile.html">Mobile Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/Icons/smartphone01.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="OpenVPN.html">OpenVPN Use</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-openvpn.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Signal.html">Signal Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-signal.png"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Skype.html">Skype</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-skype.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Telegram.html">Telegram </a><img style="position: absolute; top: 2px; left: 2px;" src="images/telegram.svg" ></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="TikTok.html">TikTok</a><img  scr= "images/TikTok-Logo.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Skype.html">Skype Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-skype.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Telegram.html">Telegram Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/telegram.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Telegram.html">TikTok Security</a><img style="position: absolute; top: 10px; left: 2px;" src="images/TikTok.png"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Twitter.html">Twitter</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-twitter.svg"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="V2ray.html">V2ray</a><img style="position: absolute; top: 2px; left: 2px;" src="images/v2rayN.png"></button>
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="VeraCrypt.html">VeraCrypt</a><img style="position: absolute; top: 2px; left: 2px;" src="images/veracrypt.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Twitter.html">Twitter Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-twitter.svg"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="V2ray.html">V2ray Use</a><img style="position: absolute; top: 2px; left: 2px;" src="images/v2rayN.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="VeraCrypt.html">Encryption with VeraCrypt</a><img style="position: absolute; top: 2px; left: 2px;" src="images/veracrypt.png"></button>
 						
-						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Whatsapp.html">Whatsapp</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-whatsapp.png"></button>
+						<button class="butty" style="height: 50px;width: 250px;text-align: center;position: relative;top: 7px;border: 1px solid;"><a style="color: black;text-align: center;top: -7px;left: 8px;" href="Whatsapp.html">Whatsapp Security</a><img style="position: absolute; top: 2px; left: 2px;" src="images/logo-whatsapp.png"></button>
 					</div>
 				</section>
 		<!-- ###########################################################################################################

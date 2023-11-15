@@ -77,18 +77,17 @@
 	</head>
 
 	<body>
-
+		<!-- Choose Language  button -->
+		<div id="Language-Chooser" style="direction: rtl; background-color: #706233;">
+			<button onclick="readJSON('Fa')">فارسی</button>
+			<button onclick="readJSON('En')">English</button>
+			<button onclick="readJSON('Ar')">العربیه</button>
+			<button onclick="readJSON('Tur')">Turkish</button>
+		</div>
 		<div class="reveal">
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#706233">
-					<!-- Choose Language  button -->
-					<div id="Language-Chooser">
-						<button onclick="readJSON('Fa')">فارسی</button>
-						<button onclick="readJSON('En')">English</button>
-						<button onclick="readJSON('Ar')">العربیه</button>
-						<button onclick="readJSON('Tur')">Turkish</button>
-					</div>
 					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
@@ -164,7 +163,7 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#706233"
 						data-background-transition="zoom">
-						<h2>تنظیمات حریم خصوصی در X</h2>
+						<h2 id="tw-pri">تنظیمات حریم خصوصی در X</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -172,7 +171,7 @@
 					<section data-background="images/Twitter/Twitter-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-pri1">
 							در تنظیمات، وارد Your account شوید. سپس روی Account information کلیک
 							کنید. در این قسمت می‌توانید شناسه، شماره تلفن و ایمیل تایید شده خودتان را
 							ببینید و یا تغییر دهید.
@@ -183,7 +182,7 @@
 					<section data-background="images/Twitter/Twitter-03.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-pri2">
 							وارد Protect posts شوید. اگر کلید این قسمت را روشن کنید، پست‌های شما فقط
 							برای دنبال‌کنندگانتان نمایش داده‌می‌شوند. همچنین می‌توانید وارد Post
 							tagging شده و با خاموش کردن آن، به دیگران اجازه ندهید که شما را در
@@ -195,7 +194,7 @@
 					<section data-background="images/Twitter/Twitter-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-pri3">
 							در تنظیمات وارد Privact and safety شوید. روی Direct messages کلیک کنید
 							و انتخاب کنید که چه کسانی می‌توانند به شما پیام خصوصی بفرستند؛ هیچکس،
 							افراد تایید شده، یا همه. همچنین اگر گزینه Show receipts را خاموش کنید،
@@ -207,7 +206,7 @@
 					<section data-background="images/Twitter/Twitter-05.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-pri4">
 							به Privact and safety برگردید و روی Discoverability and contacts کلیک
 							کنید. با خاموش بودن این دو گزینه، کسانی که شماره تلفن یا ایمیل شما را
 							دارند، نمی‌توانند حساب شما را در مخاطبین X خود مشاهده کنند.
@@ -219,7 +218,7 @@
 					<!--5.1-->
 					<section data-transition="slide" data-background-color="#706233"
 						data-background-transition="zoom">
-						<h2>حذف حساب کاربری X</h2>
+						<h2 id="tw-da">حذف حساب کاربری X</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -227,7 +226,7 @@
 					<section data-background="images/Twitter/Twitter-06.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-da-desc">
 							در تنظیمات، وارد Your account شوید. سپس رویDeactive your account کلیک
 							کنید. دکمه Deactivate را بزنید و رمز حساب کاربری خود را وارد کنید. دوباره
 							Deactivate را بزنید. حساب شما پاک شد.
@@ -239,7 +238,7 @@
 					<!--6.1-->
 					<section data-transition="slide" data-background-color="#706233"
 						data-background-transition="zoom">
-						<h2>تنظیم ورود دو مرحله‌ای X</h2>
+						<h2 id="tw-tfa">تنظیم ورود دو مرحله‌ای X</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -247,7 +246,7 @@
 					<section data-background="images/Twitter/Twitter-07.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-tfa1">
 							در تنظیمات وارد Security and account access شوید. روی Security کلیک کنید.
 							گزینه Password reset protect را روشن کنید. رمز خود را وارد کنید و Save را
 							بزنید. با فعال کردن این گزینه، درصورت بازیابی رمز، رمز شما به ایمیل یا
@@ -259,7 +258,7 @@
 					<section data-background="images/Twitter/Twitter-tfa-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-tfa2">
 							به security and account access برگردید.
 							وارد security شوید. روی two-factor authentication کلیک کنید.
 							authentication app را بزنید. رمز شناسه خود را وارد کنید. روی confirm
@@ -271,7 +270,7 @@
 					<section data-background="images/Twitter/Twitter-tfa-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-tfa3">
 							روی Get started کلیک کنید. روی ?can't scan the QR code بزنید. کد نمایش
 							داده‌شده روی صفحه را بردارید.
 						</blockquote>
@@ -281,7 +280,7 @@
 					<section data-background="images/Twitter/Twitter-tfa-03.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-tfa4">
 							وارد نرم‌‌افزار Authenticator شوید و روی دکمه + بزنید. Enter a setup key
 							را انتخاب کنید. شناسه X و کدی که از X برداشتید را در این قسمت
 							وارد کنید. شناسه ما ثبت شد. حالا عدد جلوی شناسه‌تان را بردارید و به
@@ -293,7 +292,7 @@
 					<section data-background="images/Twitter/Twitter-tfa-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-tfa5">
 							next را بزنید. کد را در قسمت مشخص شده وارد کنید و confirm را بزنید. روی
 							get backup code کلیک کنید. کدهای نمایش داده شده در صفحه را در جایی
 							(نرجیحا غیر دیجیتال) ذخیره کنید تا زمانی که دسترسی به دستگاهتان ندارید از
@@ -306,7 +305,7 @@
 					<!--7.1-->
 					<section data-transition="slide" data-background-color="#706233"
 						data-background-transition="zoom">
-						<h2>بررسی دست‌رسی‌ها به X</h2>
+						<h2 id="tw-devices">بررسی دست‌رسی‌ها به X</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -314,7 +313,7 @@
 					<section data-background="images/Twitter/Twitter-08.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-devices1">
 							در تنظیمات وارد Security and account access شوید. روی Apps and sessions
 							کلیک کنید. در بخش Connected apps می‌توانید نرم‌افزارهایی که اکانت
 							Xتان را مدیریت می‌کنند (نرم‌افزارهای شخص ثالث و غیر خود X) را
@@ -326,7 +325,7 @@
 					<section data-background="images/Twitter/Twitter-09.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-devices2">
 							به Apps and sessions برگردید. وارد Sessions شوید. در اینجا نشست‌های فعال
 							حساب خود را مشاهده می‌کنید. برای قطع اتصال همه دستگاه‌ها جز دستگاه فعلی،
 							روی Log out of all other sessions کلیک کنید.
@@ -337,7 +336,7 @@
 					<section data-background="images/Twitter/Twitter-10.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-devices3">
 							به Security and account access برگردید. روی Connected accounts کلیک
 							کنید. در این بخش تمامی حساب‌های متصل به حساب X خود را مشاهده
 							می‌کنید. برای قطع اتصال، Disconnect را بزنید.
@@ -349,7 +348,7 @@
 					<!--8.1-->
 					<section data-transition="slide" data-background-color="#706233"
 						data-background-transition="zoom">
-						<h2>حذف مکان‌های ثبت شده در پست‌های X</h2>
+						<h2 id="tw-loc">حذف مکان‌های ثبت شده در پست‌های X</h2>
 						<img class="big" src="images/Icons/smartphone01.svg">
 					</section>
 
@@ -357,7 +356,7 @@
 					<section data-background="images/Twitter/Twitter-11.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#706233">
-						<blockquote style="margin-top: 55%; font-size:50%;">
+						<blockquote style="margin-top: 55%; font-size:50%;" id="tw-loc-desc">
 							در تنظیمات وارد Privact and safety شوید. روی Your posts کلیک کنید. وارد
 							بخش مشخص شده در تصویر شوید و دکمه قرمز رنگ را بزنید.
 						</blockquote>
