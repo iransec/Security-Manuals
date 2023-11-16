@@ -76,9 +76,14 @@
 	</head>
 
 	<body>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("default").click();
+        });
+		</script>
 		<!-- Choose Language  button -->
 		<div id="Language-Chooser" style="direction: rtl; background-color: #c86b85;">
-			<button onclick="readJSON('Fa')">فارسی</button>
+			<button id="default" onclick="readJSON('Fa')">فارسی</button>
 			<button onclick="readJSON('En')">English</button>
 			<button onclick="readJSON('Ar')">العربیه</button>
 			<button onclick="readJSON('Tur')">Turkish</button>
@@ -725,95 +730,152 @@
 		################################################################################################################ -->
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-		<script>
-		// More info about config & dependencies:
-		// - https://github.com/hakimel/reveal.js#configuration
-		// - https://github.com/hakimel/reveal.js#dependencies
-		Reveal.initialize({
-			// Change the presentation direction to be RTL
-			rtl: true,
-			// Hides the address bar on mobile devices
-			hideAddressBar: true,
-			// limit how many pages a slide may expand onto
-			pdfMaxPagesPerSlide: 1,
-			// Transition style
-			transition: 'fade', // none/fade/slide/convex/concave/zoom
-			// Transition style for full page slide backgrounds
-			backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-			// Enables touch navigation on devices with touch input
-			touch: true,
-			// Push each slide change to the browser history
-			history: true,
-			// Vertical centering of slides
-			center: true,
-			// Display the page number of the current slide
-			slideNumber: true,
-			dependencies: [
-				{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-				{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-				{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-				{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-				{ src: 'plugin/search/search.js', async: true },
-				{ src: 'plugin/zoom-js/zoom.js', async: true },
-				{ src: 'plugin/notes/notes.js', async: true }
-			]
-		});
-	</script>
 
+		<!-- <script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				// Change the presentation direction to be RTL
+				rtl: true,
+				// Hides the address bar on mobile devices
+				hideAddressBar: true,
+				// limit how many pages a slide may expand onto
+				pdfMaxPagesPerSlide: 1,
+				// Transition style
+				transition: 'fade', // none/fade/slide/convex/concave/zoom
+				// Transition style for full page slide backgrounds
+				backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+				// Enables touch navigation on devices with touch input
+				touch: true,
+				// Push each slide change to the browser history
+				history: true,
+				// Vertical centering of slides
+				center: true,
+				// Display the page number of the current slide
+				slideNumber: true,
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	 -->
 		<!-- Translation Script -->
 		<script>
-	function readJSON(Language) {
-		switch(Language){
-			case 'Fa':
-				var fileName = 'Translations/fa.json';
-				break;
-			case 'En':
-				var fileName = 'Translations/en.json';
-				break;
-			case 'Ar':
-				var fileName = 'Translations/ar.json';
-				break;
-			case 'Tur':
-				var fileName = 'Translations/tur.json';
-				break;
-		};
-
-		var xhr = new XMLHttpRequest();
-		xhr.open('GET', fileName, true);
-
-		xhr.onload = function () {
-			if (xhr.status == 200) {
-				console.log("json loaded.")
-				var data = JSON.parse(xhr.responseText);
-				var Data = data['2FA'];
-				document.title = Data['tf-title'];
-
-				for (var key in Data) {
-					if (Data.hasOwnProperty(key)) {
-						var element = document.getElementById(key);
-						if (element) {
-							element.innerHTML = Data[key];
-						}
-					}
-				}
-
-				var indexData = data['Index'];
-					for (var key in indexData) {
-						if (indexData.hasOwnProperty(key)) {
-							var element = document.getElementById(key);
-							if (element) {
-								element.innerHTML = indexData[key];
+			function readJSON(Language) {
+				var isrtl = true;
+				switch(Language){
+					case 'Fa':
+						var fileName = 'Translations/fa.json';
+						isrtl = true;
+						break;
+					case 'En':
+						var fileName = 'Translations/en.json';
+						isrtl = false;
+						break;
+					case 'Ar':
+						var fileName = 'Translations/ar.json';
+						isrtl = true;
+						break;
+					case 'Tur':
+						var fileName = 'Translations/tur.json';
+						isrtl = false;
+						break;
+				};
+	
+				var xhr = new XMLHttpRequest();
+				xhr.open('GET', fileName, true);
+	
+				xhr.onload = function () {
+					if (xhr.status == 200) {
+						console.log("json loaded.")
+						var data = JSON.parse(xhr.responseText);
+						var Data = data['2FA'];
+						document.title = Data['tf-title'];
+	
+						for (var key in Data) {
+							if (Data.hasOwnProperty(key)) {
+								var element = document.getElementById(key);
+								if (element) {
+									element.innerHTML = Data[key];
+								}
 							}
 						}
 					}
+				};
+				
+				if(isrtl){
+					Reveal.initialize({
+						// Change the presentation direction to be RTL
+						rtl: true,
+						// Hides the address bar on mobile devices
+						hideAddressBar: true,
+						// limit how many pages a slide may expand onto
+						pdfMaxPagesPerSlide: 1,
+						// Transition style
+						transition: 'fade', // none/fade/slide/convex/concave/zoom
+						// Transition style for full page slide backgrounds
+						backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+						// Enables touch navigation on devices with touch input
+						touch: true,
+						// Push each slide change to the browser history
+						history: true,
+						// Vertical centering of slides
+						center: true,
+						// Display the page number of the current slide
+						slideNumber: true,
+						dependencies: [
+							{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+							{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+							{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+							{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+							{ src: 'plugin/search/search.js', async: true },
+							{ src: 'plugin/zoom-js/zoom.js', async: true },
+							{ src: 'plugin/notes/notes.js', async: true }
+						]
+					});
+				}else{
+					Reveal.initialize({
+						// Change the presentation direction to be RTL
+						rtl: false,
+						// Hides the address bar on mobile devices
+						hideAddressBar: true,
+						// limit how many pages a slide may expand onto
+						pdfMaxPagesPerSlide: 1,
+						// Transition style
+						transition: 'fade', // none/fade/slide/convex/concave/zoom
+						// Transition style for full page slide backgrounds
+						backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
+						// Enables touch navigation on devices with touch input
+						touch: true,
+						// Push each slide change to the browser history
+						history: true,
+						// Vertical centering of slides
+						center: true,
+						// Display the page number of the current slide
+						slideNumber: true,
+						dependencies: [
+							{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
+							{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+							{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
+							{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
+							{ src: 'plugin/search/search.js', async: true },
+							{ src: 'plugin/zoom-js/zoom.js', async: true },
+							{ src: 'plugin/notes/notes.js', async: true }
+						]
+					});
+				}
+				
+				xhr.send();
+	
 			}
-		};
-
-		xhr.send();
-
-	}
-</script>
-
+		</script>
 	</body>
 
 </html>

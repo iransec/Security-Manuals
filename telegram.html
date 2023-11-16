@@ -77,9 +77,14 @@
 	</head>
 
 	<body>
+		<script>
+			document.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("default").click();
+        });
+		</script>
 		<!-- Choose Language  button -->
 		<div id="Language-Chooser" style="direction: rtl; background-color: #480032;">
-			<button onclick="readJSON('Fa')">فارسی</button>
+			<button id="default" onclick="readJSON('Fa')">فارسی</button>
 			<button onclick="readJSON('En')">English</button>
 			<button onclick="readJSON('Ar')">العربیه</button>
 			<button onclick="readJSON('Tur')">Turkish</button>
