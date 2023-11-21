@@ -92,7 +92,7 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#c86b85">
-					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<h3 id="title" style="font-weight:900">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
@@ -100,7 +100,7 @@
 					<h2 style="margin-top: -6%;" id="tf-topic">{&nbsp;&nbsp; تایید دو مرحله‌ای
 						&nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
-						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+						<p class="f60 l90"><b id="iransec">ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
 									<i class="fab fa-twitter"></i></a><br />
 								<a href="http://instagram.com/IranSec">IranSec
@@ -133,7 +133,7 @@
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#c86b85"
 						data-background-transition="zoom">
-						<h1 id="tf-topic2">تایید دو مرحله‌ای</h1>
+						<h2 id="tf-topic2">تایید دو مرحله‌ای</h2>
 						<img class="big" src="images/2FA/Google-2FA.png">
 						<p id="tf-intro"><b>راهی برای امن‌تر کردن شناسه‌ها</b></p>
 						<span style="font-size:40%; opacity: 0.5;" id="tf-update">
@@ -198,6 +198,14 @@
 								شما می‌دهند؛ آن‌ها را در جایی امن نگه دارید. بهتر است به‌صورت دیجیتال
 								نباشد.
 							</li>
+						</ul>
+					</section>
+
+					<!--2.5-->
+					<section data-transition="slide" data-background-color="#c86b85"
+						data-background-transition="zoom">
+						<h2 id="tf-listd">چند نکتۀ مهم</h2>
+						<ul style="font-size: 50%; text-align: justify;">
 							<li id="tf-list3">
 								درصورتی که امنیت دستگاه شما کم باشد، دستگاه شما به صورت فیزیکی دست هکر
 								باشد یا کسی به دستگاه شما دست‌رسی داشته باشد، امکان دور زدن تایید
@@ -213,7 +221,7 @@
 						</ul>
 					</section>
 
-					<!--2.5-->
+					<!--2.6-->
 					<section data-background="images/2FA/SMS-Verification.png"
 						data-background-size="40%"
 						data-background-transition="zoom" data-background-color="#c86b85">
@@ -224,7 +232,7 @@
 						</blockquote>
 					</section>
 
-					<!--2.6-->
+					<!--2.7-->
 					<section data-transition="slide" data-background-color="#c86b85"
 						data-background-transition="zoom">
 						<p style="font-size:70%;" id="tf-tools">چندتا از ابزارهایی که می‌توان برای
@@ -296,8 +304,8 @@
 						data-background-transition="zoom">
 						<h2 id="tf-google">تایید دو مرحله‌ای گوگل</h2>
 						<img class="big" src="images/logo-google.svg">
-						<span style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
-							تابستان ۱۴۰۲</span>
+						<!-- <span style="font-size:40%; opacity: 0.5;">
+							تابستان ۱۴۰۲</span> -->
 					</section>
 
 					<!--3.2-->
@@ -417,11 +425,11 @@
 					<!--4.1-->
 					<section data-transition="slide" data-background-color="#c86b85"
 						data-background-transition="zoom">
-						<h2 id="tf-tw">تایید دو مرحله‌ای توییتر</h1>
+						<h2 id="tf-tw">تایید دو مرحله‌ای توییتر</h2>
 						<img class="big" src="images/logo-twitter.svg">
-						<p style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
+						<!-- <p style="font-size:40%; opacity: 0.5;">
 							تابستان
-							۱۴۰۲</p>
+							۱۴۰۲</p> -->
 					</section>
 
 					<!--4.2-->
@@ -487,16 +495,15 @@
 						data-background-transition="zoom">
 						<h2 id="tf-insta">تایید دو مرحله‌ای اینستاگرام</h2>
 						<img class="big" src="images/logo-instagram.svg">
-						<p style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
-							تابستان ۱۴۰۲</p>
-						<p style="font-size:20%; opacity: 0.5; text-align: left"></p>
+						<!-- <p style="font-size:40%; opacity: 0.5;">
+							تابستان ۱۴۰۲</p> -->
 					</section>
 
 					<!--5.2-->
 					<section data-background="images/Instagram/Instagram-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#c86b85">
-						<blockquote style="margin-top: 55%; font-size:50%;" id="tf-insta1">
+						<blockquote style="margin-top: 50%; font-size:50%;" id="tf-insta1">
 							وارد نرم‌‌افزار اینستاگرام شوید.
 							در صفحۀ پروفایل اینستاگرام، با کلیک بر روی منوی همبرگری (سه خط افقی
 							بالا) منوی امکانات اینستاگرام برای شما نمایش داده می‌شود. با کلیک روی
@@ -579,9 +586,8 @@
 						data-background-transition="zoom">
 						<h2 id="tf-faceb">تایید دو مرحله‌ای فیس‌بوک</h2>
 						<img class="big" src="images/logo-facebook.svg">
-						<p style="font-size:40%; opacity: 0.5;"><!--آخرین به-روز-رسانی:-->
-							تابستان ۱۴۰۲</p>
-						<p style="font-size:20%; opacity: 0.5; text-align: left"></p>
+						<!-- <p style="font-size:40%; opacity: 0.5;">
+							تابستان ۱۴۰۲</p> -->
 					</section>
 
 					<!--6.2-->
@@ -595,7 +601,7 @@
 						</blockquote>
 					</section>
 
-					<!--6.2-->
+					<!--6.3-->
 					<section data-background="images/Facebook/Facebook-tfa-01.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#c86b85">
@@ -611,7 +617,7 @@
 						</blockquote>
 					</section>
 
-					<!--6.2-->
+					<!--6.4-->
 					<section data-background="images/Facebook/Facebook-tfa-02.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#c86b85">
@@ -627,7 +633,7 @@
 						</blockquote>
 					</section>
 
-					<!--6.2-->
+					<!--6.5-->
 					<section data-background="images/Facebook/Facebook-tfa-03.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#c86b85">
@@ -640,7 +646,7 @@
 						</blockquote>
 					</section>
 
-					<!--6.2-->
+					<!--6.6-->
 					<section data-background="images/Facebook/Facebook-tfa-04.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#c86b85">
@@ -653,7 +659,7 @@
 						</blockquote>
 					</section>
 
-					<!--6.2-->
+					<!--6.7-->
 					<section data-background="images/Facebook/Facebook-tfa-05.png"
 						data-background-size="60%"
 						data-background-transition="zoom" data-background-color="#c86b85">
@@ -731,12 +737,12 @@
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
 
-		<!-- <script>
+		<script>
 			// More info about config & dependencies:
 			// - https://github.com/hakimel/reveal.js#configuration
 			// - https://github.com/hakimel/reveal.js#dependencies
 			Reveal.initialize({
-				// Change the presentation direction to be RTL
+				// Change the presentation direction to be RTL or LTR based on isRtl
 				rtl: true,
 				// Hides the address bar on mobile devices
 				hideAddressBar: true,
@@ -765,117 +771,70 @@
 				]
 			});
 		</script>
-	 -->
+
 		<!-- Translation Script -->
-		<script>
-			function readJSON(Language) {
-				var isrtl = true;
-				switch(Language){
-					case 'Fa':
-						var fileName = 'Translations/fa.json';
-						isrtl = true;
-						break;
-					case 'En':
-						var fileName = 'Translations/en.json';
-						isrtl = false;
-						break;
-					case 'Ar':
-						var fileName = 'Translations/ar.json';
-						isrtl = true;
-						break;
-					case 'Tur':
-						var fileName = 'Translations/tur.json';
-						isrtl = false;
-						break;
-				};
-	
-				var xhr = new XMLHttpRequest();
-				xhr.open('GET', fileName, true);
-	
-				xhr.onload = function () {
-					if (xhr.status == 200) {
-						console.log("json loaded.")
-						var data = JSON.parse(xhr.responseText);
-						var Data = data['2FA'];
-						document.title = Data['tf-title'];
-	
-						for (var key in Data) {
-							if (Data.hasOwnProperty(key)) {
-								var element = document.getElementById(key);
-								if (element) {
-									element.innerHTML = Data[key];
-								}
+	<script>
+		function readJSON(Language) {
+			switch(Language){
+				case 'Fa':
+					var fileName = 'Translations/fa.json';
+					break;
+				case 'En':
+					var fileName = 'Translations/en.json';
+					break;
+				case 'Ar':
+					var fileName = 'Translations/ar.json';
+					break;
+				case 'Tur':
+					var fileName = 'Translations/tur.json';
+					break;
+			};
+
+			if(Language == 'Fa' || Language == 'Ar'){
+				Reveal.configure({rtl: true});
+			}else{
+				Reveal.configure({rtl: false});
+			}
+
+			if(Language == 'En' || Language == "Tur"){
+				document.getElementById("tf-faceb2").style.marginTop = "45%";
+			}
+
+			var xhr = new XMLHttpRequest();
+			xhr.open('GET', fileName, true);
+
+			xhr.onload = function () {
+				if (xhr.status == 200) {
+					console.log("json loaded.")
+					var data = JSON.parse(xhr.responseText);
+					var Data = data['2FA'];
+					document.title = Data['tf-title'];
+
+					for (var key in Data) {
+						if (Data.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = Data[key];
 							}
 						}
 					}
-				};
-				
-				if(isrtl){
-					Reveal.initialize({
-						// Change the presentation direction to be RTL
-						rtl: true,
-						// Hides the address bar on mobile devices
-						hideAddressBar: true,
-						// limit how many pages a slide may expand onto
-						pdfMaxPagesPerSlide: 1,
-						// Transition style
-						transition: 'fade', // none/fade/slide/convex/concave/zoom
-						// Transition style for full page slide backgrounds
-						backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-						// Enables touch navigation on devices with touch input
-						touch: true,
-						// Push each slide change to the browser history
-						history: true,
-						// Vertical centering of slides
-						center: true,
-						// Display the page number of the current slide
-						slideNumber: true,
-						dependencies: [
-							{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-							{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-							{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-							{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-							{ src: 'plugin/search/search.js', async: true },
-							{ src: 'plugin/zoom-js/zoom.js', async: true },
-							{ src: 'plugin/notes/notes.js', async: true }
-						]
-					});
-				}else{
-					Reveal.initialize({
-						// Change the presentation direction to be RTL
-						rtl: false,
-						// Hides the address bar on mobile devices
-						hideAddressBar: true,
-						// limit how many pages a slide may expand onto
-						pdfMaxPagesPerSlide: 1,
-						// Transition style
-						transition: 'fade', // none/fade/slide/convex/concave/zoom
-						// Transition style for full page slide backgrounds
-						backgroundTransition: 'fade', // none/fade/slide/convex/concave/zoom
-						// Enables touch navigation on devices with touch input
-						touch: true,
-						// Push each slide change to the browser history
-						history: true,
-						// Vertical centering of slides
-						center: true,
-						// Display the page number of the current slide
-						slideNumber: true,
-						dependencies: [
-							{ src: 'lib/js/classList.js', condition: function () { return !document.body.classList; } },
-							{ src: 'plugin/markdown/marked.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-							{ src: 'plugin/markdown/markdown.js', condition: function () { return !!document.querySelector('[data-markdown]'); } },
-							{ src: 'plugin/highlight/highlight.js', async: true, callback: function () { hljs.initHighlightingOnLoad(); } },
-							{ src: 'plugin/search/search.js', async: true },
-							{ src: 'plugin/zoom-js/zoom.js', async: true },
-							{ src: 'plugin/notes/notes.js', async: true }
-						]
-					});
+					
+					var indexData = data['Index'];
+					for (var key in indexData) {
+						if (indexData.hasOwnProperty(key)) {
+							var element = document.getElementById(key);
+							if (element) {
+								element.innerHTML = indexData[key];
+							}
+						}
+					}
 				}
-				
-				xhr.send();
-	
-			}
-		</script>
+			};
+
+			xhr.send();
+
+		}
+	</script>	
 	</body>
 
 </html>

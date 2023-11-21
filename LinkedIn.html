@@ -93,14 +93,14 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#860A35">
-					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<h3 id="title" style="font-weight:900">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
 					<br/>
 					<h2 style="margin-top: -6%;" id="li-topic">{&nbsp;&nbsp; لینکدین &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
-						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+						<p class="f60 l90"><b id="iransec">ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
 									<i class="fab fa-twitter"></i></a><br />
 								<a href="http://instagram.com/IranSec">IranSec
@@ -147,7 +147,7 @@
 					<!--2.2-->
 					<section data-transition="slide" data-background-color="#860A35"
 						data-background-transition="zoom">
-						<p style="font-size: 50%; text-align: justify;">
+						<p style="font-size: 50%; text-align: justify;" id="li-intro-desc">
 							لینکدین یک شبکه اجتماعی حرفه‌ای است که به افراد و شرکت‌ها اجازه می‌دهد تا
 							در زمینه‌های مختلف حرفه‌ای و تجاری ارتباط برقرار کنند، اطلاعات مشترک را
 							به اشتراک بگذارند، مشاغل خود را توسعه دهند و فرصت‌های شغلی را پیدا کنند.
@@ -440,6 +440,12 @@
 					var fileName = 'Translations/tur.json';
 					break;
 			};
+
+			if(Language == 'Fa' || Language == 'Ar'){
+				Reveal.configure({rtl: true});
+			}else{
+				Reveal.configure({rtl: false});
+			}
 
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', fileName, true);

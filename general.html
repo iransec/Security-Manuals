@@ -94,7 +94,7 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#155e63">
-					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<h3 id="title" style="font-weight:900">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
@@ -102,7 +102,7 @@
 					<h2 style="margin-top: -6%;" id="g-topic">{&nbsp;&nbsp; امنیت عمومی
 						&nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
-						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+						<p class="f60 l90"><b id="iransec">ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
 									<i class="fab fa-twitter"></i></a><br />
 								<a href="http://instagram.com/IranSec">IranSec
@@ -136,7 +136,7 @@
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h1 id="g-topic2">امنیت عمومی</h1>
+						<h2 id="g-topic2">امنیت عمومی</h2>
 						<img class="big" src="images/General/general-security.png">
 						<p id="g-intro"><b>راه‌هایی ساده برای افزایش امنیت</b></p>
 						<span class="f40 o50" id="g-update"><!--آخرین به-روز-رسانی:--> تابستان
@@ -181,7 +181,7 @@
 					<!--2.4-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h2 id="g-tip">چند نکتۀ ساده (۲)</h2>
+						<h2 id="g-tipd">چند نکتۀ ساده (۲)</h2>
 						<ul class="f50 justify">
 							<li id="g-tip13">برنامۀ ضد سرقت را روی دستگاه خود نصب کنید.</li>
 							<li id="g-tip14">از اطلاعات خود به صورت منظم پشتیبان(Backup) تهیه کنید.</li>
@@ -203,7 +203,7 @@
 					<!--2.5-->
 					<section data-transition="slide" data-background-color="#155e63"
 						data-background-transition="zoom">
-						<h2>چند نکتۀ ساده (VPN)</h2>
+						<h2 id="g-tip-vpn">چند نکتۀ ساده (VPN)</h2>
 						<ul class="f50 justify">
 							<li id="g-tip25">VPN تنها امنیت را تامین می‌کند، نه لزوما ناشناسی را.</li>
 							<li id="g-tip26">امنیت کاربر VPN، در گرو امنیت شرکت ارائه‌دهنده آن است.</li>
@@ -929,6 +929,16 @@
 					var fileName = 'Translations/tur.json';
 					break;
 			};
+
+			if(Language == 'Fa' || Language == 'Ar'){
+				Reveal.configure({rtl: true});
+			}else{
+				Reveal.configure({rtl: false});
+			}
+
+			if(Language == 'En' || Language == 'Tur'){
+				document.getElementById("g-vpn").style.marginTop = "40%";
+			}
 
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', fileName, true);

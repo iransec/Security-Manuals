@@ -100,7 +100,7 @@
 					<br/>
 					<h2 style="margin-top: -6%;" id="s-topic">{&nbsp;&nbsp; امنیت اسکایپ &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
-						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+						<p class="f60 l90"><b id="iransec">ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
 									<i class="fab fa-twitter"></i></a><br />
 								<a href="http://instagram.com/IranSec">IranSec
@@ -174,7 +174,7 @@
 					<!--2.3-->
 					<section data-transition="slide" data-background-color="#393e6f"
 						data-background-transition="zoom">
-						<h2 id="s-list">چند نکتۀ مهم اسکایپی</h2>
+						<h2 id="s-listd">چند نکتۀ مهم اسکایپی</h2>
 						<ul style="font-size: 50%; text-align: justify;">
 							<li id="s-list6">
 								اسکایپ تاریخچۀ مکالمات شما را ذخیره می‌کند. اگر اسکایپ روی هر دستگاه
@@ -385,6 +385,12 @@
 					var fileName = 'Translations/tur.json';
 					break;
 			};
+
+			if(Language == 'Fa' || Language == 'Ar'){
+				Reveal.configure({rtl: true});
+			}else{
+				Reveal.configure({rtl: false});
+			}
 
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', fileName, true);

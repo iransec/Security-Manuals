@@ -93,14 +93,14 @@
 			<div class="slides">
 				<section data-background="images/01-falling.svg" data-background-size="70%"
 					data-background-color="#01252a">
-					<h3 id="title">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
+					<h3 id="title" style="font-weight:900">امـنـیـت رایـانـه<br>برای فعالان مدنی و روزنامه‌نگاران</h3>
 					<p class="icon" style="font-size: 170px;">
 						<ion-icon name="finger-print"></ion-icon>
 					</p>
 					<br/>
 					<h2 style="margin-top: -6%;" id="i-topic">{&nbsp;&nbsp; امنیت در مواقع خطر &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
-						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+						<p class="f60 l90"><b id="iransec">ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
 									<i class="fab fa-twitter"></i></a><br />
 								<a href="http://instagram.com/IranSec">IranSec
@@ -133,7 +133,7 @@
 					<!--2.1-->
 					<section data-transition="slide" data-background-color="#01252a"
 						data-background-transition="zoom">
-						<h1 id="i-intro">اگر هک/بازداشت شدیم؟</h1>
+						<h2 id="i-intro">اگر هک/بازداشت شدیم؟</h2>
 						<img class="big" src="images/Icons/hacked01.png">
 						<p id="i-intro-desc"><b>راه‌کارهایی ساده برای زمان خطر</b></p>
 						<span style="font-size:40%; opacity: 0.5;" id="i-update"><!--آخرین به-روز-رسانی:-->
@@ -162,7 +162,7 @@
 					<!--3.2-->
 					<section data-transition="slide" data-background-color="#01252a"
 						data-background-transition="zoom">
-						<h2 id="i-lists">بایدها و نبایدها</h2>
+						<h2 id="i-lists1">بایدها و نبایدها</h2>
 						<ul style="font-size: 50%; text-align: justify;">
 							<li id="i-stressl1">
 								نترسید. با صرف کمی زمان می‌توانید شرایط را تحت کنترل خود قرار دهید.
@@ -489,6 +489,12 @@
 					var fileName = 'Translations/tur.json';
 					break;
 			};
+
+			if(Language == 'Fa' || Language == 'Ar'){
+				Reveal.configure({rtl: true});
+			}else{
+				Reveal.configure({rtl: false});
+			}
 
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', fileName, true);

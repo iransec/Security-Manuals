@@ -100,7 +100,7 @@
 					<br/>
 					<h2 style="margin-top: -6%;" id="v-topic">{&nbsp;&nbsp; نرم‌افزار VPN &nbsp;&nbsp;}</h2>
 					<div style="opacity: 0.7;">
-						<p class="f60 l90"><b>ایرانسک</b><br><span class="f70">
+						<p class="f60 l90"><b id="iransec">ایرانسک</b><br><span class="f70">
 								<a href="http://twitter.com/IranSecurity">IranSecurity
 									<i class="fab fa-twitter"></i></a><br />
 								<a href="http://instagram.com/IranSec">IranSec
@@ -531,6 +531,12 @@
 					var fileName = 'Translations/tur.json';
 					break;
 			};
+
+			if(Language == 'Fa' || Language == 'Ar'){
+				Reveal.configure({rtl: true});
+			}else{
+				Reveal.configure({rtl: false});
+			}
 
 			var xhr = new XMLHttpRequest();
 			xhr.open('GET', fileName, true);
