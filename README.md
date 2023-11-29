@@ -41,7 +41,7 @@
    - iOS
  
 <hr />
-To run the presentation, open the project folder in your preferred editor or terminal. Then, execute the following commands:
+To run the presentation, open the project folder in your preferred editor or terminal. Then, use the following commands:
 
 Set the execution policy for running scripts in PowerShell:
 `Set-ExecutionPolicy RemoteSigned`
@@ -50,7 +50,7 @@ Install http-server:
 ```bash
 npm install -g http-server
 ```
-and use the command `http-server` in terminal, for each execution..
+and use the command `http-server` in terminal, for each execution.
 
 Or
 
@@ -58,4 +58,4 @@ Install live-server:
 ```bash
 npm install -g live-server
 ```
-and use the command `live-server` in terminal, for each execution..
+and use the command `live-server` in terminal, for each execution.
