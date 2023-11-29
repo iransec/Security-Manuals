@@ -783,7 +783,7 @@
         "cp-ios1": "Regularly review the permissions that apps request and ensure they are reasonable. To do this, go to Settings, enter Home Screen & App Library, and tap on one of the apps. This section will show a list of the software's permissions. Tap on one of the items. You can choose whether this permission should be active when using the app, prompt you for access each time, or be completely disabled. Repeat these steps for all apps and permissions.",
         "cp-ios2": "In Settings, click on your profile and enter iCloud. Tap on Passwords and Keychain. By enabling this switch, your passwords and credit card information are securely stored.",
         "cp-ios3": "In Settings, enter Privacy and Security. Tap on Apple Advertising. By turning off this switch, your information will not be sent for personalized ad tracking.",
-        "cp-ios4": ""
+        "cp-ios4": "In the settings, go to Face ID & Passcode. Enter your passcode. By turning on the Erase Data option, if you enter your passcode incorrectly ten times, all the data on your device will be completely erased."
     },
     "TikTok": {
         "tt-title": "TikTok Security Guide for Civil Activists and Journalists",
