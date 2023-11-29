@@ -49,7 +49,7 @@ Set the execution policy for running scripts in PowerShell:
 Install http-server:
 ```bash
 npm install -g http-server
-‍‍‍```
+```
 
 Or
 
