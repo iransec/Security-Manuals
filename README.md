@@ -50,12 +50,12 @@ Install http-server:
 ```bash
 npm install -g http-server
 ```
-and use the command `http-server` to run it.
-<br />
+and use the command `http-server` in terminal, for each execution..
+
 Or
 
 Install live-server:
 ```bash
 npm install -g live-server
 ```
-and use `live-server` for execution.
+and use the command `live-server` in terminal, for each execution..
