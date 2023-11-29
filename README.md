@@ -50,7 +50,7 @@ To run the presentation, open the project folder in your preferred editor or ter
 ```bash
 npm install -g http-server
 ```
-3. and use the command `http-server` in terminal, for each execution.
+3. Use the `http-server` command in terminal, for each execution.
 
 Or
 
@@ -58,4 +58,4 @@ Or
 ```bash
 npm install -g live-server
 ```
-3. and use the command `live-server` in terminal, for each execution.
+3. Use the `live-server` command in terminal, for each execution.
